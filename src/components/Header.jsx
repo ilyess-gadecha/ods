@@ -10,18 +10,7 @@ const Header = () => {
   const navigation = [
     { name: 'Features', href: '#features' },
     { name: 'Benefits', href: '#benefits' },
-    { name: 'Pricing', href: '#pricing' },
-    { name: 'Testimonials', href: '#testimonials' },
-    { 
-      name: 'Resources', 
-      href: '#', 
-      dropdown: [
-        { name: 'Blog', href: '#blog' },
-        { name: 'Case Studies', href: '#case-studies' },
-        { name: 'Documentation', href: '#docs' },
-        { name: 'Support', href: '#support' }
-      ]
-    }
+    { name: 'Pricing', href: '#pricing' }
   ]
 
   return (

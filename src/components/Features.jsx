@@ -95,8 +95,8 @@ const Features = () => {
     },
     {
       icon: Zap,
-      title: '99.9% Uptime',
-      description: 'Reliable service you can count on'
+      title: 'Lightning Fast',
+      description: 'Built for speed and performance'
     }
   ]
 

@@ -29,13 +29,6 @@ const Footer = () => {
       { name: 'Bars & Pubs', href: '#' },
       { name: 'Enterprise', href: '#' }
     ],
-    Resources: [
-      { name: 'Help Center', href: '#' },
-      { name: 'Blog', href: '#' },
-      { name: 'Case Studies', href: '#' },
-      { name: 'Webinars', href: '#' },
-      { name: 'Documentation', href: '#' }
-    ],
     Company: [
       { name: 'About Us', href: '#' },
       { name: 'Careers', href: '#' },
@@ -54,9 +47,9 @@ const Footer = () => {
 
   const socialLinks = [
     { name: 'Twitter', icon: Twitter, href: '#' },
-    { name: 'Facebook', icon: Facebook, href: '#' },
-    { name: 'Instagram', icon: Instagram, href: '#' },
-    { name: 'LinkedIn', icon: Linkedin, href: '#' }
+    { name: 'Facebook', icon: Facebook, href: 'https://www.facebook.com/share/16nyw6E6yQ/?mibextid=wwXIfr' },
+    { name: 'Instagram', icon: Instagram, href: 'https://www.instagram.com/ods_solution/' },
+    { name: 'LinkedIn', icon: Linkedin, href: 'https://www.linkedin.com/company/ordering-dashboard-solutions-io' }
   ]
 
   return (
@@ -224,7 +217,6 @@ const Footer = () => {
             <span>🌍 Available Worldwide</span>
             <span>📱 Mobile & Desktop</span>
             <span>☁️ Cloud Based</span>
-            <span>🚀 99.9% Uptime SLA</span>
           </motion.div>
         </div>
       </div>

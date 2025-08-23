@@ -2,10 +2,12 @@ import React from 'react'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import Features from './components/Features'
+import DashboardShowcase from './components/DashboardShowcase'
+import RestaurantShowcase from './components/RestaurantShowcase'
+import StatsShowcase from './components/StatsShowcase'
 import Benefits from './components/Benefits'
 import TrustSignals from './components/TrustSignals'
 import Pricing from './components/Pricing'
-import Testimonials from './components/Testimonials'
 import CTA from './components/CTA'
 import Footer from './components/Footer'
 import './index.css'
@@ -16,6 +18,9 @@ function App() {
       <Header />
       <Hero />
       <TrustSignals />
+      <DashboardShowcase />
+      <RestaurantShowcase />
+      <StatsShowcase />
       <Features />
       <Benefits />
       <Pricing />

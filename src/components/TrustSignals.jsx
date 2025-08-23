@@ -63,7 +63,7 @@ const TrustSignals = () => {
         >
           {[
             { number: '10+', label: 'Core Features', prefix: '', suffix: '+' },
-            { number: '2', label: 'Pricing Models', prefix: '', suffix: '' },
+            { number: '4', label: 'Pricing Models', prefix: '', suffix: '' },
             { number: '24/7', label: 'System Uptime', prefix: '', suffix: '' },
             { number: '∞', label: 'Orders Supported', prefix: '', suffix: '' }
           ].map((stat, index) => (
@@ -127,31 +127,7 @@ const TrustSignals = () => {
           </div>
         </motion.div>
 
-        {/* Trust Badges */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.8 }}
-          viewport={{ once: true }}
-          className="flex flex-wrap justify-center items-center gap-8 mt-16 pt-12 border-t border-gray-100"
-        >
-          {[
-            { text: 'SOC 2 Compliant', icon: '🔒' },
-            { text: 'GDPR Ready', icon: '🛡️' },
-            { text: '99.9% Uptime', icon: '⚡' },
-            { text: '24/7 Support', icon: '🚀' },
-            { text: 'ISO Certified', icon: '✅' }
-          ].map((badge, index) => (
-            <motion.div
-              key={index}
-              whileHover={{ scale: 1.05 }}
-              className="flex items-center space-x-2 px-4 py-2 bg-gray-50 rounded-full"
-            >
-              <span className="text-xl">{badge.icon}</span>
-              <span className="text-sm font-medium text-gray-700">{badge.text}</span>
-            </motion.div>
-          ))}
-        </motion.div>
+        {/* Trust Badges - Removed compliance badges */}
       </div>
     </section>
   )

@@ -1,15 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { motion } from 'framer-motion'
-import { Play, ArrowRight, CheckCircle, Star } from 'lucide-react'
+import { Play, ArrowRight, CheckCircle, Star, X } from 'lucide-react'
+import dashboardImage from '../assets/dashboard.png'
+import demoVideo from '../assets/ods.mp4'
 
 const Hero = () => {
-  const stats = [
-    { number: '5M+', label: 'Orders Processed' },
-    { number: '2K+', label: 'Restaurants' },
-    { number: '25M+', label: 'Customers Served' },
-    { number: '98%', label: 'Satisfaction Rate' }
-  ]
-
+  const [isVideoPlaying, setIsVideoPlaying] = useState(false)
+  
   const benefits = [
     'Contactless QR Code Ordering',
     'Real-time Order Management',
@@ -90,28 +87,16 @@ const Hero = () => {
                 Get Started Free
                 <ArrowRight size={20} className="ml-2 group-hover:translate-x-1 transition-transform duration-200" />
               </a>
-              <button className="btn btn-secondary btn-lg group">
+              <button
+                onClick={() => setIsVideoPlaying(true)}
+                className="btn btn-secondary btn-lg group"
+              >
                 <Play size={20} className="mr-2 group-hover:scale-110 transition-transform duration-200" />
                 Watch Demo
               </button>
             </motion.div>
 
-            {/* Stats */}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.7 }}
-              className="grid grid-cols-2 lg:grid-cols-4 gap-6 mt-12 pt-8 border-t border-gray-200"
-            >
-              {stats.map((stat, index) => (
-                <div key={index} className="text-center">
-                  <div className="text-2xl lg:text-3xl font-bold text-gray-900 mb-1">
-                    {stat.number}
-                  </div>
-                  <div className="text-sm text-gray-600">{stat.label}</div>
-                </div>
-              ))}
-            </motion.div>
+
           </motion.div>
 
           {/* Right Content - Dashboard Preview */}
@@ -133,53 +118,46 @@ const Hero = () => {
               className="absolute -bottom-4 -right-4 w-20 h-20 bg-gradient-to-r from-success-500 to-accent-500 rounded-2xl opacity-20"
             />
 
-            {/* Main Dashboard Image */}
+            {/* Main Dashboard Preview */}
             <div className="relative bg-white rounded-3xl shadow-strong p-2">
-              <div className="bg-gray-100 rounded-2xl aspect-[4/3] flex items-center justify-center overflow-hidden">
-                {/* Mock Dashboard Content */}
-                <div className="w-full h-full bg-gradient-to-br from-gray-50 to-gray-100 relative">
-                  {/* Header */}
-                  <div className="bg-primary-500 h-12 flex items-center px-4">
-                    <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
-                      <span className="text-primary-500 font-bold text-sm">O</span>
-                    </div>
-                    <div className="ml-3 text-white font-semibold">ODS Dashboard</div>
-                  </div>
-                  
-                  {/* Content Area */}
-                  <div className="p-4 space-y-4">
-                    {/* Stats Cards */}
-                    <div className="grid grid-cols-3 gap-3">
-                      {[
-                        { label: 'Orders', value: '156', color: 'bg-blue-500' },
-                        { label: 'Revenue', value: '$2.8k', color: 'bg-green-500' },
-                        { label: 'Tables', value: '24', color: 'bg-purple-500' }
-                      ].map((stat, index) => (
-                        <div key={index} className="bg-white rounded-lg p-3 shadow-sm">
-                          <div className={`w-8 h-8 ${stat.color} rounded-lg mb-2`}></div>
-                          <div className="text-xs text-gray-600">{stat.label}</div>
-                          <div className="font-bold text-gray-900">{stat.value}</div>
-                        </div>
-                      ))}
-                    </div>
-                    
-                    {/* Orders List */}
-                    <div className="bg-white rounded-lg p-3 shadow-sm">
-                      <div className="text-sm font-semibold text-gray-900 mb-3">Recent Orders</div>
-                      <div className="space-y-2">
-                        {[1, 2, 3].map((_, index) => (
-                          <div key={index} className="flex items-center justify-between">
-                            <div className="flex items-center space-x-2">
-                              <div className="w-6 h-6 bg-gray-200 rounded-full"></div>
-                              <div className="text-xs text-gray-600">Table {index + 1}</div>
-                            </div>
-                            <div className="text-xs font-medium text-primary-500">$24.50</div>
-                          </div>
-                        ))}
+              <div className="bg-gray-100 rounded-2xl overflow-hidden relative">
+                {!isVideoPlaying ? (
+                  <div className="relative">
+                    <img 
+                      src={dashboardImage} 
+                      alt="ODS Dashboard Interface" 
+                      className="w-full h-full object-cover rounded-2xl"
+                    />
+                    {/* Video Play Button Overlay */}
+                    <button
+                      onClick={() => setIsVideoPlaying(true)}
+                      className="absolute inset-0 flex items-center justify-center bg-black/20 rounded-2xl group hover:bg-black/30 transition-all duration-300"
+                    >
+                      <div className="w-20 h-20 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                        <Play size={32} className="text-primary-600 ml-1" />
                       </div>
-                    </div>
+                      <div className="absolute bottom-4 left-4 bg-black/50 text-white px-3 py-1 rounded-full text-sm">
+                        Click to play demo
+                      </div>
+                    </button>
                   </div>
-                </div>
+                ) : (
+                  <div className="relative">
+                    <video 
+                      src={demoVideo}
+                      className="w-full h-auto rounded-2xl"
+                      controls
+                      autoPlay
+                      onEnded={() => setIsVideoPlaying(false)}
+                    />
+                    <button
+                      onClick={() => setIsVideoPlaying(false)}
+                      className="absolute top-4 right-4 w-8 h-8 bg-black/50 hover:bg-black/70 text-white rounded-full flex items-center justify-center transition-all duration-200"
+                    >
+                      <X size={16} />
+                    </button>
+                  </div>
+                )}
               </div>
             </div>
 

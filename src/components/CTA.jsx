@@ -194,20 +194,7 @@ const CTA = () => {
           viewport={{ once: true }}
           className="text-center mt-16 pt-12 border-t border-white/20"
         >
-          <p className="text-white/70 mb-6">Trusted by 2,000+ restaurants worldwide</p>
-          <div className="flex flex-wrap justify-center items-center gap-8 text-white/60">
-            {[
-              'SOC 2 Compliant',
-              '99.9% Uptime',
-              'GDPR Ready',
-              '24/7 Support',
-              'PCI DSS Certified'
-            ].map((badge, index) => (
-              <span key={index} className="text-sm font-medium">
-                {badge}
-              </span>
-            ))}
-          </div>
+          <p className="text-white/70 mb-6">Built for the future of restaurant technology</p>
         </motion.div>
       </div>
     </section>
