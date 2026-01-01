@@ -1,17 +1,19 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import { Play, ArrowRight, CheckCircle, Star, X } from 'lucide-react'
+import { useTranslation } from 'react-i18next'
 import dashboardImage from '../assets/dashboard.png'
 import demoVideo from '../assets/ods.mp4'
 
 const Hero = () => {
+  const { t } = useTranslation()
   const [isVideoPlaying, setIsVideoPlaying] = useState(false)
   
   const benefits = [
-    'Contactless QR Code Ordering',
-    'Real-time Order Management',
-    'Complete Restaurant Analytics',
-    'Inventory & Staff Management'
+    t('hero.benefits.qrOrdering'),
+    t('hero.benefits.orderManagement'),
+    t('hero.benefits.analytics'),
+    t('hero.benefits.inventory')
   ]
 
   return (
@@ -33,7 +35,7 @@ const Hero = () => {
               className="inline-flex items-center space-x-2 bg-primary-50 text-primary-600 px-4 py-2 rounded-full text-sm font-medium mb-6"
             >
               <Star size={16} className="text-yellow-500" />
-              <span>#1 Restaurant Management Platform</span>
+              <span>{t('hero.badge')}</span>
             </motion.div>
 
             {/* Headline */}
@@ -43,8 +45,8 @@ const Hero = () => {
               transition={{ duration: 0.8, delay: 0.3 }}
               className="text-4xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight"
             >
-              <span className="gradient-text">Ordering Dashboard Solution</span>{' '}
-              for Modern Restaurants
+              <span className="gradient-text">{t('hero.title')}</span>{' '}
+              {t('hero.titleSuffix')}
             </motion.h1>
 
             {/* Subtitle */}
@@ -54,8 +56,7 @@ const Hero = () => {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto lg:mx-0"
             >
-              Modernize your restaurant operations with our comprehensive ordering dashboard solution. 
-              From QR code menus to real-time analytics, everything you need to boost efficiency and enhance customer experience.
+              {t('hero.subtitle')}
             </motion.p>
 
             {/* Benefits List */}
@@ -84,7 +85,7 @@ const Hero = () => {
                 href="#contact"
                 className="btn btn-primary btn-lg group"
               >
-                Get Started Free
+                {t('hero.getStarted')}
                 <ArrowRight size={20} className="ml-2 group-hover:translate-x-1 transition-transform duration-200" />
               </a>
               <button
@@ -92,7 +93,7 @@ const Hero = () => {
                 className="btn btn-secondary btn-lg group"
               >
                 <Play size={20} className="mr-2 group-hover:scale-110 transition-transform duration-200" />
-                Watch Demo
+                {t('hero.watchDemo')}
               </button>
             </motion.div>
 
@@ -137,7 +138,7 @@ const Hero = () => {
                         <Play size={32} className="text-primary-600 ml-1" />
                       </div>
                       <div className="absolute bottom-4 left-4 bg-black/50 text-white px-3 py-1 rounded-full text-sm">
-                        Click to play demo
+                        {t('hero.watchDemo')}
                       </div>
                     </button>
                   </div>

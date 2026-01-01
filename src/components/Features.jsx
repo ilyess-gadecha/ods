@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
 import { 
   ShoppingCart, 
   BarChart3, 
@@ -16,68 +17,106 @@ import {
 } from 'lucide-react'
 
 const Features = () => {
+  const { t } = useTranslation()
+  
   const features = [
     {
       icon: ShoppingCart,
-      title: 'Smart Order Management',
-      description: 'Streamline orders from multiple channels with intelligent routing and real-time tracking.',
-      benefits: ['Real-time order tracking', 'Multi-channel integration', 'Automated notifications'],
+      title: t('features.items.orderManagement.title'),
+      description: t('features.items.orderManagement.description'),
+      benefits: [
+        t('features.items.orderManagement.benefits.tracking'),
+        t('features.items.orderManagement.benefits.integration'),
+        t('features.items.orderManagement.benefits.notifications')
+      ],
       color: 'bg-blue-50 text-blue-600'
     },
     {
       icon: QrCode,
-      title: 'QR Code Ordering',
-      description: 'Enable contactless dining with custom QR codes for tables and takeaway orders.',
-      benefits: ['Contactless ordering', 'Custom table codes', 'Instant menu access'],
+      title: t('features.items.qrOrdering.title'),
+      description: t('features.items.qrOrdering.description'),
+      benefits: [
+        t('features.items.qrOrdering.benefits.contactless'),
+        t('features.items.qrOrdering.benefits.tableCodes'),
+        t('features.items.qrOrdering.benefits.menuAccess')
+      ],
       color: 'bg-green-50 text-green-600'
     },
     {
       icon: BarChart3,
-      title: 'Advanced Analytics',
-      description: 'Make data-driven decisions with comprehensive reports and real-time insights.',
-      benefits: ['Sales analytics', 'Customer insights', 'Performance tracking'],
+      title: t('features.items.analytics.title'),
+      description: t('features.items.analytics.description'),
+      benefits: [
+        t('features.items.analytics.benefits.sales'),
+        t('features.items.analytics.benefits.insights'),
+        t('features.items.analytics.benefits.tracking')
+      ],
       color: 'bg-purple-50 text-purple-600'
     },
     {
       icon: Users,
-      title: 'Staff Management',
-      description: 'Manage your team efficiently with role-based access and performance tracking.',
-      benefits: ['Role management', 'Performance metrics', 'Schedule integration'],
+      title: t('features.items.staffManagement.title'),
+      description: t('features.items.staffManagement.description'),
+      benefits: [
+        t('features.items.staffManagement.benefits.roleManagement'),
+        t('features.items.staffManagement.benefits.metrics'),
+        t('features.items.staffManagement.benefits.schedule')
+      ],
       color: 'bg-orange-50 text-orange-600'
     },
     {
       icon: Smartphone,
-      title: 'Mobile Apps',
-      description: 'Native mobile apps for both customers and staff with offline capabilities.',
-      benefits: ['Customer app', 'Staff app', 'Offline support'],
+      title: t('features.items.mobileApps.title'),
+      description: t('features.items.mobileApps.description'),
+      benefits: [
+        t('features.items.mobileApps.benefits.customerApp'),
+        t('features.items.mobileApps.benefits.staffApp'),
+        t('features.items.mobileApps.benefits.offline')
+      ],
       color: 'bg-pink-50 text-pink-600'
     },
     {
       icon: Settings,
-      title: 'Custom Integrations',
-      description: 'Connect with your existing systems through our flexible API and integrations.',
-      benefits: ['API access', 'Third-party integrations', 'Custom workflows'],
+      title: t('features.items.integrations.title'),
+      description: t('features.items.integrations.description'),
+      benefits: [
+        t('features.items.integrations.benefits.api'),
+        t('features.items.integrations.benefits.thirdParty'),
+        t('features.items.integrations.benefits.workflows')
+      ],
       color: 'bg-indigo-50 text-indigo-600'
     },
     {
       icon: CreditCard,
-      title: 'Payment Processing',
-      description: 'Accept multiple payment methods with secure, PCI-compliant processing.',
-      benefits: ['Multiple payment methods', 'Secure processing', 'Split payments'],
+      title: t('features.items.payment.title'),
+      description: t('features.items.payment.description'),
+      benefits: [
+        t('features.items.payment.benefits.multipleMethods'),
+        t('features.items.payment.benefits.secure'),
+        t('features.items.payment.benefits.split')
+      ],
       color: 'bg-emerald-50 text-emerald-600'
     },
     {
       icon: Printer,
-      title: 'Kitchen Display & Printing',
-      description: 'Streamline kitchen operations with digital displays and automated printing.',
-      benefits: ['Kitchen display system', 'Auto-printing', 'Order prioritization'],
+      title: t('features.items.kitchen.title'),
+      description: t('features.items.kitchen.description'),
+      benefits: [
+        t('features.items.kitchen.benefits.display'),
+        t('features.items.kitchen.benefits.printing'),
+        t('features.items.kitchen.benefits.prioritization')
+      ],
       color: 'bg-red-50 text-red-600'
     },
     {
       icon: Globe,
-      title: 'Multi-Location Support',
-      description: 'Manage multiple restaurants from a single dashboard with centralized control.',
-      benefits: ['Centralized management', 'Location-specific settings', 'Unified reporting'],
+      title: t('features.items.multiLocation.title'),
+      description: t('features.items.multiLocation.description'),
+      benefits: [
+        t('features.items.multiLocation.benefits.centralized'),
+        t('features.items.multiLocation.benefits.locationSettings'),
+        t('features.items.multiLocation.benefits.reporting')
+      ],
       color: 'bg-cyan-50 text-cyan-600'
     }
   ]
@@ -85,18 +124,18 @@ const Features = () => {
   const highlights = [
     {
       icon: Clock,
-      title: '30min Setup',
-      description: 'Get started in minutes, not weeks'
+      title: t('features.highlights.setup.title'),
+      description: t('features.highlights.setup.description')
     },
     {
       icon: Shield,
-      title: 'Enterprise Security',
-      description: 'Bank-level security and compliance'
+      title: t('features.highlights.security.title'),
+      description: t('features.highlights.security.description')
     },
     {
       icon: Zap,
-      title: 'Lightning Fast',
-      description: 'Built for speed and performance'
+      title: t('features.highlights.speed.title'),
+      description: t('features.highlights.speed.description')
     }
   ]
 
@@ -111,10 +150,10 @@ const Features = () => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-            Ordering Dashboard Solution Features
+            {t('features.title')}
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            From order management to analytics, ODS provides all the tools your restaurant needs to thrive in the digital age.
+            {t('features.subtitle')}
           </p>
         </motion.div>
 

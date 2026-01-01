@@ -1,0 +1,514 @@
+{
+  "header": {
+    "features": "Fonctionnalités",
+    "benefits": "Avantages",
+    "pricing": "Tarifs",
+    "getStarted": "Commencer Gratuitement"
+  },
+  "hero": {
+    "badge": "Plateforme de Gestion de Restaurant #1",
+    "title": "Solution de Tableau de Bord de Commande",
+    "titleSuffix": "pour Restaurants Modernes",
+    "subtitle": "Modernisez les opérations de votre restaurant avec notre solution complète de tableau de bord de commande. Des menus QR code aux analyses en temps réel, tout ce dont vous avez besoin pour améliorer l'efficacité et l'expérience client.",
+    "benefits": {
+      "qrOrdering": "Commande sans Contact par QR Code",
+      "orderManagement": "Gestion des Commandes en Temps Réel",
+      "analytics": "Analyses Complètes du Restaurant",
+      "inventory": "Gestion des Stocks & Personnel"
+    },
+    "getStarted": "Commencer Gratuitement",
+    "watchDemo": "Voir la Démo",
+    "noCredit": "Aucune carte de crédit requise",
+    "freeTrial": "Essai gratuit de 14 jours"
+  },
+  "trustSignals": {
+    "title": "Conçu pour le Succès des Restaurants",
+    "subtitle": "Des fonctionnalités complètes conçues pour moderniser les opérations des restaurants et améliorer l'expérience client",
+    "stats": {
+      "features": "Fonctionnalités Principales",
+      "models": "Modèles de Tarification",
+      "uptime": "Disponibilité du Système",
+      "orders": "Commandes Supportées"
+    }
+  },
+  "dashboardShowcase": {
+    "title": "Gestion du Tableau de Bord",
+    "subtitle": "Découvrez la puissance de notre système complet de gestion de restaurant avec de vraies captures d'écran de tableaux de bord d'opérations réelles.",
+    "dashboards": {
+      "complete": {
+        "title": "Aperçu Complet du Tableau de Bord",
+        "description": "Vue complète de toute l'opération de votre restaurant avec toutes les métriques clés et contrôles en un seul endroit.",
+        "features": {
+          "analytics": "Analyses en temps réel",
+          "multiLocation": "Support multi-emplacements",
+          "performance": "Informations sur les performances",
+          "control": "Contrôle centralisé"
+        }
+      },
+      "orders": {
+        "title": "Gestion des Commandes",
+        "description": "Suivi et gestion des commandes en temps réel avec analyses détaillées et mises à jour de statut.",
+        "features": {
+          "notifications": "Notifications en temps réel",
+          "tracking": "Suivi du statut des commandes",
+          "customerDetails": "Détails des clients",
+          "payment": "Traitement des paiements"
+        }
+      },
+      "inventory": {
+        "title": "Contrôle des Stocks",
+        "description": "Gestion complète des stocks avec niveaux de stock, alertes et commandes automatisées.",
+        "features": {
+          "monitoring": "Surveillance des niveaux de stock",
+          "alerts": "Alertes de stock faible",
+          "supplier": "Gestion des fournisseurs",
+          "cost": "Suivi des coûts"
+        }
+      },
+      "menu": {
+        "title": "Gestion du Menu",
+        "description": "Contrôle dynamique du menu avec tarification, catégories et gestion de disponibilité.",
+        "features": {
+          "pricing": "Tarification dynamique",
+          "category": "Organisation par catégories",
+          "availability": "Disponibilité des articles",
+          "nutritional": "Informations nutritionnelles"
+        }
+      },
+      "tables": {
+        "title": "Gestion des Tables",
+        "description": "Système efficace d'allocation de tables et de réservation avec mises à jour de statut en temps réel.",
+        "features": {
+          "reservations": "Réservations de tables",
+          "capacity": "Gestion de la capacité",
+          "qrCode": "Génération de codes QR",
+          "seating": "Optimisation des places"
+        }
+      },
+      "marketing": {
+        "title": "Analyses Marketing",
+        "description": "Outils d'analyse et de marketing complets pour améliorer les performances de votre restaurant.",
+        "features": {
+          "sales": "Analyses des ventes",
+          "insights": "Informations sur les clients",
+          "campaign": "Suivi des campagnes",
+          "revenue": "Rapports de revenus"
+        }
+      }
+    }
+  },
+  "restaurantShowcase": {
+    "title": {
+      "part1": "Parfait pour",
+      "part2": "Tous les Types de Restaurants"
+    },
+    "subtitle": "De la gastronomie au service rapide, notre plateforme s'adapte aux besoins uniques de votre restaurant et améliore chaque aspect de votre opération.",
+    "types": {
+      "fineDining": {
+        "title": "Expérience Gastronomique",
+        "description": "Élevez le service de votre restaurant avec notre solution de commande premium",
+        "stats": {
+          "restaurants": "50+ Restaurants Gastronomiques",
+          "satisfaction": "98% de Satisfaction Client",
+          "revenue": "Augmentation moyenne de 23% du chiffre d'affaires"
+        }
+      },
+      "fastCasual": {
+        "title": "Service Rapide & Décontracté",
+        "description": "Accélérez le service et réduisez les temps d'attente avec une commande rationalisée",
+        "stats": {
+          "locations": "200+ Emplacements QSR",
+          "service": "65% de Service Plus Rapide",
+          "wait": "40% de Réduction des Temps d'Attente"
+        }
+      },
+      "cafe": {
+        "title": "Cafés & Coffee Shops",
+        "description": "Parfait pour les cafés avec commande mobile et programmes de fidélité",
+        "stats": {
+          "shops": "150+ Cafés",
+          "return": "85% de Clients Fidèles",
+          "orderValue": "30% de Valeur de Commande Plus Élevée"
+        }
+      }
+    },
+    "menu": {
+      "title": "Présentez Votre Menu Délicieux",
+      "subtitle": "Une belle photographie culinaire et une présentation dynamique du menu contribuent à augmenter les commandes et la satisfaction des clients."
+    },
+    "technology": {
+      "title": "Intégration Technologique Transparente",
+      "subtitle": "Notre plateforme s'intègre à vos systèmes de point de vente, processeurs de paiement et équipements de cuisine existants pour une opération de restaurant vraiment transparente.",
+      "items": {
+        "pos": "Intégration POS",
+        "payment": "Traitement des Paiements",
+        "kitchen": "Systèmes d'Affichage Cuisine"
+      }
+    }
+  },
+  "statsShowcase": {
+    "title": {
+      "part1": "Votre",
+      "part2": "Succès",
+      "part3": "Commence Ici"
+    },
+    "subtitle": "Rejoignez la révolution de la technologie de restaurant. Soyez parmi les premiers à découvrir l'avenir de la gestion de restaurant avec ODS.",
+    "stats": {
+      "ready": {
+        "number": "Prêt",
+        "label": "À Lancer",
+        "description": "Conçu pour les restaurants modernes"
+      },
+      "dedicated": {
+        "label": "Dévoué",
+        "description": "Focus sur votre croissance"
+      },
+      "support": {
+        "label": "Support",
+        "description": "Toujours là quand vous en avez besoin"
+      },
+      "revenue": {
+        "label": "Augmentation des Revenus",
+        "description": "Projection de recherche de l'industrie"
+      }
+    },
+    "metrics": {
+      "technology": {
+        "title": "Technologie de Pointe",
+        "before": "Systèmes Legacy",
+        "after": "Solution Cloud Moderne",
+        "improvement": "Technologie de Nouvelle Génération"
+      },
+      "excellence": {
+        "title": "Conçu pour l'Excellence",
+        "before": "Processus Manuels",
+        "after": "Efficacité Automatisée",
+        "improvement": "Opérations Rationalisées"
+      },
+      "growth": {
+        "title": "Design Axé sur la Croissance",
+        "before": "Solutions Basiques",
+        "after": "Plateforme Complète",
+        "improvement": "Système Tout-en-Un"
+      }
+    }
+  },
+  "features": {
+    "title": "Tout ce dont Vous Avez Besoin pour Gérer Votre Restaurant",
+    "subtitle": "Des fonctionnalités puissantes conçues spécialement pour les restaurants modernes",
+    "items": {
+      "orderManagement": {
+        "title": "Gestion Intelligente des Commandes",
+        "description": "Rationalisez les commandes de plusieurs canaux avec routage intelligent et suivi en temps réel.",
+        "benefits": {
+          "tracking": "Suivi des commandes en temps réel",
+          "integration": "Intégration multicanal",
+          "notifications": "Notifications automatisées"
+        }
+      },
+      "qrOrdering": {
+        "title": "Commande par QR Code",
+        "description": "Activez la restauration sans contact avec des codes QR personnalisés pour les tables et les commandes à emporter.",
+        "benefits": {
+          "contactless": "Commande sans contact",
+          "tableCodes": "Codes de table personnalisés",
+          "menuAccess": "Accès instantané au menu"
+        }
+      },
+      "analytics": {
+        "title": "Analyses Avancées",
+        "description": "Prenez des décisions basées sur les données avec des rapports complets et des informations en temps réel.",
+        "benefits": {
+          "sales": "Analyses des ventes",
+          "insights": "Informations sur les clients",
+          "tracking": "Suivi des performances"
+        }
+      },
+      "staffManagement": {
+        "title": "Gestion du Personnel",
+        "description": "Gérez votre équipe efficacement avec accès basé sur les rôles et suivi des performances.",
+        "benefits": {
+          "roleManagement": "Gestion des rôles",
+          "metrics": "Métriques de performance",
+          "schedule": "Intégration de l'horaire"
+        }
+      },
+      "mobileApps": {
+        "title": "Applications Mobiles",
+        "description": "Applications mobiles natives pour les clients et le personnel avec capacités hors ligne.",
+        "benefits": {
+          "customerApp": "Application client",
+          "staffApp": "Application personnel",
+          "offline": "Support hors ligne"
+        }
+      },
+      "integrations": {
+        "title": "Intégrations Personnalisées",
+        "description": "Connectez-vous à vos systèmes existants via notre API flexible et nos intégrations.",
+        "benefits": {
+          "api": "Accès API",
+          "thirdParty": "Intégrations tierces",
+          "workflows": "Workflows personnalisés"
+        }
+      },
+      "payment": {
+        "title": "Traitement des Paiements",
+        "description": "Acceptez plusieurs méthodes de paiement avec un traitement sécurisé et conforme PCI.",
+        "benefits": {
+          "multipleMethods": "Plusieurs méthodes de paiement",
+          "secure": "Traitement sécurisé",
+          "split": "Paiements fractionnés"
+        }
+      },
+      "kitchen": {
+        "title": "Affichage Cuisine & Impression",
+        "description": "Rationalisez les opérations de cuisine avec affichages numériques et impression automatisée.",
+        "benefits": {
+          "display": "Système d'affichage cuisine",
+          "printing": "Impression automatique",
+          "prioritization": "Priorisation des commandes"
+        }
+      },
+      "multiLocation": {
+        "title": "Support Multi-Emplacements",
+        "description": "Gérez plusieurs restaurants depuis un seul tableau de bord avec contrôle centralisé.",
+        "benefits": {
+          "centralized": "Gestion centralisée",
+          "locationSettings": "Paramètres spécifiques à l'emplacement",
+          "reporting": "Rapports unifiés"
+        }
+      }
+    },
+    "highlights": {
+      "setup": {
+        "title": "Configuration en 30min",
+        "description": "Démarrez en minutes, pas en semaines"
+      },
+      "security": {
+        "title": "Sécurité Entreprise",
+        "description": "Sécurité et conformité de niveau bancaire"
+      },
+      "speed": {
+        "title": "Ultra Rapide",
+        "description": "Conçu pour la vitesse et la performance"
+      }
+    }
+  },
+  "benefits": {
+    "title": "Transformez Votre Entreprise de Restaurant",
+    "subtitle": "Voyez des résultats mesurables dès le premier jour. Notre plateforme offre un impact réel pour les restaurants de toutes tailles.",
+    "main": {
+      "revenue": {
+        "title": "Augmentez les Revenus de 35%",
+        "description": "Optimisez les opérations et augmentez les ventes avec des informations basées sur les données et des processus rationalisés.",
+        "stats": {
+          "increase": "Augmentation Moyenne des Revenus",
+          "speed": "Vitesse de Traitement des Commandes",
+          "retention": "Rétention de la Clientèle"
+        }
+      },
+      "time": {
+        "title": "Économisez 15+ Heures par Semaine",
+        "description": "Automatisez les tâches répétitives et éliminez les processus manuels pour vous concentrer sur ce qui compte le plus.",
+        "stats": {
+          "saved": "Temps Économisé par Semaine",
+          "reduced": "Tâches Manuelles Réduites",
+          "efficiency": "Efficacité du Personnel"
+        }
+      },
+      "experience": {
+        "title": "Améliorez l'Expérience Client",
+        "description": "Offrez un service exceptionnel avec des commandes plus rapides, un suivi précis et des expériences personnalisées.",
+        "stats": {
+          "satisfaction": "Satisfaction Client",
+          "accuracy": "Précision des Commandes",
+          "waitTime": "Réduction du Temps d'Attente"
+        }
+      }
+    },
+    "additional": {
+      "costs": {
+        "title": "Réduisez les Coûts d'Exploitation",
+        "description": "Réduisez les coûts de main-d'œuvre et le gaspillage avec une gestion intelligente des stocks et des processus automatisés."
+      },
+      "accuracy": {
+        "title": "Améliorez la Précision des Commandes",
+        "description": "Éliminez les erreurs humaines avec la commande numérique et les systèmes d'affichage cuisine."
+      },
+      "decisions": {
+        "title": "Meilleure Prise de Décision",
+        "description": "Prenez des décisions éclairées avec des analyses en temps réel et des rapports complets."
+      }
+    },
+    "metrics": {
+      "orders": "Commandes Traitées Mensuellement",
+      "satisfaction": "Satisfaction Client",
+      "revenue": "Augmentation Moyenne du Chiffre d'Affaires",
+      "timeSaved": "Temps Économisé par Semaine"
+    },
+    "proven": {
+      "title": "Résultats Prouvés dans Toute l'Industrie",
+      "subtitle": "Métriques réelles des restaurants utilisant la plateforme ODS"
+    },
+    "cta": {
+      "title": "Prêt à Voir Ces Résultats dans Votre Restaurant?",
+      "description": "Rejoignez des milliers de restaurants prospères qui ont transformé leurs opérations avec ODS.",
+      "contactUs": "Contactez-nous",
+      "noCredit": "Aucune carte de crédit requise"
+    }
+  },
+  "pricing": {
+    "title": "Tarification Simple et Transparente",
+    "subtitle": "Choisissez le plan qui correspond aux besoins de votre restaurant. Commencez gratuitement et évoluez à mesure que vous grandissez.",
+    "billing": {
+      "monthly": "Mensuel",
+      "yearly": "Annuel",
+      "savePercent": "Économisez 20%"
+    },
+    "period": {
+      "month": "/mois",
+      "year": "/an"
+    },
+    "mostPopular": "Le Plus Populaire",
+    "save": "Économisez 2 mois",
+    "cta": {
+      "getStarted": "Commencer",
+      "contactUs": "Contactez-nous",
+      "contactSales": "Contacter les Ventes"
+    },
+    "plans": {
+      "commission": {
+        "name": "Basé sur Commission",
+        "description": "Parfait pour les petits cafés ou lieux éphémères avec faibles coûts initiaux",
+        "period": "par commande",
+        "note": "Commission réduite (1% par commande) disponible pour les restaurants à volume élevé",
+        "features": {
+          "standard": "Commission Standard (2% par commande)",
+          "core": "Toutes les fonctionnalités de base ODS incluses",
+          "qr": "Gestion des tables par code QR",
+          "order": "Système de gestion des commandes",
+          "menu": "Gestion de menu de base",
+          "dashboard": "Rapports de tableau de bord standard",
+          "docs": "Documentation en ligne",
+          "email": "Support par e-mail",
+          "noFees": "Pas de frais d'abonnement mensuels"
+        }
+      },
+      "starter": {
+        "name": "Démarrage",
+        "description": "Commande numérique essentielle pour les petits restaurants",
+        "idealFor": "Petits cafés ou food trucks",
+        "features": {
+          "qr": "Gestion des tables par code QR",
+          "menu": "Gestion de base du menu et des commandes",
+          "dashboard": "Rapports de tableau de bord standard",
+          "employees": "Jusqu'à 2 employés",
+          "sector": "1 secteur inclus",
+          "orders": "Commandes illimitées (sans commission)",
+          "email": "Support par e-mail",
+          "docs": "Documentation en ligne"
+        }
+      },
+      "pro": {
+        "name": "Pro",
+        "description": "Solution complète pour les restaurants en croissance",
+        "idealFor": "Restaurants en croissance nécessitant un contrôle des stocks",
+        "features": {
+          "starter": "Toutes les fonctionnalités Démarrage incluses",
+          "inventory": "Gestion des stocks",
+          "purchase": "Bons de commande et fournisseurs",
+          "waste": "Système de suivi des déchets",
+          "bookings": "Réservations et réservations",
+          "menu": "Articles de menu illimités",
+          "employees": "Jusqu'à 10 employés",
+          "support": "Support prioritaire"
+        }
+      },
+      "enterprise": {
+        "name": "Entreprise",
+        "description": "Solution complète pour les grandes opérations",
+        "idealFor": "Grands restaurants ou groupes multi-emplacements",
+        "features": {
+          "pro": "Toutes les fonctionnalités Pro incluses",
+          "marketing": "Automatisation du marketing",
+          "loyalty": "Programmes de fidélité",
+          "theme": "Couleurs de thème personnalisées",
+          "employees": "Employés et secteurs illimités",
+          "multiLocation": "Support multi-emplacements",
+          "manager": "Gestionnaire de compte dédié",
+          "integrations": "Intégrations personnalisées disponibles",
+          "sla": "Garantie SLA"
+        }
+      }
+    },
+    "faq": {
+      "title": "Questions Fréquemment Posées",
+      "questions": {
+        "trial": {
+          "q": "Y a-t-il un essai gratuit?",
+          "a": "Oui! Tous les plans sont fournis avec un essai gratuit de 14 jours. Aucune carte de crédit requise."
+        },
+        "switch": {
+          "q": "Puis-je changer de plan à tout moment?",
+          "a": "Absolument! Vous pouvez mettre à niveau, rétrograder ou changer votre plan à tout moment."
+        },
+        "support": {
+          "q": "Qu'est-ce qui est inclus dans le support?",
+          "a": "Tous les plans incluent le support par e-mail. Les plans Professionnel et Entreprise bénéficient d'un support prioritaire."
+        },
+        "fees": {
+          "q": "Y a-t-il des frais de configuration?",
+          "a": "Aucun frais de configuration. Nous vous aiderons à démarrer sans coût supplémentaire."
+        }
+      }
+    }
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "subtitle": "Vous avez des questions sur ODS? Nous sommes là pour vous aider! Remplissez le formulaire ci-dessous et notre équipe vous répondra dans les 24 heures.",
+    "contactInfo": "Informations de Contact",
+    "description": "Contactez-nous par l'un de ces canaux. Nous sommes toujours heureux de vous entendre!",
+    "email": "E-mail",
+    "info": {
+      "title": "Informations de Contact",
+      "description": "Contactez-nous par l'un de ces canaux. Nous sommes toujours heureux de vous entendre!",
+      "email": "E-mail"
+    },
+    "form": {
+      "name": "Votre Nom",
+      "email": "Adresse E-mail",
+      "phone": "Numéro de Téléphone",
+      "restaurant": "Nom du Restaurant",
+      "message": "Message",
+      "submit": "Envoyer le Message",
+      "send": "Envoyer le Message",
+      "sending": "Envoi en cours...",
+      "required": "Champs obligatoires",
+      "thankYou": "Merci!",
+      "success": "Votre message a été envoyé avec succès. Nous vous répondrons dans les 24 heures.",
+      "sendAnother": "Envoyer un Autre Message"
+    },
+    "immediate": {
+      "title": "Besoin d'une Assistance Immédiate?",
+      "description": "Notre équipe d'assistance est disponible du lundi au vendredi, de 9h à 18h EST",
+      "cta": "Envoyez-nous un E-mail",
+      "emailUs": "Envoyez-nous un E-mail"
+    }
+  },
+  "cta": {
+    "title": "Prêt à Transformer Votre Restaurant?",
+    "subtitle": "Rejoignez des milliers de restaurants prospères qui utilisent ODS pour rationaliser les opérations, augmenter les revenus et ravir les clients.",
+    "contactUs": "Contactez-nous"
+  },
+  "footer": {
+    "description": "Autonomiser les restaurants avec des solutions de commande et de gestion intelligentes. Transformez votre entreprise avec ODS.",
+    "email": "contact@ordering-dashboard-solution.com",
+    "copyright": "ODS Platform. Fait avec",
+    "copyrightEnd": "pour les restaurants du monde entier.",
+    "forRestaurants": "pour les restaurants du monde entier.",
+    "security": "Sécurité de Niveau Entreprise",
+    "worldwide": "Disponible dans le Monde Entier",
+    "mobile": "Applications Mobiles Disponibles",
+    "cloud": "Plateforme Basée sur le Cloud"
+  }
+}
