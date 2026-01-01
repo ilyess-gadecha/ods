@@ -1,7 +1,9 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
 
 const TrustSignals = () => {
+  const { t } = useTranslation()
   const partners = [
     {
       name: 'Restaurant Chain A',
@@ -46,10 +48,10 @@ const TrustSignals = () => {
           className="text-center mb-12"
         >
           <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">
-            Built for Restaurant Success
+            {t('trustSignals.title')}
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Comprehensive features designed to modernize restaurant operations and enhance customer experience
+            {t('trustSignals.subtitle')}
           </p>
         </motion.div>
 
@@ -62,10 +64,10 @@ const TrustSignals = () => {
           className="grid grid-cols-2 lg:grid-cols-4 gap-8 mb-16"
         >
           {[
-            { number: '10+', label: 'Core Features', prefix: '', suffix: '+' },
-            { number: '4', label: 'Pricing Models', prefix: '', suffix: '' },
-            { number: '24/7', label: 'System Uptime', prefix: '', suffix: '' },
-            { number: '∞', label: 'Orders Supported', prefix: '', suffix: '' }
+            { number: '10+', label: t('trustSignals.stats.features'), prefix: '', suffix: '+' },
+            { number: '4', label: t('trustSignals.stats.models'), prefix: '', suffix: '' },
+            { number: '24/7', label: t('trustSignals.stats.uptime'), prefix: '', suffix: '' },
+            { number: '∞', label: t('trustSignals.stats.orders'), prefix: '', suffix: '' }
           ].map((stat, index) => (
             <motion.div
               key={index}

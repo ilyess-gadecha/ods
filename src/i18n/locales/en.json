@@ -1,0 +1,514 @@
+{
+  "header": {
+    "features": "Features",
+    "benefits": "Benefits",
+    "pricing": "Pricing",
+    "getStarted": "Get Started Free"
+  },
+  "hero": {
+    "badge": "#1 Restaurant Management Platform",
+    "title": "Ordering Dashboard Solution",
+    "titleSuffix": "for Modern Restaurants",
+    "subtitle": "Modernize your restaurant operations with our comprehensive ordering dashboard solution. From QR code menus to real-time analytics, everything you need to boost efficiency and enhance customer experience.",
+    "benefits": {
+      "qrOrdering": "Contactless QR Code Ordering",
+      "orderManagement": "Real-time Order Management",
+      "analytics": "Complete Restaurant Analytics",
+      "inventory": "Inventory & Staff Management"
+    },
+    "getStarted": "Get Started Free",
+    "watchDemo": "Watch Demo",
+    "noCredit": "No credit card required",
+    "freeTrial": "14-day free trial"
+  },
+  "trustSignals": {
+    "title": "Built for Restaurant Success",
+    "subtitle": "Comprehensive features designed to modernize restaurant operations and enhance customer experience",
+    "stats": {
+      "features": "Core Features",
+      "models": "Pricing Models",
+      "uptime": "System Uptime",
+      "orders": "Orders Supported"
+    }
+  },
+  "dashboardShowcase": {
+    "title": "Dashboard Management",
+    "subtitle": "Experience the power of our comprehensive restaurant management system with real dashboard screenshots from actual restaurant operations.",
+    "dashboards": {
+      "complete": {
+        "title": "Complete Dashboard Overview",
+        "description": "Comprehensive view of your entire restaurant operation with all key metrics and controls in one place.",
+        "features": {
+          "analytics": "Real-time analytics",
+          "multiLocation": "Multi-location support",
+          "performance": "Performance insights",
+          "control": "Centralized control"
+        }
+      },
+      "orders": {
+        "title": "Order Management",
+        "description": "Real-time order tracking and management with detailed analytics and status updates.",
+        "features": {
+          "notifications": "Real-time notifications",
+          "tracking": "Order status tracking",
+          "customerDetails": "Customer details",
+          "payment": "Payment processing"
+        }
+      },
+      "inventory": {
+        "title": "Inventory Control",
+        "description": "Complete inventory management with stock levels, alerts, and automated ordering.",
+        "features": {
+          "monitoring": "Stock level monitoring",
+          "alerts": "Low stock alerts",
+          "supplier": "Supplier management",
+          "cost": "Cost tracking"
+        }
+      },
+      "menu": {
+        "title": "Menu Management",
+        "description": "Dynamic menu control with pricing, categories, and availability management.",
+        "features": {
+          "pricing": "Dynamic pricing",
+          "category": "Category organization",
+          "availability": "Item availability",
+          "nutritional": "Nutritional info"
+        }
+      },
+      "tables": {
+        "title": "Table Management",
+        "description": "Efficient table allocation and reservation system with real-time status updates.",
+        "features": {
+          "reservations": "Table reservations",
+          "capacity": "Capacity management",
+          "qrCode": "QR code generation",
+          "seating": "Seating optimization"
+        }
+      },
+      "marketing": {
+        "title": "Marketing Analytics",
+        "description": "Comprehensive analytics and marketing tools to boost your restaurant's performance.",
+        "features": {
+          "sales": "Sales analytics",
+          "insights": "Customer insights",
+          "campaign": "Campaign tracking",
+          "revenue": "Revenue reports"
+        }
+      }
+    }
+  },
+  "restaurantShowcase": {
+    "title": {
+      "part1": "Perfect for",
+      "part2": "Every Restaurant Type"
+    },
+    "subtitle": "From fine dining to quick service, our platform adapts to your restaurant's unique needs and enhances every aspect of your operation.",
+    "types": {
+      "fineDining": {
+        "title": "Fine Dining Experience",
+        "description": "Elevate your restaurant's service with our premium ordering solution",
+        "stats": {
+          "restaurants": "50+ Fine Dining Restaurants",
+          "satisfaction": "98% Customer Satisfaction",
+          "revenue": "Average 23% Revenue Increase"
+        }
+      },
+      "fastCasual": {
+        "title": "Fast Casual & Quick Service",
+        "description": "Speed up service and reduce wait times with streamlined ordering",
+        "stats": {
+          "locations": "200+ QSR Locations",
+          "service": "65% Faster Service",
+          "wait": "40% Reduced Wait Times"
+        }
+      },
+      "cafe": {
+        "title": "Café & Coffee Shops",
+        "description": "Perfect for coffee shops with mobile ordering and loyalty programs",
+        "stats": {
+          "shops": "150+ Coffee Shops",
+          "return": "85% Return Customers",
+          "orderValue": "30% Higher Order Value"
+        }
+      }
+    },
+    "menu": {
+      "title": "Showcase Your Delicious Menu",
+      "subtitle": "Beautiful food photography and dynamic menu presentation help increase orders and customer satisfaction."
+    },
+    "technology": {
+      "title": "Seamless Technology Integration",
+      "subtitle": "Our platform integrates with your existing POS systems, payment processors, and kitchen equipment for a truly seamless restaurant operation.",
+      "items": {
+        "pos": "POS Integration",
+        "payment": "Payment Processing",
+        "kitchen": "Kitchen Display Systems"
+      }
+    }
+  },
+  "statsShowcase": {
+    "title": {
+      "part1": "Your",
+      "part2": "Success",
+      "part3": "Starts Here"
+    },
+    "subtitle": "Join the revolution in restaurant technology. Be among the first to experience the future of restaurant management with ODS.",
+    "stats": {
+      "ready": {
+        "number": "Ready",
+        "label": "To Launch",
+        "description": "Built for modern restaurants"
+      },
+      "dedicated": {
+        "label": "Dedicated",
+        "description": "Focus on your growth"
+      },
+      "support": {
+        "label": "Support",
+        "description": "Always here when needed"
+      },
+      "revenue": {
+        "label": "Revenue Boost",
+        "description": "Industry research projection"
+      }
+    },
+    "metrics": {
+      "technology": {
+        "title": "Industry-Leading Technology",
+        "before": "Legacy Systems",
+        "after": "Modern Cloud Solution",
+        "improvement": "Next-Gen Tech"
+      },
+      "excellence": {
+        "title": "Built for Excellence",
+        "before": "Manual Processes",
+        "after": "Automated Efficiency",
+        "improvement": "Streamlined Operations"
+      },
+      "growth": {
+        "title": "Growth-Focused Design",
+        "before": "Basic Solutions",
+        "after": "Comprehensive Platform",
+        "improvement": "All-in-One System"
+      }
+    }
+  },
+  "features": {
+    "title": "Everything You Need to Run Your Restaurant",
+    "subtitle": "Powerful features designed specifically for modern restaurants",
+    "items": {
+      "orderManagement": {
+        "title": "Smart Order Management",
+        "description": "Streamline orders from multiple channels with intelligent routing and real-time tracking.",
+        "benefits": {
+          "tracking": "Real-time order tracking",
+          "integration": "Multi-channel integration",
+          "notifications": "Automated notifications"
+        }
+      },
+      "qrOrdering": {
+        "title": "QR Code Ordering",
+        "description": "Enable contactless dining with custom QR codes for tables and takeaway orders.",
+        "benefits": {
+          "contactless": "Contactless ordering",
+          "tableCodes": "Custom table codes",
+          "menuAccess": "Instant menu access"
+        }
+      },
+      "analytics": {
+        "title": "Advanced Analytics",
+        "description": "Make data-driven decisions with comprehensive reports and real-time insights.",
+        "benefits": {
+          "sales": "Sales analytics",
+          "insights": "Customer insights",
+          "tracking": "Performance tracking"
+        }
+      },
+      "staffManagement": {
+        "title": "Staff Management",
+        "description": "Manage your team efficiently with role-based access and performance tracking.",
+        "benefits": {
+          "roleManagement": "Role management",
+          "metrics": "Performance metrics",
+          "schedule": "Schedule integration"
+        }
+      },
+      "mobileApps": {
+        "title": "Mobile Apps",
+        "description": "Native mobile apps for both customers and staff with offline capabilities.",
+        "benefits": {
+          "customerApp": "Customer app",
+          "staffApp": "Staff app",
+          "offline": "Offline support"
+        }
+      },
+      "integrations": {
+        "title": "Custom Integrations",
+        "description": "Connect with your existing systems through our flexible API and integrations.",
+        "benefits": {
+          "api": "API access",
+          "thirdParty": "Third-party integrations",
+          "workflows": "Custom workflows"
+        }
+      },
+      "payment": {
+        "title": "Payment Processing",
+        "description": "Accept multiple payment methods with secure, PCI-compliant processing.",
+        "benefits": {
+          "multipleMethods": "Multiple payment methods",
+          "secure": "Secure processing",
+          "split": "Split payments"
+        }
+      },
+      "kitchen": {
+        "title": "Kitchen Display & Printing",
+        "description": "Streamline kitchen operations with digital displays and automated printing.",
+        "benefits": {
+          "display": "Kitchen display system",
+          "printing": "Auto-printing",
+          "prioritization": "Order prioritization"
+        }
+      },
+      "multiLocation": {
+        "title": "Multi-Location Support",
+        "description": "Manage multiple restaurants from a single dashboard with centralized control.",
+        "benefits": {
+          "centralized": "Centralized management",
+          "locationSettings": "Location-specific settings",
+          "reporting": "Unified reporting"
+        }
+      }
+    },
+    "highlights": {
+      "setup": {
+        "title": "30min Setup",
+        "description": "Get started in minutes, not weeks"
+      },
+      "security": {
+        "title": "Enterprise Security",
+        "description": "Bank-level security and compliance"
+      },
+      "speed": {
+        "title": "Lightning Fast",
+        "description": "Built for speed and performance"
+      }
+    }
+  },
+  "benefits": {
+    "title": "Transform Your Restaurant Business",
+    "subtitle": "See measurable results from day one. Our platform delivers real impact for restaurants of all sizes.",
+    "main": {
+      "revenue": {
+        "title": "Increase Revenue by 35%",
+        "description": "Optimize operations and boost sales with data-driven insights and streamlined processes.",
+        "stats": {
+          "increase": "Average Revenue Increase",
+          "speed": "Order Processing Speed",
+          "retention": "Customer Retention"
+        }
+      },
+      "time": {
+        "title": "Save 15+ Hours Weekly",
+        "description": "Automate repetitive tasks and eliminate manual processes to focus on what matters most.",
+        "stats": {
+          "saved": "Time Saved Per Week",
+          "reduced": "Manual Tasks Reduced",
+          "efficiency": "Staff Efficiency"
+        }
+      },
+      "experience": {
+        "title": "Enhance Customer Experience",
+        "description": "Deliver exceptional service with faster ordering, accurate tracking, and personalized experiences.",
+        "stats": {
+          "satisfaction": "Customer Satisfaction",
+          "accuracy": "Order Accuracy",
+          "waitTime": "Wait Time Reduction"
+        }
+      }
+    },
+    "additional": {
+      "costs": {
+        "title": "Reduce Operating Costs",
+        "description": "Lower labor costs and reduce waste with intelligent inventory management and automated processes."
+      },
+      "accuracy": {
+        "title": "Improve Order Accuracy",
+        "description": "Eliminate human errors with digital ordering and kitchen display systems."
+      },
+      "decisions": {
+        "title": "Better Decision Making",
+        "description": "Make informed decisions with real-time analytics and comprehensive reporting."
+      }
+    },
+    "metrics": {
+      "orders": "Orders Processed Monthly",
+      "satisfaction": "Customer Satisfaction",
+      "revenue": "Average Revenue Increase",
+      "timeSaved": "Time Saved Weekly"
+    },
+    "proven": {
+      "title": "Proven Results Across the Industry",
+      "subtitle": "Real metrics from restaurants using ODS platform"
+    },
+    "cta": {
+      "title": "Ready to See These Results in Your Restaurant?",
+      "description": "Join thousands of successful restaurants that have transformed their operations with ODS.",
+      "contactUs": "Contact Us",
+      "noCredit": "No credit card required"
+    }
+  },
+  "pricing": {
+    "title": "Simple, Transparent Pricing",
+    "subtitle": "Choose the plan that fits your restaurant's needs. Start free and upgrade as you grow.",
+    "billing": {
+      "monthly": "Monthly",
+      "yearly": "Yearly",
+      "savePercent": "Save 20%"
+    },
+    "period": {
+      "month": "/month",
+      "year": "/year"
+    },
+    "mostPopular": "Most Popular",
+    "save": "Save 2 months",
+    "cta": {
+      "getStarted": "Get Started",
+      "contactUs": "Contact Us",
+      "contactSales": "Contact Sales"
+    },
+    "plans": {
+      "commission": {
+        "name": "Commission Based",
+        "description": "Perfect for small coffees or pop-up venues with low upfront costs",
+        "period": "per order",
+        "note": "Reduced Commission (1% per order) available for higher-volume restaurants",
+        "features": {
+          "standard": "Standard Commission (2% per order)",
+          "core": "All core ODS features included",
+          "qr": "QR code table management",
+          "order": "Order management system",
+          "menu": "Basic menu management",
+          "dashboard": "Standard dashboard reports",
+          "docs": "Online documentation",
+          "email": "Email support",
+          "noFees": "No monthly subscription fees"
+        }
+      },
+      "starter": {
+        "name": "Starter",
+        "description": "Essential digital ordering for small restaurants",
+        "idealFor": "Small coffee shops or food trucks",
+        "features": {
+          "qr": "QR code table management",
+          "menu": "Basic menu & order management",
+          "dashboard": "Standard dashboard reports",
+          "employees": "Up to 2 employees",
+          "sector": "1 sector included",
+          "orders": "Unlimited orders (no commission)",
+          "email": "Email support",
+          "docs": "Online documentation"
+        }
+      },
+      "pro": {
+        "name": "Pro",
+        "description": "Complete solution for growing restaurants",
+        "idealFor": "Growing restaurants needing stock control",
+        "features": {
+          "starter": "All Starter features included",
+          "inventory": "Inventory management",
+          "purchase": "Purchase orders & suppliers",
+          "waste": "Waste tracking system",
+          "bookings": "Bookings & reservations",
+          "menu": "Unlimited menu items",
+          "employees": "Up to 10 employees",
+          "support": "Priority support"
+        }
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "description": "Full-featured solution for large operations",
+        "idealFor": "Large restaurants or multi-location groups",
+        "features": {
+          "pro": "All Pro features included",
+          "marketing": "Marketing automation",
+          "loyalty": "Loyalty programs",
+          "theme": "Custom theme colors",
+          "employees": "Unlimited employees & sectors",
+          "multiLocation": "Multi-location support",
+          "manager": "Dedicated account manager",
+          "integrations": "Custom integrations available",
+          "sla": "SLA guarantee"
+        }
+      }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "questions": {
+        "trial": {
+          "q": "Is there a free trial?",
+          "a": "Yes! All plans come with a 14-day free trial. No credit card required."
+        },
+        "switch": {
+          "q": "Can I switch plans anytime?",
+          "a": "Absolutely! You can upgrade, downgrade, or change your plan at any time."
+        },
+        "support": {
+          "q": "What's included in support?",
+          "a": "All plans include email support. Professional and Enterprise get priority support."
+        },
+        "fees": {
+          "q": "Are there setup fees?",
+          "a": "No setup fees ever. We'll help you get started at no additional cost."
+        }
+      }
+    }
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "Have questions about ODS? We're here to help! Fill out the form below and our team will respond within 24 hours.",
+    "contactInfo": "Contact Information",
+    "description": "Reach out to us through any of these channels. We're always happy to hear from you!",
+    "email": "Email",
+    "info": {
+      "title": "Contact Information",
+      "description": "Reach out to us through any of these channels. We're always happy to hear from you!",
+      "email": "Email"
+    },
+    "form": {
+      "name": "Your Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "restaurant": "Restaurant Name",
+      "message": "Message",
+      "submit": "Send Message",
+      "send": "Send Message",
+      "sending": "Sending...",
+      "required": "Required fields",
+      "thankYou": "Thank You!",
+      "success": "Your message has been sent successfully. We'll get back to you within 24 hours.",
+      "sendAnother": "Send Another Message"
+    },
+    "immediate": {
+      "title": "Need Immediate Assistance?",
+      "description": "Our support team is available Monday to Friday, 9 AM to 6 PM EST",
+      "cta": "Email Us",
+      "emailUs": "Email Us"
+    }
+  },
+  "cta": {
+    "title": "Ready to Transform Your Restaurant?",
+    "subtitle": "Join thousands of successful restaurants that use ODS to streamline operations, increase revenue, and delight customers.",
+    "contactUs": "Contact Us"
+  },
+  "footer": {
+    "description": "Empowering restaurants with intelligent ordering and management solutions. Transform your business with ODS.",
+    "email": "contact@ordering-dashboard-solution.com",
+    "copyright": "ODS Platform. Made with",
+    "copyrightEnd": "for restaurants worldwide.",
+    "forRestaurants": "for restaurants worldwide.",
+    "security": "Enterprise-Grade Security",
+    "worldwide": "Available Worldwide",
+    "mobile": "Mobile Apps Available",
+    "cloud": "Cloud-Based Platform"
+  }
+}

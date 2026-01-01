@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
 import { 
   TrendingUp, 
   Clock, 
@@ -12,37 +13,39 @@ import {
 } from 'lucide-react'
 
 const Benefits = () => {
+  const { t } = useTranslation()
+  
   const mainBenefits = [
     {
       icon: TrendingUp,
-      title: 'Increase Revenue by 35%',
-      description: 'Optimize operations and boost sales with data-driven insights and streamlined processes.',
+      title: t('benefits.main.revenue.title'),
+      description: t('benefits.main.revenue.description'),
       stats: [
-        { label: 'Average Revenue Increase', value: '35%' },
-        { label: 'Order Processing Speed', value: '3x faster' },
-        { label: 'Customer Retention', value: '+45%' }
+        { label: t('benefits.main.revenue.stats.increase'), value: '35%' },
+        { label: t('benefits.main.revenue.stats.speed'), value: '3x' },
+        { label: t('benefits.main.revenue.stats.retention'), value: '+45%' }
       ],
       color: 'from-green-500 to-emerald-600'
     },
     {
       icon: Clock,
-      title: 'Save 15+ Hours Weekly',
-      description: 'Automate repetitive tasks and eliminate manual processes to focus on what matters most.',
+      title: t('benefits.main.time.title'),
+      description: t('benefits.main.time.description'),
       stats: [
-        { label: 'Time Saved Per Week', value: '15+ hrs' },
-        { label: 'Manual Tasks Reduced', value: '80%' },
-        { label: 'Staff Efficiency', value: '+60%' }
+        { label: t('benefits.main.time.stats.saved'), value: '15+ hrs' },
+        { label: t('benefits.main.time.stats.reduced'), value: '80%' },
+        { label: t('benefits.main.time.stats.efficiency'), value: '+60%' }
       ],
       color: 'from-blue-500 to-cyan-600'
     },
     {
       icon: Users,
-      title: 'Enhance Customer Experience',
-      description: 'Deliver exceptional service with faster ordering, accurate tracking, and personalized experiences.',
+      title: t('benefits.main.experience.title'),
+      description: t('benefits.main.experience.description'),
       stats: [
-        { label: 'Customer Satisfaction', value: '98%' },
-        { label: 'Order Accuracy', value: '99.5%' },
-        { label: 'Wait Time Reduction', value: '50%' }
+        { label: t('benefits.main.experience.stats.satisfaction'), value: '98%' },
+        { label: t('benefits.main.experience.stats.accuracy'), value: '99.5%' },
+        { label: t('benefits.main.experience.stats.waitTime'), value: '50%' }
       ],
       color: 'from-purple-500 to-pink-600'
     }
@@ -51,29 +54,29 @@ const Benefits = () => {
   const additionalBenefits = [
     {
       icon: DollarSign,
-      title: 'Reduce Operating Costs',
-      description: 'Lower labor costs and reduce waste with intelligent inventory management and automated processes.',
+      title: t('benefits.additional.costs.title'),
+      description: t('benefits.additional.costs.description'),
       percentage: '25%'
     },
     {
       icon: Star,
-      title: 'Improve Order Accuracy',
-      description: 'Eliminate human errors with digital ordering and kitchen display systems.',
+      title: t('benefits.additional.accuracy.title'),
+      description: t('benefits.additional.accuracy.description'),
       percentage: '99.5%'
     },
     {
       icon: Target,
-      title: 'Better Decision Making',
-      description: 'Make informed decisions with real-time analytics and comprehensive reporting.',
+      title: t('benefits.additional.decisions.title'),
+      description: t('benefits.additional.decisions.description'),
       percentage: '100%'
     }
   ]
 
   const successMetrics = [
-    { number: '2M+', label: 'Orders Processed Monthly', icon: '📦' },
-    { number: '98%', label: 'Customer Satisfaction', icon: '⭐' },
-    { number: '35%', label: 'Average Revenue Increase', icon: '📈' },
-    { number: '15hrs', label: 'Time Saved Weekly', icon: '⏰' }
+    { number: '2M+', label: t('benefits.metrics.orders'), icon: '📦' },
+    { number: '98%', label: t('benefits.metrics.satisfaction'), icon: '⭐' },
+    { number: '35%', label: t('benefits.metrics.revenue'), icon: '📈' },
+    { number: '15hrs', label: t('benefits.metrics.timeSaved'), icon: '⏰' }
   ]
 
   return (
@@ -87,10 +90,10 @@ const Benefits = () => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-            Transform Your Restaurant Business
+            {t('benefits.title')}
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            See measurable results from day one. Our platform delivers real impact for restaurants of all sizes.
+            {t('benefits.subtitle')}
           </p>
         </motion.div>
 
@@ -143,10 +146,10 @@ const Benefits = () => {
         >
           <div className="text-center mb-12">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">
-              Proven Results Across the Industry
+              {t('benefits.proven.title')}
             </h3>
             <p className="text-gray-600">
-              Real metrics from restaurants using ODS platform
+              {t('benefits.proven.subtitle')}
             </p>
           </div>
           
@@ -211,10 +214,10 @@ const Benefits = () => {
         >
           <div className="max-w-2xl mx-auto">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">
-              Ready to See These Results in Your Restaurant?
+              {t('benefits.cta.title')}
             </h3>
             <p className="text-gray-600 mb-6">
-              Join thousands of successful restaurants that have transformed their operations with ODS.
+              {t('benefits.cta.description')}
             </p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -224,13 +227,13 @@ const Benefits = () => {
                 whileTap={{ scale: 0.95 }}
                 className="btn-primary px-8 py-3 flex items-center space-x-2"
               >
-                <span>Contact Us</span>
+                <span>{t('benefits.cta.contactUs')}</span>
                 <ArrowRight className="w-4 h-4" />
               </motion.a>
               
               <div className="flex items-center space-x-2 text-sm text-gray-600">
                 <CheckCircle className="w-4 h-4 text-green-500" />
-                <span>No credit card required</span>
+                <span>{t('benefits.cta.noCredit')}</span>
               </div>
             </div>
           </div>

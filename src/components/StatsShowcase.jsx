@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
 import { 
   TrendingUp, 
   Clock, 
@@ -12,32 +13,34 @@ import {
 } from 'lucide-react'
 
 const StatsShowcase = () => {
+  const { t } = useTranslation()
+  
   const stats = [
     {
-      number: "Ready",
-      label: "To Launch",
-      description: "Built for modern restaurants",
+      number: t('statsShowcase.stats.ready.number'),
+      label: t('statsShowcase.stats.ready.label'),
+      description: t('statsShowcase.stats.ready.description'),
       icon: Users,
       color: "from-blue-500 to-blue-600"
     },
     {
       number: "100%",
-      label: "Dedicated",
-      description: "Focus on your growth",
+      label: t('statsShowcase.stats.dedicated.label'),
+      description: t('statsShowcase.stats.dedicated.description'),
       icon: BarChart3,
       color: "from-green-500 to-green-600"
     },
     {
       number: "24/7",
-      label: "Support",
-      description: "Always here when needed",
+      label: t('statsShowcase.stats.support.label'),
+      description: t('statsShowcase.stats.support.description'),
       icon: CheckCircle,
       color: "from-purple-500 to-purple-600"
     },
     {
       number: "35%",
-      label: "Revenue Boost",
-      description: "Industry research projection",
+      label: t('statsShowcase.stats.revenue.label'),
+      description: t('statsShowcase.stats.revenue.description'),
       icon: TrendingUp,
       color: "from-orange-500 to-orange-600"
     }
@@ -45,24 +48,24 @@ const StatsShowcase = () => {
 
   const successMetrics = [
     {
-      title: "Industry-Leading Technology",
-      before: "Legacy Systems",
-      after: "Modern Cloud Solution",
-      improvement: "Next-Gen Tech",
+      title: t('statsShowcase.metrics.technology.title'),
+      before: t('statsShowcase.metrics.technology.before'),
+      after: t('statsShowcase.metrics.technology.after'),
+      improvement: t('statsShowcase.metrics.technology.improvement'),
       image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80"
     },
     {
-      title: "Built for Excellence",
-      before: "Manual Processes",
-      after: "Automated Efficiency",
-      improvement: "Streamlined Operations",
+      title: t('statsShowcase.metrics.excellence.title'),
+      before: t('statsShowcase.metrics.excellence.before'),
+      after: t('statsShowcase.metrics.excellence.after'),
+      improvement: t('statsShowcase.metrics.excellence.improvement'),
       image: "https://images.unsplash.com/photo-1559329007-40df8a9345d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80"
     },
     {
-      title: "Growth-Focused Design",
-      before: "Basic Solutions",
-      after: "Comprehensive Platform",
-      improvement: "All-in-One System",
+      title: t('statsShowcase.metrics.growth.title'),
+      before: t('statsShowcase.metrics.growth.before'),
+      after: t('statsShowcase.metrics.growth.after'),
+      improvement: t('statsShowcase.metrics.growth.improvement'),
       image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80"
     }
   ]
@@ -85,10 +88,10 @@ const StatsShowcase = () => {
           className="text-center mb-20"
         >
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-            Your <span className="bg-gradient-to-r from-primary-400 to-secondary-400 bg-clip-text text-transparent">Success</span> Starts Here
+            {t('statsShowcase.title.part1')} <span className="bg-gradient-to-r from-primary-400 to-secondary-400 bg-clip-text text-transparent">{t('statsShowcase.title.part2')}</span> {t('statsShowcase.title.part3')}
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Join the revolution in restaurant technology. Be among the first to experience the future of restaurant management with ODS.
+            {t('statsShowcase.subtitle')}
           </p>
         </motion.div>
 

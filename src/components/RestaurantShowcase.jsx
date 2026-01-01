@@ -1,29 +1,44 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
 import { Star, Users, Utensils, Wifi } from 'lucide-react'
 
 const RestaurantShowcase = () => {
+  const { t } = useTranslation()
+  
   const restaurantFeatures = [
     {
-      title: "Fine Dining Experience",
-      description: "Elevate your restaurant's service with our premium ordering solution",
+      title: t('restaurantShowcase.types.fineDining.title'),
+      description: t('restaurantShowcase.types.fineDining.description'),
       image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80",
       icon: Utensils,
-      stats: ["50+ Fine Dining Restaurants", "98% Customer Satisfaction", "Average 23% Revenue Increase"]
+      stats: [
+        t('restaurantShowcase.types.fineDining.stats.restaurants'),
+        t('restaurantShowcase.types.fineDining.stats.satisfaction'),
+        t('restaurantShowcase.types.fineDining.stats.revenue')
+      ]
     },
     {
-      title: "Fast Casual & Quick Service",
-      description: "Speed up service and reduce wait times with streamlined ordering",
+      title: t('restaurantShowcase.types.fastCasual.title'),
+      description: t('restaurantShowcase.types.fastCasual.description'),
       image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80",
       icon: Users,
-      stats: ["200+ QSR Locations", "65% Faster Service", "40% Reduced Wait Times"]
+      stats: [
+        t('restaurantShowcase.types.fastCasual.stats.locations'),
+        t('restaurantShowcase.types.fastCasual.stats.service'),
+        t('restaurantShowcase.types.fastCasual.stats.wait')
+      ]
     },
     {
-      title: "Café & Coffee Shops",
-      description: "Perfect for coffee shops with mobile ordering and loyalty programs",
+      title: t('restaurantShowcase.types.cafe.title'),
+      description: t('restaurantShowcase.types.cafe.description'),
       image: "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80",
       icon: Star,
-      stats: ["150+ Coffee Shops", "85% Return Customers", "30% Higher Order Value"]
+      stats: [
+        t('restaurantShowcase.types.cafe.stats.shops'),
+        t('restaurantShowcase.types.cafe.stats.return'),
+        t('restaurantShowcase.types.cafe.stats.orderValue')
+      ]
     }
   ]
 
@@ -44,11 +59,10 @@ const RestaurantShowcase = () => {
           className="text-center mb-20"
         >
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            Perfect for <span className="gradient-text">Every Restaurant Type</span>
+            {t('restaurantShowcase.title.part1')} <span className="gradient-text">{t('restaurantShowcase.title.part2')}</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            From fine dining to quick service, our platform adapts to your restaurant's unique needs 
-            and enhances every aspect of your operation.
+            {t('restaurantShowcase.subtitle')}
           </p>
         </motion.div>
 
@@ -108,10 +122,10 @@ const RestaurantShowcase = () => {
           className="text-center mb-12"
         >
           <h3 className="text-3xl font-bold text-gray-900 mb-4">
-            Showcase Your <span className="text-primary-600">Delicious Menu</span>
+            {t('restaurantShowcase.menu.title')}
           </h3>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Beautiful food photography and dynamic menu presentation help increase orders and customer satisfaction.
+            {t('restaurantShowcase.menu.subtitle')}
           </p>
         </motion.div>
 
@@ -171,17 +185,16 @@ const RestaurantShowcase = () => {
         >
           <Wifi size={48} className="mx-auto mb-6 opacity-80" />
           <h3 className="text-3xl font-bold mb-4">
-            Seamless Technology Integration
+            {t('restaurantShowcase.technology.title')}
           </h3>
           <p className="text-xl opacity-90 mb-8 max-w-3xl mx-auto">
-            Our platform integrates with your existing POS systems, payment processors, and kitchen equipment 
-            for a truly seamless restaurant operation.
+            {t('restaurantShowcase.technology.subtitle')}
           </p>
           <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             {[
-              "POS Integration",
-              "Payment Processing", 
-              "Kitchen Display Systems"
+              t('restaurantShowcase.technology.items.pos'),
+              t('restaurantShowcase.technology.items.payment'), 
+              t('restaurantShowcase.technology.items.kitchen')
             ].map((tech, index) => (
               <div key={index} className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
                 <div className="text-lg font-semibold">{tech}</div>

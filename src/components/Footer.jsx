@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
 import { 
   Mail, 
   MapPin, 
@@ -11,6 +12,7 @@ import {
 import odsLogo from '../assets/ods-logo.png'
 
 const Footer = () => {
+  const { t } = useTranslation()
   const socialLinks = [
     { name: 'Facebook', icon: Facebook, href: 'https://www.facebook.com/share/16nyw6E6yQ/?mibextid=wwXIfr' },
     { name: 'Instagram', icon: Instagram, href: 'https://www.instagram.com/ods_solution/' },
@@ -40,8 +42,7 @@ const Footer = () => {
             </div>
             
             <p className="text-gray-400 text-lg mb-10 leading-relaxed max-w-2xl mx-auto">
-              Empowering restaurants with intelligent ordering and management solutions. 
-              Transform your business with ODS.
+              {t('footer.description')}
             </p>
             
             {/* Contact Info */}
@@ -54,8 +55,8 @@ const Footer = () => {
                 className="flex items-center justify-center space-x-3 text-gray-400 hover:text-white transition-colors duration-200"
               >
                 <Mail className="w-5 h-5 text-primary" />
-                <a href="mailto:contact@ordering-dashboard-solution.com" className="text-base">
-                  contact@ordering-dashboard-solution.com
+                <a href={`mailto:${t('footer.email')}`} className="text-base">
+                  {t('footer.email')}
                 </a>
               </motion.div>
               <motion.div 
@@ -83,9 +84,9 @@ const Footer = () => {
               viewport={{ once: true }}
               className="flex items-center space-x-2 text-gray-400 text-sm"
             >
-              <span>© 2026 ODS Platform. Made with</span>
+              <span>© 2026 {t('footer.copyright')}</span>
               <Heart className="w-4 h-4 text-red-500 fill-current" />
-              <span>for restaurants worldwide.</span>
+              <span>{t('footer.forRestaurants')}</span>
             </motion.div>
 
             {/* Social Links */}
@@ -123,19 +124,19 @@ const Footer = () => {
           >
             <div className="flex items-center space-x-2">
               <span className="text-yellow-500">🔒</span>
-              <span>Enterprise Grade Security</span>
+              <span>{t('footer.security')}</span>
             </div>
             <div className="flex items-center space-x-2">
               <span className="text-blue-500">🌍</span>
-              <span>Available Worldwide</span>
+              <span>{t('footer.worldwide')}</span>
             </div>
             <div className="flex items-center space-x-2">
               <span className="text-green-500">📱</span>
-              <span>Mobile & Desktop</span>
+              <span>{t('footer.mobile')}</span>
             </div>
             <div className="flex items-center space-x-2">
               <span className="text-purple-500">☁️</span>
-              <span>Cloud Based</span>
+              <span>{t('footer.cloud')}</span>
             </div>
           </motion.div>
         </div>

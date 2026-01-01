@@ -1,99 +1,101 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
 import { Check, Star, Zap, Crown } from 'lucide-react'
 
 const Pricing = () => {
+  const { t } = useTranslation()
   const [billingCycle, setBillingCycle] = useState('monthly')
 
   const plans = [
     {
-      name: 'Commission Based',
-      description: 'Perfect for small coffees or pop-up venues with low upfront costs',
+      name: t('pricing.plans.commission.name'),
+      description: t('pricing.plans.commission.description'),
       price: '2%',
-      period: 'per order',
+      period: t('pricing.plans.commission.period'),
       popular: false,
       icon: Star,
       features: [
-        'Standard Commission (2% per order)',
-        'All core ODS features included',
-        'QR code table management',
-        'Order management system',
-        'Basic menu management',
-        'Standard dashboard reports',
-        'Online documentation',
-        'Email support',
-        'No monthly subscription fees'
+        t('pricing.plans.commission.features.standard'),
+        t('pricing.plans.commission.features.core'),
+        t('pricing.plans.commission.features.qr'),
+        t('pricing.plans.commission.features.order'),
+        t('pricing.plans.commission.features.menu'),
+        t('pricing.plans.commission.features.dashboard'),
+        t('pricing.plans.commission.features.docs'),
+        t('pricing.plans.commission.features.email'),
+        t('pricing.plans.commission.features.noFees')
       ],
-      cta: 'Get Started',
+      cta: t('pricing.cta.getStarted'),
       highlight: false,
-      note: 'Reduced Commission (1% per order) available for higher-volume restaurants'
+      note: t('pricing.plans.commission.note')
     },
     {
-      name: 'Starter',
-      description: 'Essential digital ordering for small restaurants',
+      name: t('pricing.plans.starter.name'),
+      description: t('pricing.plans.starter.description'),
       price: billingCycle === 'monthly' ? '49' : '490',
-      period: billingCycle === 'monthly' ? '/month' : '/year',
+      period: billingCycle === 'monthly' ? t('pricing.period.month') : t('pricing.period.year'),
       popular: true,
       icon: Zap,
       features: [
-        'QR code table management',
-        'Basic menu & order management',
-        'Standard dashboard reports',
-        'Up to 2 employees',
-        '1 sector included',
-        'Unlimited orders (no commission)',
-        'Email support',
-        'Online documentation'
+        t('pricing.plans.starter.features.qr'),
+        t('pricing.plans.starter.features.menu'),
+        t('pricing.plans.starter.features.dashboard'),
+        t('pricing.plans.starter.features.employees'),
+        t('pricing.plans.starter.features.sector'),
+        t('pricing.plans.starter.features.orders'),
+        t('pricing.plans.starter.features.email'),
+        t('pricing.plans.starter.features.docs')
       ],
-      savings: billingCycle === 'yearly' ? 'Save 2 months' : null,
-      cta: 'Contact Us',
+      savings: billingCycle === 'yearly' ? t('pricing.save') : null,
+      cta: t('pricing.cta.contactUs'),
       highlight: true,
-      idealFor: 'Small coffee shops or food trucks'
+      idealFor: t('pricing.plans.starter.idealFor')
     },
     {
-      name: 'Pro',
-      description: 'Complete solution for growing restaurants',
+      name: t('pricing.plans.pro.name'),
+      description: t('pricing.plans.pro.description'),
       price: billingCycle === 'monthly' ? '99' : '990',
-      period: billingCycle === 'monthly' ? '/month' : '/year',
+      period: billingCycle === 'monthly' ? t('pricing.period.month') : t('pricing.period.year'),
       popular: false,
       icon: Crown,
       features: [
-        'All Starter features included',
-        'Inventory management',
-        'Purchase orders & suppliers',
-        'Waste tracking system',
-        'Bookings & reservations',
-        'Unlimited menu items',
-        'Up to 10 employees',
-        'Priority support'
+        t('pricing.plans.pro.features.starter'),
+        t('pricing.plans.pro.features.inventory'),
+        t('pricing.plans.pro.features.purchase'),
+        t('pricing.plans.pro.features.waste'),
+        t('pricing.plans.pro.features.bookings'),
+        t('pricing.plans.pro.features.menu'),
+        t('pricing.plans.pro.features.employees'),
+        t('pricing.plans.pro.features.support')
       ],
-      savings: billingCycle === 'yearly' ? 'Save 2 months' : null,
-      cta: 'Contact Us',
+      savings: billingCycle === 'yearly' ? t('pricing.save') : null,
+      cta: t('pricing.cta.contactUs'),
       highlight: false,
-      idealFor: 'Growing restaurants needing stock control'
+      idealFor: t('pricing.plans.pro.idealFor')
     },
     {
-      name: 'Enterprise',
-      description: 'Full-featured solution for large operations',
+      name: t('pricing.plans.enterprise.name'),
+      description: t('pricing.plans.enterprise.description'),
       price: billingCycle === 'monthly' ? '199' : '1990',
-      period: billingCycle === 'monthly' ? '/month' : '/year',
+      period: billingCycle === 'monthly' ? t('pricing.period.month') : t('pricing.period.year'),
       popular: false,
       icon: Crown,
       features: [
-        'All Pro features included',
-        'Marketing automation',
-        'Loyalty programs',
-        'Custom theme colors',
-        'Unlimited employees & sectors',
-        'Multi-location support',
-        'Dedicated account manager',
-        'Custom integrations available',
-        'SLA guarantee'
+        t('pricing.plans.enterprise.features.pro'),
+        t('pricing.plans.enterprise.features.marketing'),
+        t('pricing.plans.enterprise.features.loyalty'),
+        t('pricing.plans.enterprise.features.theme'),
+        t('pricing.plans.enterprise.features.employees'),
+        t('pricing.plans.enterprise.features.multiLocation'),
+        t('pricing.plans.enterprise.features.manager'),
+        t('pricing.plans.enterprise.features.integrations'),
+        t('pricing.plans.enterprise.features.sla')
       ],
-      savings: billingCycle === 'yearly' ? 'Save 2 months' : null,
-      cta: 'Contact Sales',
+      savings: billingCycle === 'yearly' ? t('pricing.save') : null,
+      cta: t('pricing.cta.contactSales'),
       highlight: false,
-      idealFor: 'Large restaurants or multi-location groups'
+      idealFor: t('pricing.plans.enterprise.idealFor')
     }
   ]
 
@@ -108,16 +110,16 @@ const Pricing = () => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-            Simple, Transparent Pricing
+            {t('pricing.title')}
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-            Choose the plan that fits your restaurant's needs. Start free and upgrade as you grow.
+            {t('pricing.subtitle')}
           </p>
 
           {/* Billing Toggle */}
           <div className="flex items-center justify-center space-x-4 mb-8">
             <span className={`text-sm font-medium ${billingCycle === 'monthly' ? 'text-gray-900' : 'text-gray-500'}`}>
-              Monthly
+              {t('pricing.billing.monthly')}
             </span>
             <button
               onClick={() => setBillingCycle(billingCycle === 'monthly' ? 'yearly' : 'monthly')}
@@ -130,8 +132,8 @@ const Pricing = () => {
               />
             </button>
             <span className={`text-sm font-medium ${billingCycle === 'yearly' ? 'text-gray-900' : 'text-gray-500'}`}>
-              Yearly
-              <span className="ml-1 text-xs text-primary font-semibold">(Save 20%)</span>
+              {t('pricing.billing.yearly')}
+              <span className="ml-1 text-xs text-primary font-semibold">({t('pricing.billing.savePercent')})</span>
             </span>
           </div>
         </motion.div>
@@ -153,7 +155,7 @@ const Pricing = () => {
               {plan.popular && (
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
                   <span className="bg-primary text-white px-4 py-1 rounded-full text-sm font-semibold">
-                    Most Popular
+                    {t('pricing.mostPopular')}
                   </span>
                 </div>
               )}
@@ -215,24 +217,24 @@ const Pricing = () => {
           viewport={{ once: true }}
           className="mt-20 text-center"
         >
-          <h3 className="text-2xl font-bold text-gray-900 mb-8">Frequently Asked Questions</h3>
+          <h3 className="text-2xl font-bold text-gray-900 mb-8">{t('pricing.faq.title')}</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {[
               {
-                question: "Is there a free trial?",
-                answer: "Yes! All plans come with a 14-day free trial. No credit card required."
+                question: t('pricing.faq.questions.trial.q'),
+                answer: t('pricing.faq.questions.trial.a')
               },
               {
-                question: "Can I switch plans anytime?",
-                answer: "Absolutely! You can upgrade, downgrade, or change your plan at any time."
+                question: t('pricing.faq.questions.switch.q'),
+                answer: t('pricing.faq.questions.switch.a')
               },
               {
-                question: "What's included in support?",
-                answer: "All plans include email support. Professional and Enterprise get priority support."
+                question: t('pricing.faq.questions.support.q'),
+                answer: t('pricing.faq.questions.support.a')
               },
               {
-                question: "Are there setup fees?",
-                answer: "No setup fees ever. We'll help you get started at no additional cost."
+                question: t('pricing.faq.questions.fees.q'),
+                answer: t('pricing.faq.questions.fees.a')
               }
             ].map((faq, index) => (
               <div key={index} className="text-left">

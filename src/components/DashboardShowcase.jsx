@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
 import { 
   ShoppingCart, 
   BarChart3, 
@@ -16,54 +17,86 @@ import marketingImage from '../assets/marketing.png'
 import dashboardImage from '../assets/dashboard.png'
 
 const DashboardShowcase = () => {
+  const { t } = useTranslation()
+  
   const dashboards = [
     {
-      title: "Complete Dashboard Overview",
-      description: "Comprehensive view of your entire restaurant operation with all key metrics and controls in one place.",
+      title: t('dashboardShowcase.dashboards.complete.title'),
+      description: t('dashboardShowcase.dashboards.complete.description'),
       image: dashboardImage,
       icon: BarChart3,
       color: "from-primary-500 to-primary-600",
-      features: ["Real-time analytics", "Multi-location support", "Performance insights", "Centralized control"]
+      features: [
+        t('dashboardShowcase.dashboards.complete.features.analytics'),
+        t('dashboardShowcase.dashboards.complete.features.multiLocation'),
+        t('dashboardShowcase.dashboards.complete.features.performance'),
+        t('dashboardShowcase.dashboards.complete.features.control')
+      ]
     },
     {
-      title: "Order Management",
-      description: "Real-time order tracking and management with detailed analytics and status updates.",
+      title: t('dashboardShowcase.dashboards.orders.title'),
+      description: t('dashboardShowcase.dashboards.orders.description'),
       image: ordersImage,
       icon: ShoppingCart,
       color: "from-blue-500 to-blue-600",
-      features: ["Real-time notifications", "Order status tracking", "Customer details", "Payment processing"]
+      features: [
+        t('dashboardShowcase.dashboards.orders.features.notifications'),
+        t('dashboardShowcase.dashboards.orders.features.tracking'),
+        t('dashboardShowcase.dashboards.orders.features.customerDetails'),
+        t('dashboardShowcase.dashboards.orders.features.payment')
+      ]
     },
     {
-      title: "Inventory Control",
-      description: "Complete inventory management with stock levels, alerts, and automated ordering.",
+      title: t('dashboardShowcase.dashboards.inventory.title'),
+      description: t('dashboardShowcase.dashboards.inventory.description'),
       image: inventoryImage,
       icon: Package,
       color: "from-green-500 to-green-600",
-      features: ["Stock level monitoring", "Low stock alerts", "Supplier management", "Cost tracking"]
+      features: [
+        t('dashboardShowcase.dashboards.inventory.features.monitoring'),
+        t('dashboardShowcase.dashboards.inventory.features.alerts'),
+        t('dashboardShowcase.dashboards.inventory.features.supplier'),
+        t('dashboardShowcase.dashboards.inventory.features.cost')
+      ]
     },
     {
-      title: "Menu Management",
-      description: "Dynamic menu control with pricing, categories, and availability management.",
+      title: t('dashboardShowcase.dashboards.menu.title'),
+      description: t('dashboardShowcase.dashboards.menu.description'),
       image: menuImage,
       icon: BarChart3,
       color: "from-purple-500 to-purple-600",
-      features: ["Dynamic pricing", "Category organization", "Item availability", "Nutritional info"]
+      features: [
+        t('dashboardShowcase.dashboards.menu.features.pricing'),
+        t('dashboardShowcase.dashboards.menu.features.category'),
+        t('dashboardShowcase.dashboards.menu.features.availability'),
+        t('dashboardShowcase.dashboards.menu.features.nutritional')
+      ]
     },
     {
-      title: "Table Management",
-      description: "Efficient table allocation and reservation system with real-time status updates.",
+      title: t('dashboardShowcase.dashboards.tables.title'),
+      description: t('dashboardShowcase.dashboards.tables.description'),
       image: tablesImage,
       icon: Calendar,
       color: "from-orange-500 to-orange-600",
-      features: ["Table reservations", "Capacity management", "QR code generation", "Seating optimization"]
+      features: [
+        t('dashboardShowcase.dashboards.tables.features.reservations'),
+        t('dashboardShowcase.dashboards.tables.features.capacity'),
+        t('dashboardShowcase.dashboards.tables.features.qrCode'),
+        t('dashboardShowcase.dashboards.tables.features.seating')
+      ]
     },
     {
-      title: "Marketing Analytics",
-      description: "Comprehensive analytics and marketing tools to boost your restaurant's performance.",
+      title: t('dashboardShowcase.dashboards.marketing.title'),
+      description: t('dashboardShowcase.dashboards.marketing.description'),
       image: marketingImage,
       icon: TrendingUp,
       color: "from-red-500 to-red-600",
-      features: ["Sales analytics", "Customer insights", "Campaign tracking", "Revenue reports"]
+      features: [
+        t('dashboardShowcase.dashboards.marketing.features.sales'),
+        t('dashboardShowcase.dashboards.marketing.features.insights'),
+        t('dashboardShowcase.dashboards.marketing.features.campaign'),
+        t('dashboardShowcase.dashboards.marketing.features.revenue')
+      ]
     }
   ]
 
@@ -79,11 +112,10 @@ const DashboardShowcase = () => {
           className="text-center mb-20"
         >
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            <span className="gradient-text">Dashboard Management</span>
+            <span className="gradient-text">{t('dashboardShowcase.title')}</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Experience the power of our comprehensive restaurant management system with real dashboard screenshots 
-            from actual restaurant operations.
+            {t('dashboardShowcase.subtitle')}
           </p>
         </motion.div>
 
@@ -170,15 +202,14 @@ const DashboardShowcase = () => {
           <div className="bg-gradient-to-r from-primary-500 to-accent-500 rounded-3xl p-12 text-white">
             <Users size={48} className="mx-auto mb-6 opacity-80" />
             <h3 className="text-3xl font-bold mb-4">
-              Ready to Transform Your Restaurant?
+              {t('cta.title')}
             </h3>
             <p className="text-xl opacity-90 mb-8 max-w-2xl mx-auto">
-              Join thousands of restaurants already using ODS to streamline their operations 
-              and boost their revenue.
+              {t('cta.subtitle')}
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
               <a href="#contact" className="btn bg-white text-primary-600 hover:bg-gray-50 btn-lg">
-                Contact Us
+                {t('cta.contactUs')}
               </a>
             </div>
           </div>

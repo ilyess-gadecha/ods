@@ -1,17 +1,19 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { useForm, ValidationError } from '@formspree/react'
+import { useTranslation } from 'react-i18next'
 import { Mail, Send, CheckCircle } from 'lucide-react'
 
 const Contact = () => {
+  const { t } = useTranslation()
   const [state, handleSubmit] = useForm("maqnnljl")
 
   const contactInfo = [
     {
       icon: Mail,
-      title: 'Email',
-      value: 'contact@ordering-dashboard-solution.com',
-      link: 'mailto:contact@ordering-dashboard-solution.com'
+      title: t('contact.email'),
+      value: t('footer.email'),
+      link: `mailto:${t('footer.email')}`
     }
   ]
 
@@ -27,10 +29,10 @@ const Contact = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            Get in <span className="gradient-text">Touch</span>
+            {t('contact.title').split(' ')[0]} <span className="gradient-text">{t('contact.title').split(' ').slice(1).join(' ')}</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Have questions about ODS? We're here to help! Fill out the form below and our team will get back to you within 24 hours.
+            {t('contact.subtitle')}
           </p>
         </motion.div>
 
@@ -45,10 +47,10 @@ const Contact = () => {
           >
             <div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                Contact Information
+                {t('contact.contactInfo')}
               </h3>
               <p className="text-gray-600 mb-8">
-                Reach out to us through any of these channels. We're always happy to hear from you!
+                {t('contact.description')}
               </p>
             </div>
 
@@ -92,16 +94,16 @@ const Contact = () => {
                   <CheckCircle className="w-10 h-10 text-green-600" />
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                  Thank You!
+                  {t('contact.form.thankYou')}
                 </h3>
                 <p className="text-gray-600 mb-6">
-                  Your message has been sent successfully. We'll get back to you within 24 hours.
+                  {t('contact.form.success')}
                 </p>
                 <button
                   onClick={() => window.location.reload()}
                   className="btn btn-primary"
                 >
-                  Send Another Message
+                  {t('contact.form.sendAnother')}
                 </button>
               </motion.div>
             ) : (
@@ -109,7 +111,7 @@ const Contact = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                   <div>
                     <label htmlFor="name" className="block text-sm font-semibold text-gray-700 mb-2">
-                      Your Name *
+                      {t('contact.form.name')} *
                     </label>
                     <input
                       type="text"
@@ -129,7 +131,7 @@ const Contact = () => {
 
                   <div>
                     <label htmlFor="email" className="block text-sm font-semibold text-gray-700 mb-2">
-                      Email Address *
+                      {t('contact.form.email')} *
                     </label>
                     <input
                       type="email"
@@ -151,7 +153,7 @@ const Contact = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                   <div>
                     <label htmlFor="phone" className="block text-sm font-semibold text-gray-700 mb-2">
-                      Phone Number
+                      {t('contact.form.phone')}
                     </label>
                     <input
                       type="tel"
@@ -170,7 +172,7 @@ const Contact = () => {
 
                   <div>
                     <label htmlFor="restaurant" className="block text-sm font-semibold text-gray-700 mb-2">
-                      Restaurant Name
+                      {t('contact.form.restaurant')}
                     </label>
                     <input
                       type="text"
@@ -190,7 +192,7 @@ const Contact = () => {
 
                 <div className="mb-6">
                   <label htmlFor="message" className="block text-sm font-semibold text-gray-700 mb-2">
-                    Message *
+                    {t('contact.form.message')} *
                   </label>
                   <textarea
                     id="message"
@@ -198,7 +200,7 @@ const Contact = () => {
                     required
                     rows="6"
                     className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all duration-200 resize-none"
-                    placeholder="Tell us about your restaurant and how we can help..."
+                    placeholder={t('contact.form.message')}
                   ></textarea>
                   <ValidationError 
                     prefix="Message" 
@@ -219,12 +221,12 @@ const Contact = () => {
                       : 'bg-primary text-white hover:bg-primary-dark shadow-lg hover:shadow-xl'
                   }`}
                 >
-                  <span>{state.submitting ? 'Sending...' : 'Send Message'}</span>
+                  <span>{state.submitting ? t('contact.form.sending') : t('contact.form.send')}</span>
                   {!state.submitting && <Send className="w-5 h-5" />}
                 </motion.button>
 
                 <p className="text-sm text-gray-500 text-center mt-4">
-                  * Required fields
+                  * {t('contact.form.required')}
                 </p>
               </form>
             )}
@@ -240,19 +242,19 @@ const Contact = () => {
           className="mt-20 text-center bg-gradient-to-r from-primary/5 to-accent/5 rounded-2xl p-8 border border-primary/10"
         >
           <h3 className="text-2xl font-bold text-gray-900 mb-4">
-            Need Immediate Assistance?
+            {t('contact.immediate.title')}
           </h3>
           <p className="text-gray-600 mb-6">
-            Our support team is available Monday to Friday, 9 AM - 6 PM EST
+            {t('contact.immediate.description')}
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <motion.a
-              href="mailto:contact@ordering-dashboard-solution.com"
+              href={`mailto:${t('footer.email')}`}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="inline-flex items-center justify-center px-8 py-3 bg-primary text-white font-semibold rounded-xl hover:bg-primary-dark transition-all duration-200 shadow-lg hover:shadow-xl"
             >
-              Email Us Directly
+              {t('contact.immediate.emailUs')}
             </motion.a>
           </div>
         </motion.div>

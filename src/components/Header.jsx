@@ -1,16 +1,19 @@
 import React, { useState } from 'react'
 import { Menu, X, ChevronDown } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
 import odsLogo from '../assets/ods-logo.png'
+import LanguageSwitcher from './LanguageSwitcher'
 
 const Header = () => {
+  const { t } = useTranslation()
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isDropdownOpen, setIsDropdownOpen] = useState(false)
 
   const navigation = [
-    { name: 'Features', href: '#features' },
-    { name: 'Benefits', href: '#benefits' },
-    { name: 'Pricing', href: '#pricing' }
+    { name: t('header.features'), href: '#features' },
+    { name: t('header.benefits'), href: '#benefits' },
+    { name: t('header.pricing'), href: '#pricing' }
   ]
 
   return (
@@ -77,11 +80,12 @@ const Header = () => {
 
           {/* CTA Buttons */}
           <div className="hidden lg:flex items-center space-x-4">
+            <LanguageSwitcher />
             <a
               href="#contact"
               className="btn btn-primary btn-md"
             >
-              Get Started Free
+              {t('header.getStarted')}
             </a>
           </div>
 
@@ -149,11 +153,14 @@ const Header = () => {
                   </div>
                 ))}
                 <div className="pt-4 space-y-4 border-t border-gray-100">
+                  <div className="flex justify-center">
+                    <LanguageSwitcher />
+                  </div>
                   <a
                     href="#contact"
                     className="btn btn-primary btn-md w-full text-center"
                   >
-                    Get Started Free
+                    {t('header.getStarted')}
                   </a>
                 </div>
               </div>

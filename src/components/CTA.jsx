@@ -1,8 +1,10 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { ArrowRight, Zap } from 'lucide-react'
+import { useTranslation } from 'react-i18next'
 
 const CTA = () => {
+  const { t } = useTranslation()
   return (
     <section className="py-20 bg-gradient-to-br from-primary to-primary-dark relative overflow-hidden">
       {/* Background Pattern */}
@@ -68,11 +70,10 @@ const CTA = () => {
           className="text-center text-white"
         >
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-            Ready to Transform Your Restaurant?
+            {t('cta.title')}
           </h2>
           <p className="text-xl lg:text-2xl text-white/90 max-w-3xl mx-auto mb-12">
-            Join thousands of successful restaurants using ODS to streamline operations, 
-            increase revenue, and delight customers.
+            {t('cta.subtitle')}
           </p>
           
           <motion.button
@@ -81,7 +82,7 @@ const CTA = () => {
             onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
             className="group bg-white text-primary px-8 py-4 rounded-xl font-semibold text-lg shadow-xl hover:shadow-2xl transition-all duration-300 flex items-center space-x-3 mx-auto"
           >
-            <span>Contact Us</span>
+            <span>{t('cta.contactUs')}</span>
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </motion.button>
         </motion.div>
