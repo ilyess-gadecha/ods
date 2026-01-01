@@ -200,25 +200,6 @@ const StatsShowcase = () => {
           viewport={{ once: true }}
           className="text-center"
         >
-          <div className="bg-gradient-to-r from-primary-600 to-accent-600 rounded-3xl p-12">
-            <DollarSign size={48} className="mx-auto mb-6 opacity-80" />
-            <h3 className="text-3xl font-bold mb-4">
-              Ready to Be Our First Success Story?
-            </h3>
-            <p className="text-xl opacity-90 mb-8 max-w-2xl mx-auto">
-              Join us as a founding restaurant partner and help shape the future of restaurant technology. 
-              Get exclusive early-adopter benefits and priority support.
-            </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-              <button className="btn bg-white text-primary-600 hover:bg-gray-50 btn-lg group">
-                Join as Founding Partner
-                <ArrowUpRight size={20} className="ml-2 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-200" />
-              </button>
-              <button className="btn border-white text-white hover:bg-white hover:text-primary-600 btn-lg">
-                Book Discovery Call
-              </button>
-            </div>
-          </div>
         </motion.div>
       </div>
     </section>

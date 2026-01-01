@@ -78,12 +78,6 @@ const Header = () => {
           {/* CTA Buttons */}
           <div className="hidden lg:flex items-center space-x-4">
             <a
-              href="#demo"
-              className="text-gray-700 hover:text-primary-500 font-medium transition-colors duration-200"
-            >
-              View Demo
-            </a>
-            <a
               href="#contact"
               className="btn btn-primary btn-md"
             >
@@ -155,12 +149,6 @@ const Header = () => {
                   </div>
                 ))}
                 <div className="pt-4 space-y-4 border-t border-gray-100">
-                  <a
-                    href="#demo"
-                    className="block text-gray-700 hover:text-primary-500 font-medium py-2"
-                  >
-                    View Demo
-                  </a>
                   <a
                     href="#contact"
                     className="btn btn-primary btn-md w-full text-center"
