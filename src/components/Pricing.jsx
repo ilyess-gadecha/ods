@@ -46,7 +46,7 @@ const Pricing = () => {
         'Online documentation'
       ],
       savings: billingCycle === 'yearly' ? 'Save 2 months' : null,
-      cta: 'Start Free Trial',
+      cta: 'Contact Us',
       highlight: true,
       idealFor: 'Small coffee shops or food trucks'
     },
@@ -68,7 +68,7 @@ const Pricing = () => {
         'Priority support'
       ],
       savings: billingCycle === 'yearly' ? 'Save 2 months' : null,
-      cta: 'Start Free Trial',
+      cta: 'Contact Us',
       highlight: false,
       idealFor: 'Growing restaurants needing stock control'
     },
@@ -203,18 +203,6 @@ const Pricing = () => {
                   </li>
                 ))}
               </ul>
-
-              <motion.button
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-                className={`w-full py-3 px-6 rounded-xl font-semibold transition-all duration-200 ${
-                  plan.highlight
-                    ? 'bg-primary text-white hover:bg-primary-dark shadow-lg'
-                    : 'bg-gray-100 text-gray-900 hover:bg-gray-200'
-                }`}
-              >
-                {plan.cta}
-              </motion.button>
             </motion.div>
           ))}
         </div>

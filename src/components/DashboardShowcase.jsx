@@ -121,11 +121,6 @@ const DashboardShowcase = () => {
                     </div>
                   ))}
                 </div>
-
-                <button className="btn btn-primary group">
-                  Explore {dashboard.title}
-                  <TrendingUp size={20} className="ml-2 group-hover:translate-x-1 transition-transform duration-200" />
-                </button>
               </div>
 
               {/* Dashboard Image */}
@@ -182,12 +177,9 @@ const DashboardShowcase = () => {
               and boost their revenue.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-              <button className="btn bg-white text-primary-600 hover:bg-gray-50 btn-lg">
-                Start Free Trial
-              </button>
-              <button className="btn border-white text-white hover:bg-white hover:text-primary-600 btn-lg">
-                Schedule Demo
-              </button>
+              <a href="#contact" className="btn bg-white text-primary-600 hover:bg-gray-50 btn-lg">
+                Contact Us
+              </a>
             </div>
           </div>
         </motion.div>

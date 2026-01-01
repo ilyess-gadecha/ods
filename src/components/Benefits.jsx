@@ -218,14 +218,15 @@ const Benefits = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <motion.button
+              <motion.a
+                href="#contact"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="btn-primary px-8 py-3 flex items-center space-x-2"
               >
-                <span>Start Free Trial</span>
+                <span>Contact Us</span>
                 <ArrowRight className="w-4 h-4" />
-              </motion.button>
+              </motion.a>
               
               <div className="flex items-center space-x-2 text-sm text-gray-600">
                 <CheckCircle className="w-4 h-4 text-green-500" />

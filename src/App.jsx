@@ -8,6 +8,7 @@ import StatsShowcase from './components/StatsShowcase'
 import Benefits from './components/Benefits'
 import TrustSignals from './components/TrustSignals'
 import Pricing from './components/Pricing'
+import Contact from './components/Contact'
 import CTA from './components/CTA'
 import Footer from './components/Footer'
 import './index.css'
@@ -24,6 +25,7 @@ function App() {
       <Features />
       <Benefits />
       <Pricing />
+      <Contact />
       <CTA />
       <Footer />
     </div>
