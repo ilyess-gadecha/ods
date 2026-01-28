@@ -100,7 +100,7 @@ const Pricing = () => {
   ]
 
   return (
-    <section id="pricing" className="py-20 bg-gradient-to-br from-gray-50 to-white">
+    <section id="pricing" className="py-20 bg-gradient-to-br from-gray-50 to-white" aria-labelledby="pricing-title">
       <div className="container-custom">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -109,7 +109,7 @@ const Pricing = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+          <h2 id="pricing-title" className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
             {t('pricing.title')}
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
@@ -117,13 +117,15 @@ const Pricing = () => {
           </p>
 
           {/* Billing Toggle */}
-          <div className="flex items-center justify-center space-x-4 mb-8">
+          <div className="flex items-center justify-center space-x-4 mb-8" role="group" aria-label="Billing cycle selection">
             <span className={`text-sm font-medium ${billingCycle === 'monthly' ? 'text-gray-900' : 'text-gray-500'}`}>
               {t('pricing.billing.monthly')}
             </span>
             <button
               onClick={() => setBillingCycle(billingCycle === 'monthly' ? 'yearly' : 'monthly')}
               className="relative inline-flex h-6 w-11 items-center rounded-full bg-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+              aria-pressed={billingCycle === 'yearly'}
+              aria-label={`Switch to ${billingCycle === 'monthly' ? 'yearly' : 'monthly'} billing`}
             >
               <motion.span
                 animate={{ x: billingCycle === 'monthly' ? 2 : 22 }}

@@ -20,7 +20,7 @@ const Footer = () => {
   ]
 
   return (
-    <footer className="bg-[#1a2332] text-white">
+    <footer className="bg-[#1a2332] text-white" role="contentinfo">
       {/* Main Footer Content */}
       <div className="container-custom py-16">
         <div className="max-w-4xl mx-auto">
@@ -33,13 +33,16 @@ const Footer = () => {
             className="text-center mb-12"
           >
             {/* Logo */}
-            <div className="flex items-center justify-center mb-8">
+            <a href="/" className="flex items-center justify-center mb-8" aria-label="ODS - Home">
               <img 
                 src={odsLogo} 
-                alt="ODS Logo" 
+                alt="ODS - Restaurant Management Platform Logo" 
                 className="w-16 h-16 object-contain"
+                width="64"
+                height="64"
+                loading="lazy"
               />
-            </div>
+            </a>
             
             <p className="text-gray-400 text-lg mb-10 leading-relaxed max-w-2xl mx-auto">
               {t('footer.description')}
@@ -90,12 +93,13 @@ const Footer = () => {
             </motion.div>
 
             {/* Social Links */}
-            <motion.div
+            <motion.nav
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.2 }}
               viewport={{ once: true }}
               className="flex items-center space-x-4"
+              aria-label="Social media links"
             >
               {socialLinks.map((social) => (
                 <motion.a
@@ -106,12 +110,12 @@ const Footer = () => {
                   whileHover={{ scale: 1.1, y: -2 }}
                   whileTap={{ scale: 0.95 }}
                   className="w-10 h-10 bg-gray-800/50 hover:bg-primary border border-gray-700/50 hover:border-primary rounded-lg flex items-center justify-center transition-all duration-300"
-                  aria-label={social.name}
+                  aria-label={`Follow ODS on ${social.name}`}
                 >
-                  <social.icon className="w-5 h-5" />
+                  <social.icon className="w-5 h-5" aria-hidden="true" />
                 </motion.a>
               ))}
-            </motion.div>
+            </motion.nav>
           </div>
 
           {/* Trust Badges */}
