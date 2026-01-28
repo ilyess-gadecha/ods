@@ -80,7 +80,7 @@ const Benefits = () => {
   ]
 
   return (
-    <section id="benefits" className="py-20 bg-white">
+    <section id="benefits" className="py-20 bg-white" aria-labelledby="benefits-title">
       <div className="container-custom">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -89,7 +89,7 @@ const Benefits = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+          <h2 id="benefits-title" className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
             {t('benefits.title')}
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">

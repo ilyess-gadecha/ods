@@ -17,17 +17,19 @@ const Header = () => {
   ]
 
   return (
-    <header className="fixed w-full top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
-      <nav className="container-custom">
+    <header className="fixed w-full top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100" role="banner">
+      <nav className="container-custom" aria-label="Main navigation">
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
-          <div className="flex items-center">
+          <a href="/" className="flex items-center" aria-label="ODS - Home">
             <img 
               src={odsLogo} 
-              alt="ODS Logo" 
+              alt="ODS - Restaurant Management Platform Logo" 
               className="w-12 h-12 object-contain"
+              width="48"
+              height="48"
             />
-          </div>
+          </a>
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8">
@@ -93,8 +95,11 @@ const Header = () => {
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors duration-200"
+            aria-expanded={isMenuOpen}
+            aria-controls="mobile-menu"
+            aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
           >
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            {isMenuOpen ? <X size={24} aria-hidden="true" /> : <Menu size={24} aria-hidden="true" />}
           </button>
         </div>
 

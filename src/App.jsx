@@ -11,22 +11,26 @@ import Pricing from './components/Pricing'
 import Contact from './components/Contact'
 import CTA from './components/CTA'
 import Footer from './components/Footer'
+import SEOHead from './components/SEOHead'
 import './index.css'
 
 function App() {
   return (
     <div className="App">
+      <SEOHead />
       <Header />
-      <Hero />
-      <TrustSignals />
-      <DashboardShowcase />
-      <RestaurantShowcase />
-      <StatsShowcase />
-      <Features />
-      <Benefits />
-      <Pricing />
-      <Contact />
-      <CTA />
+      <main id="main-content" role="main">
+        <Hero />
+        <TrustSignals />
+        <DashboardShowcase />
+        <RestaurantShowcase />
+        <StatsShowcase />
+        <Features />
+        <Benefits />
+        <Pricing />
+        <Contact />
+        <CTA />
+      </main>
       <Footer />
     </div>
   )

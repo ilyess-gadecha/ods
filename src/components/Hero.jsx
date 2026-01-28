@@ -17,7 +17,7 @@ const Hero = () => {
   ]
 
   return (
-    <section className="pt-20 lg:pt-28 pb-16 lg:pb-24 bg-gradient-to-br from-gray-50 via-white to-blue-50 overflow-hidden">
+    <section id="hero" className="pt-20 lg:pt-28 pb-16 lg:pb-24 bg-gradient-to-br from-gray-50 via-white to-blue-50 overflow-hidden" aria-labelledby="hero-title">
       <div className="container-custom">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left Content */}
@@ -40,6 +40,7 @@ const Hero = () => {
 
             {/* Headline */}
             <motion.h1
+              id="hero-title"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
@@ -126,8 +127,11 @@ const Hero = () => {
                   <div className="relative">
                     <img 
                       src={dashboardImage} 
-                      alt="ODS Dashboard Interface" 
+                      alt="ODS Restaurant Dashboard - Real-time order management, analytics, and inventory control interface" 
                       className="w-full h-full object-cover rounded-2xl"
+                      width="600"
+                      height="400"
+                      loading="eager"
                     />
                     {/* Video Play Button Overlay */}
                     <button

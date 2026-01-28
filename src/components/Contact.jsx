@@ -18,7 +18,7 @@ const Contact = () => {
   ]
 
   return (
-    <section id="contact" className="py-20 bg-gradient-to-br from-gray-50 to-white">
+    <section id="contact" className="py-20 bg-gradient-to-br from-gray-50 to-white" aria-labelledby="contact-title">
       <div className="container-custom">
         {/* Header */}
         <motion.div
@@ -28,7 +28,7 @@ const Contact = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+          <h2 id="contact-title" className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
             {t('contact.title').split(' ')[0]} <span className="gradient-text">{t('contact.title').split(' ').slice(1).join(' ')}</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">

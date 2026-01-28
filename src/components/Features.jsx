@@ -140,7 +140,7 @@ const Features = () => {
   ]
 
   return (
-    <section id="features" className="py-20 bg-gray-50">
+    <section id="features" className="py-20 bg-gray-50" aria-labelledby="features-title">
       <div className="container-custom">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -149,7 +149,7 @@ const Features = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+          <h2 id="features-title" className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
             {t('features.title')}
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -169,7 +169,7 @@ const Features = () => {
               className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 group"
             >
               <div className={`inline-flex items-center justify-center w-12 h-12 rounded-xl mb-4 ${feature.color} group-hover:scale-110 transition-transform duration-300`}>
-                <feature.icon className="w-6 h-6" />
+                <feature.icon className="w-6 h-6" aria-hidden="true" />
               </div>
               
               <h3 className="text-xl font-semibold text-gray-900 mb-3">
