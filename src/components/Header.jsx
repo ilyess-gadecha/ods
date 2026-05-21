@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
 import odsLogo from '../assets/ods-logo.png'
 import LanguageSwitcher from './LanguageSwitcher'
+import { ADMIN_REGISTER_URL } from '../constants/links'
 
 const Header = () => {
   const { t } = useTranslation()
@@ -84,7 +85,7 @@ const Header = () => {
           <div className="hidden lg:flex items-center space-x-4">
             <LanguageSwitcher />
             <a
-              href="#contact"
+              href={ADMIN_REGISTER_URL}
               className="btn btn-primary btn-md"
             >
               {t('header.getStarted')}
@@ -162,7 +163,7 @@ const Header = () => {
                     <LanguageSwitcher />
                   </div>
                   <a
-                    href="#contact"
+                    href={ADMIN_REGISTER_URL}
                     className="btn btn-primary btn-md w-full text-center"
                   >
                     {t('header.getStarted')}

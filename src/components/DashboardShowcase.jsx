@@ -4,17 +4,17 @@ import { useTranslation } from 'react-i18next'
 import { 
   ShoppingCart, 
   BarChart3, 
-  Package,
   Calendar,
   TrendingUp,
   Users
 } from 'lucide-react'
 import ordersImage from '../assets/orders.png'
-import inventoryImage from '../assets/inventory.png'
 import menuImage from '../assets/menu.png'
 import tablesImage from '../assets/tables.png'
 import marketingImage from '../assets/marketing.png'
 import dashboardImage from '../assets/dashboard.png'
+import { ADMIN_REGISTER_URL } from '../constants/links'
+import InventorySpotlight from './InventorySpotlight'
 
 const DashboardShowcase = () => {
   const { t } = useTranslation()
@@ -44,19 +44,6 @@ const DashboardShowcase = () => {
         t('dashboardShowcase.dashboards.orders.features.tracking'),
         t('dashboardShowcase.dashboards.orders.features.customerDetails'),
         t('dashboardShowcase.dashboards.orders.features.payment')
-      ]
-    },
-    {
-      title: t('dashboardShowcase.dashboards.inventory.title'),
-      description: t('dashboardShowcase.dashboards.inventory.description'),
-      image: inventoryImage,
-      icon: Package,
-      color: "from-green-500 to-green-600",
-      features: [
-        t('dashboardShowcase.dashboards.inventory.features.monitoring'),
-        t('dashboardShowcase.dashboards.inventory.features.alerts'),
-        t('dashboardShowcase.dashboards.inventory.features.supplier'),
-        t('dashboardShowcase.dashboards.inventory.features.cost')
       ]
     },
     {
@@ -191,6 +178,8 @@ const DashboardShowcase = () => {
           ))}
         </div>
 
+        <InventorySpotlight embedded />
+
         {/* Bottom CTA */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -208,8 +197,8 @@ const DashboardShowcase = () => {
               {t('cta.subtitle')}
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-              <a href="#contact" className="btn bg-white text-primary-600 hover:bg-gray-50 btn-lg">
-                {t('cta.contactUs')}
+              <a href={ADMIN_REGISTER_URL} className="btn bg-white text-primary-600 hover:bg-gray-50 btn-lg">
+                {t('pricing.cta.getStarted')}
               </a>
             </div>
           </div>

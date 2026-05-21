@@ -4,6 +4,7 @@ import { Play, ArrowRight, CheckCircle, Star, X } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import dashboardImage from '../assets/dashboard.png'
 import demoVideo from '../assets/ods.mp4'
+import { ADMIN_REGISTER_URL } from '../constants/links'
 
 const Hero = () => {
   const { t } = useTranslation()
@@ -11,8 +12,10 @@ const Hero = () => {
   
   const benefits = [
     t('hero.benefits.qrOrdering'),
-    t('hero.benefits.orderManagement'),
+    t('hero.benefits.clickCollect'),
+    t('hero.benefits.reservations'),
     t('hero.benefits.analytics'),
+    t('hero.benefits.costManagement'),
     t('hero.benefits.inventory')
   ]
 
@@ -65,12 +68,12 @@ const Hero = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.5 }}
-              className="grid sm:grid-cols-2 gap-3 mb-8"
+              className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 mb-8"
             >
               {benefits.map((benefit, index) => (
                 <div key={index} className="flex items-center space-x-3">
                   <CheckCircle size={20} className="text-success-500 flex-shrink-0" />
-                  <span className="text-gray-700">{benefit}</span>
+                  <span className="text-gray-700 text-sm">{benefit}</span>
                 </div>
               ))}
             </motion.div>
@@ -83,7 +86,7 @@ const Hero = () => {
               className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4 justify-center lg:justify-start"
             >
               <a
-                href="#contact"
+                href={ADMIN_REGISTER_URL}
                 className="btn btn-primary btn-lg group"
               >
                 {t('hero.getStarted')}

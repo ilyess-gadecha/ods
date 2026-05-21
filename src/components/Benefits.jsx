@@ -11,6 +11,7 @@ import {
   ArrowRight,
   CheckCircle
 } from 'lucide-react'
+import { ADMIN_REGISTER_URL } from '../constants/links'
 
 const Benefits = () => {
   const { t } = useTranslation()
@@ -222,12 +223,12 @@ const Benefits = () => {
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <motion.a
-                href="#contact"
+                href={ADMIN_REGISTER_URL}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="btn-primary px-8 py-3 flex items-center space-x-2"
               >
-                <span>{t('benefits.cta.contactUs')}</span>
+                <span>{t('pricing.cta.getStarted')}</span>
                 <ArrowRight className="w-4 h-4" />
               </motion.a>
               

@@ -12,8 +12,10 @@
     "subtitle": "Modernize your restaurant operations with our comprehensive ordering dashboard solution. From QR code menus to real-time analytics, everything you need to boost efficiency and enhance customer experience.",
     "benefits": {
       "qrOrdering": "Contactless QR Code Ordering",
-      "orderManagement": "Real-time Order Management",
+      "clickCollect": "Click & Collect with QR Pickup",
+      "reservations": "QR Code Reservations",
       "analytics": "Complete Restaurant Analytics",
+      "costManagement": "Cost Management & Profitability",
       "inventory": "Inventory & Staff Management"
     },
     "getStarted": "Get Started Free",
@@ -56,13 +58,13 @@
         }
       },
       "inventory": {
-        "title": "Inventory Control",
-        "description": "Complete inventory management with stock levels, alerts, and automated ordering.",
+        "title": "Ingredients, Zones & Transfers",
+        "description": "Manage ingredient stock, storage zones, internal transfers, alerts, and inventory value from one live workspace.",
         "features": {
-          "monitoring": "Stock level monitoring",
-          "alerts": "Low stock alerts",
-          "supplier": "Supplier management",
-          "cost": "Cost tracking"
+          "monitoring": "Zone stock visibility and live quantities",
+          "alerts": "Critical, low, and out-of-stock alerts",
+          "supplier": "Transfers between main, kitchen, and custom zones",
+          "cost": "AVCO valuation and stock value tracking"
         }
       },
       "menu": {
@@ -94,6 +96,40 @@
           "campaign": "Campaign tracking",
           "revenue": "Revenue reports"
         }
+      }
+    }
+  },
+  "inventorySpotlight": {
+    "eyebrow": "Inventory Intelligence",
+    "title": "Turn stock, waste, and ingredient cost into profit control",
+    "subtitle": "ODS connects zone-based stock, live alerts, batch valuation, actual ingredient consumption, and revenue signals so your team can react before service or margin slips.",
+    "caption": "Built from the same inventory and cost screens used daily inside ODS admin.",
+    "proofs": {
+      "zones": "Multi-zone storage with main, kitchen, and custom transfer flows.",
+      "alerts": "Low-stock, critical, and out-of-stock alerts tied to reorder thresholds.",
+      "valuation": "Zone-aware AVCO valuation with stock value excluding and including tax.",
+      "analytics": "Real cost vs revenue, actual-vs-theoretical usage, and month-end ingredient projections."
+    },
+    "screens": {
+      "zones": {
+        "title": "Zones, stock, and transfers",
+        "description": "Manage ingredients, storage areas, and internal transfers from one operational screen."
+      },
+      "alerts": {
+        "title": "Live stock alerts",
+        "description": "Catch outages and critical ingredients before service is affected."
+      },
+      "ingredient": {
+        "title": "Ingredient-level analysis",
+        "description": "See AVCO, stock by zone, variance, recommendations, and projected closing stock."
+      },
+      "cost": {
+        "title": "Real cost vs revenue",
+        "description": "Compare actual ingredient cost, revenue, net profit, and projected margin for the month."
+      },
+      "projections": {
+        "title": "Ingredient spend projections",
+        "description": "Track top ingredients by real cost and estimate end-of-month spend from live usage."
       }
     }
   },
@@ -277,6 +313,33 @@
           "locationSettings": "Location-specific settings",
           "reporting": "Unified reporting"
         }
+      },
+      "clickCollect": {
+        "title": "Click & Collect",
+        "description": "Enable customers to order ahead with QR code pickup for seamless takeaway service.",
+        "benefits": {
+          "qrOrdering": "QR code pickup orders",
+          "pickupManagement": "Pickup time management",
+          "notifications": "Ready notifications"
+        }
+      },
+      "costManagement": {
+        "title": "Cost Management",
+        "description": "Complete financial control with expense tracking, cost analysis, and profitability insights.",
+        "benefits": {
+          "tracking": "Real-time cost tracking",
+          "analytics": "Profit margin analysis",
+          "profitability": "Profitability reports"
+        }
+      },
+      "reservations": {
+        "title": "QR Reservations",
+        "description": "Let customers book tables instantly with QR code scanning and automated confirmations.",
+        "benefits": {
+          "qrBooking": "QR code table booking",
+          "management": "Booking management",
+          "reminders": "Automated reminders"
+        }
       }
     },
     "highlights": {
@@ -359,7 +422,12 @@
   },
   "pricing": {
     "title": "Simple, Transparent Pricing",
-    "subtitle": "Choose the plan that fits your restaurant's needs. Start free and upgrade as you grow.",
+    "subtitle": "Choose the plan that fits your restaurant's needs. All features included in every plan.",
+    "idealFor": "Ideal for",
+    "trial": {
+      "message": "7-Day Free Trial - No Credit Card Required",
+      "badge": "Free Trial"
+    },
     "billing": {
       "monthly": "Monthly",
       "yearly": "Yearly",
@@ -377,67 +445,70 @@
       "contactSales": "Contact Sales"
     },
     "plans": {
-      "commission": {
-        "name": "Commission Based",
-        "description": "Perfect for small coffees or pop-up venues with low upfront costs",
-        "period": "per order",
-        "note": "Reduced Commission (1% per order) available for higher-volume restaurants",
+      "monthly": {
+        "name": "Monthly Plan",
+        "description": "Perfect for restaurants wanting flexibility with monthly billing",
+        "idealFor": "Small to medium restaurants testing ODS Premium",
+        "billing": "Billed monthly",
         "features": {
-          "standard": "Standard Commission (2% per order)",
-          "core": "All core ODS features included",
-          "qr": "QR code table management",
-          "order": "Order management system",
-          "menu": "Basic menu management",
-          "dashboard": "Standard dashboard reports",
-          "docs": "Online documentation",
-          "email": "Email support",
-          "noFees": "No monthly subscription fees"
-        }
-      },
-      "starter": {
-        "name": "Starter",
-        "description": "Essential digital ordering for small restaurants",
-        "idealFor": "Small coffee shops or food trucks",
-        "features": {
-          "qr": "QR code table management",
-          "menu": "Basic menu & order management",
-          "dashboard": "Standard dashboard reports",
-          "employees": "Up to 2 employees",
-          "sector": "1 sector included",
-          "orders": "Unlimited orders (no commission)",
-          "email": "Email support",
-          "docs": "Online documentation"
-        }
-      },
-      "pro": {
-        "name": "Pro",
-        "description": "Complete solution for growing restaurants",
-        "idealFor": "Growing restaurants needing stock control",
-        "features": {
-          "starter": "All Starter features included",
-          "inventory": "Inventory management",
-          "purchase": "Purchase orders & suppliers",
-          "waste": "Waste tracking system",
-          "bookings": "Bookings & reservations",
+          "tables": "Unlimited tables & orders",
           "menu": "Unlimited menu items",
-          "employees": "Up to 10 employees",
-          "support": "Priority support"
+          "categories": "Multiple categories & organization",
+          "qr": "QR code digital menu",
+          "branding": "Custom branding (logo & colors)",
+          "orders": "Advanced order management",
+          "kitchen": "Kitchen display & printer integration",
+          "payment": "Multiple payment methods",
+          "dashboard": "Real-time analytics dashboard",
+          "analytics": "Sales reports & insights",
+          "reports": "Export reports (CSV/PDF)",
+          "activityLogs": "Activity logs & tracking",
+          "employees": "Unlimited employee management",
+          "inventory": "Inventory tracking & alerts",
+          "costTracking": "Cost analysis & tracking",
+          "costManagement": "Complete cost management system",
+          "reservations": "Table reservations & bookings",
+          "qrReservations": "QR code for reservations",
+          "clickCollect": "Click & Collect / Pickup orders",
+          "qrClickCollect": "QR code for Click & Collect",
+          "marketing": "Marketing tools & promotions",
+          "notifications": "Push notifications",
+          "multiLocation": "Multi-restaurant support",
+          "support": "Email & priority support"
         }
       },
-      "enterprise": {
-        "name": "Enterprise",
-        "description": "Full-featured solution for large operations",
-        "idealFor": "Large restaurants or multi-location groups",
+      "yearly": {
+        "name": "Yearly Plan",
+        "description": "Best value with 2 months free - our most popular choice",
+        "idealFor": "Growing restaurants committed to digital transformation",
+        "billing": "Billed annually",
+        "savings": "Save 2 months",
+        "discount": "Only €40.83/month when billed annually",
         "features": {
-          "pro": "All Pro features included",
-          "marketing": "Marketing automation",
-          "loyalty": "Loyalty programs",
-          "theme": "Custom theme colors",
-          "employees": "Unlimited employees & sectors",
-          "multiLocation": "Multi-location support",
-          "manager": "Dedicated account manager",
-          "integrations": "Custom integrations available",
-          "sla": "SLA guarantee"
+          "tables": "Unlimited tables & orders",
+          "menu": "Unlimited menu items",
+          "categories": "Multiple categories & organization",
+          "qr": "QR code digital menu",
+          "branding": "Custom branding (logo & colors)",
+          "orders": "Advanced order management",
+          "kitchen": "Kitchen display & printer integration",
+          "payment": "Multiple payment methods",
+          "dashboard": "Real-time analytics dashboard",
+          "analytics": "Sales reports & insights",
+          "reports": "Export reports (CSV/PDF)",
+          "activityLogs": "Activity logs & tracking",
+          "employees": "Unlimited employee management",
+          "inventory": "Inventory tracking & alerts",
+          "costTracking": "Cost analysis & tracking",
+          "costManagement": "Complete cost management system",
+          "reservations": "Table reservations & bookings",
+          "qrReservations": "QR code for reservations",
+          "clickCollect": "Click & Collect / Pickup orders",
+          "qrClickCollect": "QR code for Click & Collect",
+          "marketing": "Marketing tools & promotions",
+          "notifications": "Push notifications",
+          "multiLocation": "Multi-restaurant support",
+          "prioritySupport": "Priority support & faster response times"
         }
       }
     },
@@ -446,7 +517,7 @@
       "questions": {
         "trial": {
           "q": "Is there a free trial?",
-          "a": "Yes! All plans come with a 14-day free trial. No credit card required."
+          "a": "Yes! All plans come with a 7-day free trial to explore all features. No credit card required."
         },
         "switch": {
           "q": "Can I switch plans anytime?",
@@ -454,7 +525,7 @@
         },
         "support": {
           "q": "What's included in support?",
-          "a": "All plans include email support. Professional and Enterprise get priority support."
+          "a": "All plans include email support. Yearly subscribers get priority support with faster response times."
         },
         "fees": {
           "q": "Are there setup fees?",

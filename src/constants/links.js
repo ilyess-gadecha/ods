@@ -1,0 +1,1 @@
+export const ADMIN_REGISTER_URL = 'https://console.ordering-dashboard-solution.com/admin/register'

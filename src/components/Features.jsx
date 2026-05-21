@@ -13,7 +13,10 @@ import {
   Printer,
   Globe,
   Shield,
-  Zap
+  Zap,
+  Package,
+  DollarSign,
+  Calendar
 } from 'lucide-react'
 
 const Features = () => {
@@ -118,6 +121,39 @@ const Features = () => {
         t('features.items.multiLocation.benefits.reporting')
       ],
       color: 'bg-cyan-50 text-cyan-600'
+    },
+    {
+      icon: Package,
+      title: t('features.items.clickCollect.title'),
+      description: t('features.items.clickCollect.description'),
+      benefits: [
+        t('features.items.clickCollect.benefits.qrOrdering'),
+        t('features.items.clickCollect.benefits.pickupManagement'),
+        t('features.items.clickCollect.benefits.notifications')
+      ],
+      color: 'bg-yellow-50 text-yellow-600'
+    },
+    {
+      icon: DollarSign,
+      title: t('features.items.costManagement.title'),
+      description: t('features.items.costManagement.description'),
+      benefits: [
+        t('features.items.costManagement.benefits.tracking'),
+        t('features.items.costManagement.benefits.analytics'),
+        t('features.items.costManagement.benefits.profitability')
+      ],
+      color: 'bg-teal-50 text-teal-600'
+    },
+    {
+      icon: Calendar,
+      title: t('features.items.reservations.title'),
+      description: t('features.items.reservations.description'),
+      benefits: [
+        t('features.items.reservations.benefits.qrBooking'),
+        t('features.items.reservations.benefits.management'),
+        t('features.items.reservations.benefits.reminders')
+      ],
+      color: 'bg-rose-50 text-rose-600'
     }
   ]
 

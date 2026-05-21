@@ -2,6 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { ArrowRight, Zap } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
+import { ADMIN_REGISTER_URL } from '../constants/links'
 
 const CTA = () => {
   const { t } = useTranslation()
@@ -76,15 +77,15 @@ const CTA = () => {
             {t('cta.subtitle')}
           </p>
           
-          <motion.button
+          <motion.a
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+            href={ADMIN_REGISTER_URL}
             className="group bg-white text-primary px-8 py-4 rounded-xl font-semibold text-lg shadow-xl hover:shadow-2xl transition-all duration-300 flex items-center space-x-3 mx-auto"
           >
-            <span>{t('cta.contactUs')}</span>
+            <span>{t('pricing.cta.getStarted')}</span>
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-          </motion.button>
+          </motion.a>
         </motion.div>
       </div>
     </section>

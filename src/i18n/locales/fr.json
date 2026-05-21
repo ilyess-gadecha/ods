@@ -12,8 +12,10 @@
     "subtitle": "Modernisez les opérations de votre restaurant avec notre solution complète de tableau de bord de commande. Des menus QR code aux analyses en temps réel, tout ce dont vous avez besoin pour améliorer l'efficacité et l'expérience client.",
     "benefits": {
       "qrOrdering": "Commande sans Contact par QR Code",
-      "orderManagement": "Gestion des Commandes en Temps Réel",
+      "clickCollect": "Click & Collect avec Retrait QR",
+      "reservations": "Réservations par Code QR",
       "analytics": "Analyses Complètes du Restaurant",
+      "costManagement": "Gestion des Coûts & Rentabilité",
       "inventory": "Gestion des Stocks & Personnel"
     },
     "getStarted": "Commencer Gratuitement",
@@ -56,13 +58,13 @@
         }
       },
       "inventory": {
-        "title": "Contrôle des Stocks",
-        "description": "Gestion complète des stocks avec niveaux de stock, alertes et commandes automatisées.",
+        "title": "Ingrédients, zones et transferts",
+        "description": "Gérez les stocks d'ingrédients, les zones de stockage, les transferts internes, les alertes et la valeur du stock depuis un seul espace en direct.",
         "features": {
-          "monitoring": "Surveillance des niveaux de stock",
-          "alerts": "Alertes de stock faible",
-          "supplier": "Gestion des fournisseurs",
-          "cost": "Suivi des coûts"
+          "monitoring": "Visibilité du stock par zone et quantités en direct",
+          "alerts": "Alertes critique, faible et rupture de stock",
+          "supplier": "Transferts entre réserve principale, cuisine et zones personnalisées",
+          "cost": "Valorisation AVCO et suivi de la valeur du stock"
         }
       },
       "menu": {
@@ -94,6 +96,40 @@
           "campaign": "Suivi des campagnes",
           "revenue": "Rapports de revenus"
         }
+      }
+    }
+  },
+  "inventorySpotlight": {
+    "eyebrow": "Intelligence Stock",
+    "title": "Transformez le stock, les pertes et le coût ingrédient en pilotage de marge",
+    "subtitle": "ODS relie le stock par zone, les alertes en direct, la valorisation par lot, la consommation réelle des ingrédients et le chiffre d'affaires pour permettre à votre équipe d'agir avant qu'un service ou qu'une marge ne glisse.",
+    "caption": "Construit à partir des mêmes écrans de stock et de coûts utilisés chaque jour dans l'admin ODS.",
+    "proofs": {
+      "zones": "Stockage multi-zones avec flux de transfert entre réserve principale, cuisine et zones personnalisées.",
+      "alerts": "Alertes faible stock, critique et rupture liées aux seuils de réapprovisionnement.",
+      "valuation": "Valorisation AVCO par zone avec valeur du stock hors taxe et TTC.",
+      "analytics": "Coût réel vs revenu, usage théorique vs réel, et projections de dépenses ingrédients en fin de mois."
+    },
+    "screens": {
+      "zones": {
+        "title": "Zones, stock et transferts",
+        "description": "Gérez les ingrédients, les espaces de stockage et les transferts internes depuis un seul écran opérationnel."
+      },
+      "alerts": {
+        "title": "Alertes de stock en direct",
+        "description": "Repérez les ruptures et les ingrédients critiques avant qu'ils n'impactent le service."
+      },
+      "ingredient": {
+        "title": "Analyse par ingrédient",
+        "description": "Consultez l'AVCO, le stock par zone, l'écart, les recommandations et la projection de stock à la clôture."
+      },
+      "cost": {
+        "title": "Coût réel vs revenu",
+        "description": "Comparez le coût réel des ingrédients, le chiffre d'affaires, le bénéfice net et la marge projetée du mois."
+      },
+      "projections": {
+        "title": "Projections de dépense ingrédient",
+        "description": "Suivez les ingrédients les plus coûteux et estimez la dépense de fin de mois à partir de l'usage en direct."
       }
     }
   },
@@ -277,6 +313,33 @@
           "locationSettings": "Paramètres spécifiques à l'emplacement",
           "reporting": "Rapports unifiés"
         }
+      },
+      "clickCollect": {
+        "title": "Click & Collect",
+        "description": "Permettez aux clients de commander à l'avance avec code QR pour un service de retrait sans contact.",
+        "benefits": {
+          "qrOrdering": "Commandes à emporter par code QR",
+          "pickupManagement": "Gestion des horaires de retrait",
+          "notifications": "Notifications de préparation"
+        }
+      },
+      "costManagement": {
+        "title": "Gestion des Coûts",
+        "description": "Contrôle financier complet avec suivi des dépenses, analyse des coûts et insights de rentabilité.",
+        "benefits": {
+          "tracking": "Suivi des coûts en temps réel",
+          "analytics": "Analyse des marges bénéficiaires",
+          "profitability": "Rapports de rentabilité"
+        }
+      },
+      "reservations": {
+        "title": "Réservations QR",
+        "description": "Permettez aux clients de réserver des tables instantanément avec scan de code QR et confirmations automatiques.",
+        "benefits": {
+          "qrBooking": "Réservation de table par code QR",
+          "management": "Gestion des réservations",
+          "reminders": "Rappels automatiques"
+        }
       }
     },
     "highlights": {
@@ -359,7 +422,12 @@
   },
   "pricing": {
     "title": "Tarification Simple et Transparente",
-    "subtitle": "Choisissez le plan qui correspond aux besoins de votre restaurant. Commencez gratuitement et évoluez à mesure que vous grandissez.",
+    "subtitle": "Choisissez le plan qui correspond aux besoins de votre restaurant. Toutes les fonctionnalités incluses dans chaque plan.",
+    "idealFor": "Idéal pour",
+    "trial": {
+      "message": "Essai Gratuit de 7 Jours - Aucune Carte de Crédit Requise",
+      "badge": "Essai Gratuit"
+    },
     "billing": {
       "monthly": "Mensuel",
       "yearly": "Annuel",
@@ -377,67 +445,70 @@
       "contactSales": "Contacter les Ventes"
     },
     "plans": {
-      "commission": {
-        "name": "Basé sur Commission",
-        "description": "Parfait pour les petits cafés ou lieux éphémères avec faibles coûts initiaux",
-        "period": "par commande",
-        "note": "Commission réduite (1% par commande) disponible pour les restaurants à volume élevé",
+      "monthly": {
+        "name": "Plan Mensuel",
+        "description": "Parfait pour les restaurants souhaitant de la flexibilité avec facturation mensuelle",
+        "idealFor": "Petits et moyens restaurants testant ODS Premium",
+        "billing": "Facturé mensuellement",
         "features": {
-          "standard": "Commission Standard (2% par commande)",
-          "core": "Toutes les fonctionnalités de base ODS incluses",
-          "qr": "Gestion des tables par code QR",
-          "order": "Système de gestion des commandes",
-          "menu": "Gestion de menu de base",
-          "dashboard": "Rapports de tableau de bord standard",
-          "docs": "Documentation en ligne",
-          "email": "Support par e-mail",
-          "noFees": "Pas de frais d'abonnement mensuels"
-        }
-      },
-      "starter": {
-        "name": "Démarrage",
-        "description": "Commande numérique essentielle pour les petits restaurants",
-        "idealFor": "Petits cafés ou food trucks",
-        "features": {
-          "qr": "Gestion des tables par code QR",
-          "menu": "Gestion de base du menu et des commandes",
-          "dashboard": "Rapports de tableau de bord standard",
-          "employees": "Jusqu'à 2 employés",
-          "sector": "1 secteur inclus",
-          "orders": "Commandes illimitées (sans commission)",
-          "email": "Support par e-mail",
-          "docs": "Documentation en ligne"
-        }
-      },
-      "pro": {
-        "name": "Pro",
-        "description": "Solution complète pour les restaurants en croissance",
-        "idealFor": "Restaurants en croissance nécessitant un contrôle des stocks",
-        "features": {
-          "starter": "Toutes les fonctionnalités Démarrage incluses",
-          "inventory": "Gestion des stocks",
-          "purchase": "Bons de commande et fournisseurs",
-          "waste": "Système de suivi des déchets",
-          "bookings": "Réservations et réservations",
+          "tables": "Tables et commandes illimitées",
           "menu": "Articles de menu illimités",
-          "employees": "Jusqu'à 10 employés",
-          "support": "Support prioritaire"
+          "categories": "Catégories multiples et organisation",
+          "qr": "Menu numérique avec code QR",
+          "branding": "Image de marque personnalisée (logo et couleurs)",
+          "orders": "Gestion avancée des commandes",
+          "kitchen": "Affichage cuisine et intégration imprimante",
+          "payment": "Méthodes de paiement multiples",
+          "dashboard": "Tableau de bord analytique en temps réel",
+          "analytics": "Rapports de ventes et insights",
+          "reports": "Exportation de rapports (CSV/PDF)",
+          "activityLogs": "Journaux d'activité et suivi",
+          "employees": "Gestion illimitée des employés",
+          "inventory": "Suivi des stocks et alertes",
+          "costTracking": "Analyse et suivi des coûts",
+          "costManagement": "Système complet de gestion des coûts",
+          "reservations": "Réservations et réservations de tables",
+          "qrReservations": "Code QR pour les réservations",
+          "clickCollect": "Click & Collect / Commandes à emporter",
+          "qrClickCollect": "Code QR pour Click & Collect",
+          "marketing": "Outils marketing et promotions",
+          "notifications": "Notifications push",
+          "multiLocation": "Support multi-restaurants",
+          "support": "Support par e-mail et prioritaire"
         }
       },
-      "enterprise": {
-        "name": "Entreprise",
-        "description": "Solution complète pour les grandes opérations",
-        "idealFor": "Grands restaurants ou groupes multi-emplacements",
+      "yearly": {
+        "name": "Plan Annuel",
+        "description": "Meilleure valeur avec 2 mois gratuits - notre choix le plus populaire",
+        "idealFor": "Restaurants en croissance engagés dans la transformation digitale",
+        "billing": "Facturé annuellement",
+        "savings": "Économisez 2 mois",
+        "discount": "Seulement 40,83€/mois facturé annuellement",
         "features": {
-          "pro": "Toutes les fonctionnalités Pro incluses",
-          "marketing": "Automatisation du marketing",
-          "loyalty": "Programmes de fidélité",
-          "theme": "Couleurs de thème personnalisées",
-          "employees": "Employés et secteurs illimités",
-          "multiLocation": "Support multi-emplacements",
-          "manager": "Gestionnaire de compte dédié",
-          "integrations": "Intégrations personnalisées disponibles",
-          "sla": "Garantie SLA"
+          "tables": "Tables et commandes illimitées",
+          "menu": "Articles de menu illimités",
+          "categories": "Catégories multiples et organisation",
+          "qr": "Menu numérique avec code QR",
+          "branding": "Image de marque personnalisée (logo et couleurs)",
+          "orders": "Gestion avancée des commandes",
+          "kitchen": "Affichage cuisine et intégration imprimante",
+          "payment": "Méthodes de paiement multiples",
+          "dashboard": "Tableau de bord analytique en temps réel",
+          "analytics": "Rapports de ventes et insights",
+          "reports": "Exportation de rapports (CSV/PDF)",
+          "activityLogs": "Journaux d'activité et suivi",
+          "employees": "Gestion illimitée des employés",
+          "inventory": "Suivi des stocks et alertes",
+          "costTracking": "Analyse et suivi des coûts",
+          "costManagement": "Système complet de gestion des coûts",
+          "reservations": "Réservations et réservations de tables",
+          "qrReservations": "Code QR pour les réservations",
+          "clickCollect": "Click & Collect / Commandes à emporter",
+          "qrClickCollect": "Code QR pour Click & Collect",
+          "marketing": "Outils marketing et promotions",
+          "notifications": "Notifications push",
+          "multiLocation": "Support multi-restaurants",
+          "prioritySupport": "Support prioritaire et temps de réponse plus rapides"
         }
       }
     },
@@ -446,7 +517,7 @@
       "questions": {
         "trial": {
           "q": "Y a-t-il un essai gratuit?",
-          "a": "Oui! Tous les plans sont fournis avec un essai gratuit de 14 jours. Aucune carte de crédit requise."
+          "a": "Oui! Tous les plans incluent un essai gratuit de 7 jours pour explorer toutes les fonctionnalités. Aucune carte de crédit requise."
         },
         "switch": {
           "q": "Puis-je changer de plan à tout moment?",
@@ -454,7 +525,7 @@
         },
         "support": {
           "q": "Qu'est-ce qui est inclus dans le support?",
-          "a": "Tous les plans incluent le support par e-mail. Les plans Professionnel et Entreprise bénéficient d'un support prioritaire."
+          "a": "Tous les plans incluent le support par e-mail. Les abonnés annuels bénéficient d'un support prioritaire avec des temps de réponse plus rapides."
         },
         "fees": {
           "q": "Y a-t-il des frais de configuration?",
