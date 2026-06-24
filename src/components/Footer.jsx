@@ -143,6 +143,11 @@ const Footer = () => {
               <span>{t('footer.cloud')}</span>
             </div>
           </motion.div>
+
+          {/* CEO / Founder credit */}
+          <div className="text-center mt-8 pt-8 border-t border-gray-800/50 text-sm text-gray-500">
+            CEO &amp; Founder — Houssem Gharsalli
+          </div>
         </div>
       </div>
     </footer>
