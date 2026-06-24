@@ -4,8 +4,8 @@ import { useTranslation } from 'react-i18next'
 import { 
   Mail, 
   MapPin, 
-  Facebook, 
-  Instagram, 
+  Facebook,
+  Instagram,
   Linkedin,
   Heart
 } from 'lucide-react'
@@ -62,7 +62,7 @@ const Footer = () => {
                   {t('footer.email')}
                 </a>
               </motion.div>
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: 0.3 }}
@@ -70,6 +70,9 @@ const Footer = () => {
                 className="flex items-center justify-center space-x-3 text-gray-400"
               >
               </motion.div>
+              <div className="text-gray-400 text-base pt-2">
+                CEO &amp; Founder — Houssem Gharsalli
+              </div>
             </div>
           </motion.div>
         </div>
@@ -143,11 +146,6 @@ const Footer = () => {
               <span>{t('footer.cloud')}</span>
             </div>
           </motion.div>
-
-          {/* CEO / Founder credit */}
-          <div className="text-center mt-8 pt-8 border-t border-gray-800/50 text-sm text-gray-500">
-            CEO &amp; Founder — Houssem Gharsalli
-          </div>
         </div>
       </div>
     </footer>
