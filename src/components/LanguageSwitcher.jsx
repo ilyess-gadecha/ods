@@ -35,6 +35,14 @@ const FRFlag = () => (
   </svg>
 )
 
+const DEFlag = () => (
+  <svg className="w-6 h-6 rounded-sm" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+    <rect fill="#000" width="32" height="10.67"/>
+    <rect fill="#dd0000" y="10.67" width="32" height="10.67"/>
+    <rect fill="#ffce00" y="21.33" width="32" height="10.67"/>
+  </svg>
+)
+
 const LanguageSwitcher = () => {
   const { i18n } = useTranslation()
   const [isOpen, setIsOpen] = useState(false)
@@ -42,13 +50,21 @@ const LanguageSwitcher = () => {
 
   const languages = [
     { code: 'en', name: 'English', flag: <USFlag /> },
-    { code: 'fr', name: 'Français', flag: <FRFlag /> }
+    { code: 'fr', name: 'Français', flag: <FRFlag /> },
+    { code: 'de', name: 'Deutsch', flag: <DEFlag /> }
   ]
 
   const currentLanguage = languages.find(lang => lang.code === i18n.language) || languages[0]
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng)
+    // Reflect the language in the URL path (/, /fr/, /de/) without a reload,
+    // keeping the shareable URL and canonical/OG tags consistent.
+    const targetPath = lng === 'en' ? '/' : `/${lng}/`
+    if (typeof window !== 'undefined' && window.location.pathname !== targetPath) {
+      const { search, hash } = window.location
+      window.history.pushState({}, '', targetPath + search + hash)
+    }
     setIsOpen(false)
   }
 

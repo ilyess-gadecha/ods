@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <!-- Primary Meta Tags -->
-    <title>ODS - #1 Restaurant Management Platform | QR Code Ordering & Analytics</title>
-    <meta name="title" content="ODS - #1 Restaurant Management Platform | QR Code Ordering & Analytics" />
-    <meta name="description" content="Modernize your restaurant with ODS - the all-in-one ordering dashboard solution. QR code menus, real-time order management, inventory tracking, and powerful analytics. Start your free trial today!" />
-    <meta name="keywords" content="restaurant management software, QR code ordering, restaurant POS system, order management, restaurant analytics, menu management, inventory management, table management, restaurant dashboard, contactless ordering, restaurant technology, food service software, hospitality software, restaurant operations, digital menu, online ordering system" />
+    <title>ODS - Restaurant Platform | Pay-First QR Ordering, AI Menus & Analytics</title>
+    <meta name="title" content="ODS - Restaurant Platform | Pay-First QR Ordering, AI Menus & Analytics" />
+    <meta name="description" content="Run a modern restaurant with ODS: beautiful QR menu templates, pay-first checkout (get paid the moment guests order via Stripe), built-in AI for menu videos, food photos & invoice capture, plus analytics, inventory and the ODS Print app. Start your free trial today!" />
+    <meta name="keywords" content="restaurant management software, pay-first ordering, QR code ordering, Stripe restaurant payments, AI menu generator, AI food photography, menu video generator, restaurant POS system, order management, restaurant analytics, menu templates, inventory management, kitchen printing software, thermal receipt printer app, loyalty program, restaurant CRM, contactless ordering, digital menu, online ordering system" />
     <meta name="author" content="ODS - Ordering Dashboard Solutions" />
     <meta name="robots" content="index, follow" />
     <meta name="language" content="English" />
@@ -16,6 +16,12 @@
     
     <!-- Canonical URL -->
     <link rel="canonical" href="https://ordering-dashboard-solution.com/" />
+
+    <!-- Language alternates (hreflang) -->
+    <link rel="alternate" hreflang="en" href="https://ordering-dashboard-solution.com/" />
+    <link rel="alternate" hreflang="fr" href="https://ordering-dashboard-solution.com/fr/" />
+    <link rel="alternate" hreflang="de" href="https://ordering-dashboard-solution.com/de/" />
+    <link rel="alternate" hreflang="x-default" href="https://ordering-dashboard-solution.com/" />
     
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/src/assets/ods-logo.png" />
@@ -24,20 +30,21 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://ordering-dashboard-solution.com/" />
-    <meta property="og:title" content="ODS - #1 Restaurant Management Platform | QR Code Ordering & Analytics" />
-    <meta property="og:description" content="Modernize your restaurant with ODS - the all-in-one ordering dashboard solution. QR code menus, real-time order management, inventory tracking, and powerful analytics." />
+    <meta property="og:title" content="ODS - Restaurant Platform | Pay-First QR Ordering, AI Menus & Analytics" />
+    <meta property="og:description" content="Run a modern restaurant with ODS: beautiful QR menu templates, pay-first checkout (get paid the moment guests order via Stripe), built-in AI for menu videos, food photos & invoice capture, plus analytics, inventory and the ODS Print app. Start your free trial today!" />
     <meta property="og:image" content="https://ordering-dashboard-solution.com/og-image.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:site_name" content="ODS - Ordering Dashboard Solutions" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:locale:alternate" content="fr_FR" />
+    <meta property="og:locale:alternate" content="de_DE" />
     
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:url" content="https://ordering-dashboard-solution.com/" />
-    <meta name="twitter:title" content="ODS - #1 Restaurant Management Platform | QR Code Ordering & Analytics" />
-    <meta name="twitter:description" content="Modernize your restaurant with ODS - the all-in-one ordering dashboard solution. QR code menus, real-time order management, inventory tracking, and powerful analytics." />
+    <meta name="twitter:title" content="ODS - Restaurant Platform | Pay-First QR Ordering, AI Menus & Analytics" />
+    <meta name="twitter:description" content="Run a modern restaurant with ODS: beautiful QR menu templates, pay-first checkout (get paid the moment guests order via Stripe), built-in AI for menu videos, food photos & invoice capture, plus analytics, inventory and the ODS Print app. Start your free trial today!" />
     <meta name="twitter:image" content="https://ordering-dashboard-solution.com/og-image.png" />
     
     <!-- Additional SEO Meta Tags -->
@@ -68,7 +75,7 @@
         "@type": "ContactPoint",
         "contactType": "customer service",
         "email": "contact@ods-solution.com",
-        "availableLanguage": ["English", "French"]
+        "availableLanguage": ["English", "French", "German"]
       }
     }
     </script>
@@ -83,28 +90,24 @@
       "operatingSystem": "Web Browser",
       "description": "Complete restaurant management solution with QR code ordering, order management, inventory tracking, and real-time analytics.",
       "offers": {
-        "@type": "AggregateOffer",
-        "priceCurrency": "USD",
-        "lowPrice": "0",
-        "highPrice": "199",
-        "offerCount": "3"
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "ratingCount": "500",
-        "bestRating": "5",
-        "worstRating": "1"
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "description": "Free ODS subscription for venues with 500+ orders per month. For lower volumes, the ODS Price Center sets one fair, fixed monthly price. Guests pay per order via Stripe with 0% commission charged to the restaurant; ODS charges only a small per-order service fee added to the guest total. 7-day free trial, no credit card required."
       },
       "featureList": [
+        "Pay-First Checkout (Stripe)",
         "QR Code Ordering",
+        "Menu Design Templates",
+        "AI Menu Videos & Food Photography",
+        "AI Menu & Invoice Capture",
         "Real-time Order Management",
         "Inventory Management",
-        "Table Management",
-        "Menu Management",
+        "Loyalty & CRM",
         "Analytics Dashboard",
-        "Multi-location Support",
-        "Payment Processing"
+        "Kitchen & Receipt Printing (ODS Print)",
+        "Multi-location Support"
       ]
     }
     </script>
@@ -121,33 +124,57 @@
     </script>
     
     <!-- Structured Data - FAQPage for common questions -->
-    <script type="application/ld+json">
+    <script type="application/ld+json" id="faq-jsonld">
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "What is ODS restaurant management software?",
+          "name": "What is ODS?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "ODS is an all-in-one restaurant management platform that includes QR code ordering, real-time order management, inventory tracking, table management, and powerful analytics to help modernize restaurant operations."
+            "text": "ODS (Ordering Dashboard Solution) is an all-in-one restaurant management platform. It combines QR-code ordering with pay-first Stripe checkout, beautiful menu design templates, built-in AI (menu videos, food photography, menu and supplier-invoice capture), inventory and cost management, loyalty and CRM, real-time analytics, and the free ODS Print desktop app for kitchen and receipt printing."
           }
         },
         {
           "@type": "Question",
-          "name": "Does ODS offer a free trial?",
+          "name": "How much does ODS cost?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, ODS offers a 14-day free trial with no credit card required. You can explore all features and see how ODS can transform your restaurant operations."
+            "text": "ODS is free for venues with 500 or more orders per month — you only pay a small per-order service fee that is added to the guest's total. For venues under 500 orders per month, the ODS Price Center sets one fair, fixed monthly price. All features are included in every plan, and there is a 7-day free trial with no credit card required."
           }
         },
         {
           "@type": "Question",
-          "name": "What types of restaurants can use ODS?",
+          "name": "How do customers pay with ODS pay-first?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "ODS is designed for all restaurant types including fine dining, fast casual, quick service restaurants, cafes, coffee shops, and food trucks. The platform adapts to your specific needs."
+            "text": "With pay-first, guests pay by card via Stripe the moment they order, before the order reaches the kitchen. Payments settle directly to the restaurant's own Stripe account with 0% commission charged to the restaurant. ODS collects only a small per-order service fee (from €0.20 up to €1.00 by ticket size) that is added to the guest's total."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does ODS have AI features?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. ODS includes shipped AI tools: AI menu-video reels generated from a dish photo, AI food photography for dishes, categories and ingredients, AI menu scanning that digitizes a paper menu, AI recipe composition from in-stock ingredients, and AI supplier-invoice capture that extracts line items, VAT and totals from a photo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does ODS work with receipt and kitchen printers?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, through the free ODS Print app for Windows. It connects your thermal printers to ODS and prints every incoming order automatically, routing price-less kitchen tickets and priced counter receipts to the right station. It supports network (LAN, port 9100), USB and any installed Windows printer."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What languages and countries does ODS support?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The ODS website and dashboard are available in English, French and German, and printed tickets support 7 languages including Arabic (right-to-left). Pay-first works in every Stripe-supported country and currency, with the service fee shown in the guest's local currency."
           }
         }
       ]

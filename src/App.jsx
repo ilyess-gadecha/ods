@@ -3,6 +3,10 @@ import Header from './components/Header'
 import Hero from './components/Hero'
 import Features from './components/Features'
 import DashboardShowcase from './components/DashboardShowcase'
+import OrderingTemplates from './components/OrderingTemplates'
+import PaymentShowcase from './components/PaymentShowcase'
+import AIFeatures from './components/AIFeatures'
+import PrintApp from './components/PrintApp'
 import RestaurantShowcase from './components/RestaurantShowcase'
 import StatsShowcase from './components/StatsShowcase'
 import Benefits from './components/Benefits'
@@ -23,6 +27,10 @@ function App() {
         <Hero />
         <TrustSignals />
         <DashboardShowcase />
+        <OrderingTemplates />
+        <PaymentShowcase />
+        <AIFeatures />
+        <PrintApp />
         <RestaurantShowcase />
         <StatsShowcase />
         <Features />

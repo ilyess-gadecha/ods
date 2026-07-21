@@ -34,6 +34,15 @@
   
   html {
     scroll-behavior: smooth;
+    /* Offset in-page anchor jumps so the fixed header doesn't cover section titles */
+    scroll-padding-top: 6rem;
+  }
+
+  /* Guard against stray horizontal scroll from full-bleed/decorative elements.
+     `clip` (not `hidden`) avoids creating a scroll container, so position: sticky
+     keeps working. */
+  html, body {
+    overflow-x: clip;
   }
 }
 

@@ -11,11 +11,11 @@ const Hero = () => {
   const [isVideoPlaying, setIsVideoPlaying] = useState(false)
   
   const benefits = [
+    t('hero.benefits.payFirst'),
     t('hero.benefits.qrOrdering'),
-    t('hero.benefits.clickCollect'),
-    t('hero.benefits.reservations'),
+    t('hero.benefits.ai'),
+    t('hero.benefits.templates'),
     t('hero.benefits.analytics'),
-    t('hero.benefits.costManagement'),
     t('hero.benefits.inventory')
   ]
 

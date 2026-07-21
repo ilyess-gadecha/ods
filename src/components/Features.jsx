@@ -16,13 +16,48 @@ import {
   Zap,
   Package,
   DollarSign,
-  Calendar
+  Calendar,
+  Sparkles,
+  Heart
 } from 'lucide-react'
 
 const Features = () => {
   const { t } = useTranslation()
   
   const features = [
+    {
+      icon: CreditCard,
+      title: t('features.items.payFirst.title'),
+      description: t('features.items.payFirst.description'),
+      benefits: [
+        t('features.items.payFirst.benefits.prepaid'),
+        t('features.items.payFirst.benefits.direct'),
+        t('features.items.payFirst.benefits.stripe')
+      ],
+      color: 'bg-indigo-50 text-indigo-600'
+    },
+    {
+      icon: Sparkles,
+      title: t('features.items.aiStudio.title'),
+      description: t('features.items.aiStudio.description'),
+      benefits: [
+        t('features.items.aiStudio.benefits.video'),
+        t('features.items.aiStudio.benefits.photos'),
+        t('features.items.aiStudio.benefits.ocr')
+      ],
+      color: 'bg-fuchsia-50 text-fuchsia-600'
+    },
+    {
+      icon: Heart,
+      title: t('features.items.loyalty.title'),
+      description: t('features.items.loyalty.description'),
+      benefits: [
+        t('features.items.loyalty.benefits.points'),
+        t('features.items.loyalty.benefits.crm'),
+        t('features.items.loyalty.benefits.campaigns')
+      ],
+      color: 'bg-rose-50 text-rose-600'
+    },
     {
       icon: ShoppingCart,
       title: t('features.items.orderManagement.title'),

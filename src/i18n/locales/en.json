@@ -3,20 +3,26 @@
     "features": "Features",
     "benefits": "Benefits",
     "pricing": "Pricing",
-    "getStarted": "Get Started Free"
+    "getStarted": "Get Started Free",
+    "payments": "Payments",
+    "ai": "AI",
+    "templates": "Templates"
   },
   "hero": {
     "badge": "#1 Restaurant Management Platform",
     "title": "Ordering Dashboard Solution",
     "titleSuffix": "for Modern Restaurants",
-    "subtitle": "Modernize your restaurant operations with our comprehensive ordering dashboard solution. From QR code menus to real-time analytics, everything you need to boost efficiency and enhance customer experience.",
+    "subtitle": "Give guests a beautiful QR menu, take payment the moment they order, and let AI handle the busywork — from menu videos to invoices. Everything you need to run a modern restaurant, in one platform.",
     "benefits": {
       "qrOrdering": "Contactless QR Code Ordering",
       "clickCollect": "Click & Collect with QR Pickup",
       "reservations": "QR Code Reservations",
       "analytics": "Complete Restaurant Analytics",
       "costManagement": "Cost Management & Profitability",
-      "inventory": "Inventory & Staff Management"
+      "inventory": "Inventory & Staff Management",
+      "payFirst": "Pay-First Secure Checkout",
+      "ai": "AI Menus, Photos & Videos",
+      "templates": "Beautiful Menu Templates"
     },
     "getStarted": "Get Started Free",
     "watchDemo": "Watch Demo",
@@ -340,6 +346,33 @@
           "management": "Booking management",
           "reminders": "Automated reminders"
         }
+      },
+      "payFirst": {
+        "title": "Pay-First Checkout",
+        "description": "Guests pay by card the moment they order — every ticket settled before it reaches the kitchen.",
+        "benefits": {
+          "prepaid": "Prepaid orders, zero walkouts",
+          "direct": "Money straight to your account",
+          "stripe": "Secure payments via Stripe"
+        }
+      },
+      "aiStudio": {
+        "title": "AI Studio",
+        "description": "Menu videos, food photos, menu scanning and invoice capture — real AI that does the busywork.",
+        "benefits": {
+          "video": "AI menu-video reels",
+          "photos": "AI food photography",
+          "ocr": "AI menu & invoice capture"
+        }
+      },
+      "loyalty": {
+        "title": "Loyalty & CRM",
+        "description": "Turn diners into regulars with points, tiers, customer insights and one-click email campaigns.",
+        "benefits": {
+          "points": "Points & Bronze-to-VIP tiers",
+          "crm": "Customer profiles & segments",
+          "campaigns": "Email marketing campaigns"
+        }
       }
     },
     "highlights": {
@@ -422,7 +455,7 @@
   },
   "pricing": {
     "title": "Simple, Transparent Pricing",
-    "subtitle": "Choose the plan that fits your restaurant's needs. All features included in every plan.",
+    "subtitle": "The busier you get, the less you pay. Pass 500 orders a month and your ODS subscription is free. Below that, our Price Center agrees one fair, fixed price with you — all features included, always.",
     "idealFor": "Ideal for",
     "trial": {
       "message": "7-Day Free Trial - No Credit Card Required",
@@ -442,7 +475,8 @@
     "cta": {
       "getStarted": "Get Started",
       "contactUs": "Contact Us",
-      "contactSales": "Contact Sales"
+      "contactSales": "Contact Sales",
+      "priceCenter": "Talk to the Price Center"
     },
     "plans": {
       "monthly": {
@@ -510,6 +544,21 @@
           "multiLocation": "Multi-restaurant support",
           "prioritySupport": "Priority support & faster response times"
         }
+      },
+      "free": {
+        "name": "Free",
+        "badge": "500+ orders / month",
+        "description": "For busy venues. Once you pass 500 orders a month, your ODS subscription is completely free — you only ever pay the small per-order service fee.",
+        "idealFor": "Cafés and restaurants doing 500+ orders a month",
+        "priceNote": "Free while you stay above 500 orders a month"
+      },
+      "custom": {
+        "name": "Custom",
+        "badge": "Under 500 orders / month",
+        "description": "Fewer than 500 orders a month? Our ODS Price Center agrees a fair, fixed monthly price tailored to your venue — no surprises.",
+        "idealFor": "New or smaller venues still growing their volume",
+        "priceLabel": "Custom",
+        "priceNote": "One fair price, set with the ODS Price Center"
       }
     },
     "faq": {
@@ -530,9 +579,22 @@
         "fees": {
           "q": "Are there setup fees?",
           "a": "No setup fees ever. We'll help you get started at no additional cost."
+        },
+        "payments": {
+          "q": "How do customer card payments work?",
+          "a": "With pay-first, guests pay by card via Stripe the moment they order. You keep the full order amount minus standard Stripe card fees — ODS charges no commission to you, and payouts go straight to your own Stripe account."
+        },
+        "cost": {
+          "q": "How much does ODS cost?",
+          "a": "If your venue does 500 or more orders a month, your ODS subscription is €0 — you only pay the small per-order service fee, which is added to the guest's total. Below 500 orders a month, our ODS Price Center agrees one fair, fixed monthly price with you. Every plan includes all features."
         }
       }
-    }
+    },
+    "payFirst": {
+      "title": "Customer payments included",
+      "text": "Turn on pay-first and let guests pay by card at order time. 0% commission to you — a small service fee is added to the guest total, and payouts land directly in your own Stripe account."
+    },
+    "headline": "Free at 500+ orders a month"
   },
   "contact": {
     "title": "Get in Touch",
@@ -581,5 +643,198 @@
     "worldwide": "Available Worldwide",
     "mobile": "Mobile Apps Available",
     "cloud": "Cloud-Based Platform"
+  },
+  "templates": {
+    "eyebrow": "Guest ordering experience",
+    "title": {
+      "part1": "One menu.",
+      "part2": "Your brand, seven ways."
+    },
+    "subtitle": "Guests scan a QR code and get a fast, native-feeling ordering app — in a design that matches your room. Pick a look, switch it whenever you like.",
+    "cta": "Design my menu",
+    "note": "Switch templates anytime — no redesign, no downtime.",
+    "perks": {
+      "qr": "One QR code per table, pickup point or reservation.",
+      "brand": "Your logo, colors and photos on every screen.",
+      "native": "App-smooth on any phone — nothing to install."
+    },
+    "items": {
+      "minimalPremium": {
+        "name": "Minimal Premium",
+        "description": "Clean cream canvas, warm beige accents and a featured-drink banner — quietly upscale."
+      },
+      "premiumDark": {
+        "name": "Premium Dark",
+        "description": "Black-and-gold luxury lounge with a dramatic full-width hero photo."
+      },
+      "vibrantPromo": {
+        "name": "Vibrant Promo",
+        "description": "Bold red-and-orange, promo-first hero and circular category tiles for high-energy spots."
+      },
+      "editorialLifestyle": {
+        "name": "Editorial Lifestyle",
+        "description": "Immersive hero, elegant serif headings and horizontal signature-drink scrolls."
+      },
+      "quickOrder": {
+        "name": "Quick Order",
+        "description": "Deep-green utility layout with search, compact rows and quantity steppers for fast service."
+      },
+      "pastelFriendly": {
+        "name": "Pastel Friendly",
+        "description": "Soft sky-blue and blush, rounded icon chips and a gentle, welcoming feel."
+      },
+      "futuristicGlass": {
+        "name": "Futuristic Glass",
+        "description": "Dark teal gradient with glassmorphism panels and cyan glow — modern and next-gen."
+      }
+    }
+  },
+  "payment": {
+    "eyebrow": "Pay-first checkout · Powered by Stripe",
+    "title": {
+      "part1": "Get paid the moment",
+      "part2": "guests order."
+    },
+    "subtitle": "With pay-first, guests pay by card before the ticket ever reaches your kitchen. No walkouts, no unpaid tabs, no chasing — every order is settled the instant it is placed.",
+    "cta": "Start taking payments",
+    "onboard": "Set up in minutes — just add your IBAN and ID.",
+    "steps": {
+      "order": "Guest scans and builds their order",
+      "pay": "Pays securely by card via Stripe",
+      "kitchen": "Order hits the kitchen — money hits your account"
+    },
+    "benefits": {
+      "commission": {
+        "title": "0% commission to you",
+        "text": "You keep the full order amount, minus only standard Stripe card fees. The small service fee is added to the guest total — never taken from yours."
+      },
+      "direct": {
+        "title": "Money lands in your account",
+        "text": "Payments settle directly to your own Stripe account and your bank. ODS never holds your funds."
+      },
+      "noShows": {
+        "title": "Zero no-shows & walkouts",
+        "text": "The order only reaches the kitchen once payment succeeds, so every prepared ticket is already paid."
+      },
+      "fee": {
+        "title": "A tiny, fair service fee",
+        "text": "A small fee scales with the basket — from €0.20 on small tickets up to €1.00 on large ones — shown to the guest before they pay."
+      },
+      "refunds": {
+        "title": "Refunds built in",
+        "text": "Refund a single item or a whole order in a click, with automatic month-end settlement of platform fees back to you."
+      },
+      "global": {
+        "title": "Works worldwide",
+        "text": "Charge in every Stripe-supported country and currency, with the fee shown in the guest local currency."
+      }
+    },
+    "mock": {
+      "review": "Review & pay",
+      "subtotal": "Subtotal",
+      "serviceFee": "Service fee",
+      "total": "Total to pay",
+      "pay": "Pay",
+      "secured": "Secured by Stripe · cards never touch ODS",
+      "settled": "Payment successful",
+      "settledSub": "Order sent to the kitchen"
+    }
+  },
+  "ai": {
+    "eyebrow": "AI, built in",
+    "title": {
+      "part1": "AI does the busywork.",
+      "part2": "You run the restaurant."
+    },
+    "subtitle": "Real, shipped AI across your dashboard — turning photos and stock into menus, media and paperwork in seconds. No prompts to learn.",
+    "cta": "Explore AI tools",
+    "video": {
+      "badge": "AI Menu Video",
+      "title": "Turn a dish photo into a scroll-stopping food reel",
+      "description": "AI looks at your real dish photo and directs a cinematic 5-second vertical reel that stays true to the plating — ready to post or show right in the menu.",
+      "reelCaption": "AI-generated · with music",
+      "points": {
+        "vision": "AI reads your actual photo for a dish-faithful result — never generic stock.",
+        "music": "Optional AI-generated background music, added automatically.",
+        "batch": "Generate reels for your whole menu in one batch, at a predictable per-clip cost."
+      },
+      "chips": {
+        "faithful": "Dish-faithful",
+        "music": "AI soundtrack",
+        "batch": "Your whole menu"
+      }
+    },
+    "cards": {
+      "photos": {
+        "title": "AI food photography",
+        "description": "Generate professional dish, category and ingredient photos on demand — no photographer, no shoot."
+      },
+      "menuScan": {
+        "title": "AI menu scan",
+        "description": "Snap a photo of your paper menu and AI digitizes every item and category, names and accents intact."
+      },
+      "recipes": {
+        "title": "AI recipe composer",
+        "description": "Build a dish's ingredients and quantities from exactly what is in your stock — or go full creative-chef — costed against your inventory."
+      },
+      "invoice": {
+        "title": "AI invoice capture",
+        "description": "Photograph a supplier invoice — printed or handwritten, in any language — and AI extracts every line, VAT rate and total."
+      },
+      "recipeScan": {
+        "title": "AI recipe-sheet scan",
+        "description": "Turn a handwritten or printed prep sheet into a structured recipe with ingredients, quantities and units."
+      }
+    }
+  },
+  "print": {
+    "eyebrow": "Kitchen & counter printing",
+    "title": {
+      "part1": "Every order on paper,",
+      "part2": "the second it lands."
+    },
+    "subtitle": "ODS Print is a lightweight Windows app that connects your thermal printers to ODS and prints each incoming order automatically — kitchen tickets and counter receipts, routed to the right station.",
+    "cta": "Get ODS Print",
+    "note": "Free with ODS · one-click install, no setup.",
+    "window": {
+      "switchCert": "Switch Certificate",
+      "connected": "Connected",
+      "disconnected": "Disconnected",
+      "jobs": "Jobs",
+      "tabPrinters": "Printers",
+      "tabService": "Service",
+      "refresh": "Refresh Printers",
+      "autoCut": "Auto-cut paper",
+      "tearOff": "Tear-off feed (lines):",
+      "testPrint": "Test Print",
+      "cutTest": "Cut Test",
+      "configure": "Configure"
+    },
+    "features": {
+      "connect": {
+        "title": "LAN, USB & Windows printers",
+        "text": "Network (port 9100), USB, or any installed Windows printer."
+      },
+      "routing": {
+        "title": "Routed by station",
+        "text": "Priced counter receipts and price-less kitchen tickets, sent to the right printer."
+      },
+      "cut": {
+        "title": "Auto-cut or tear-off",
+        "text": "Full auto-cut on printers with a cutter, or a smart tear-off feed — tunable per printer."
+      },
+      "cert": {
+        "title": "Certificate login",
+        "text": "No passwords — one .ods-cert per restaurant, and printing stops if it is revoked."
+      },
+      "resilient": {
+        "title": "Never misses a ticket",
+        "text": "Auto-reconnect, a 5-second watchdog and duplicate-print protection — every order prints once."
+      },
+      "languages": {
+        "title": "7-language tickets",
+        "text": "English, French, German, Spanish, Italian, Russian and right-to-left Arabic."
+      }
+    }
   }
 }

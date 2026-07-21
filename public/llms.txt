@@ -1,0 +1,44 @@
+# ODS — Ordering Dashboard Solution
+
+> ODS is an all-in-one restaurant management platform for cafés, restaurants and quick-service venues. Guests order from a beautiful QR-code menu and pay by card the moment they order (pay-first, powered by Stripe); staff manage everything — orders, menu, inventory, cost, loyalty, analytics and printing — from one dashboard, with built-in AI that turns photos and stock into menus, media and paperwork.
+
+## Pricing
+- Free for venues with 500 or more orders per month — you only pay a small per-order service fee that is added to the guest's total.
+- For venues under 500 orders per month, the ODS Price Center agrees one fair, fixed monthly price.
+- All features are included in every plan. 7-day free trial, no credit card required.
+
+## Pay-first checkout (Stripe)
+- Guests pay by card before the order reaches the kitchen — no walkouts, no unpaid tabs.
+- 0% commission charged to the restaurant: payments settle directly to the restaurant's own Stripe account (the restaurant is the merchant of record). ODS collects only a small per-order service fee, added to the guest's total.
+- The service fee is tiered by ticket size, from about €0.20 on small tickets up to €1.00 on large ones, shown to the guest before they pay.
+- Refunds are built in; works in every Stripe-supported country and currency.
+
+## AI features (shipped)
+- AI menu-video reels: turn a dish photo into a cinematic 5-second vertical food reel, with optional AI background music; batch the whole menu.
+- AI food photography: generate professional dish, category and ingredient photos.
+- AI menu scan: photograph a paper menu and digitize every item and category.
+- AI recipe composer: build a dish's ingredients and quantities from what's in stock, costed against inventory.
+- AI supplier-invoice capture: extract line items, VAT and totals from a photo of an invoice, printed or handwritten, in any language.
+- Note: ODS does not currently offer an AI chatbot or AI demand-forecasting.
+
+## Menu templates
+- Seven guest-facing menu designs to match any venue: Minimal Premium, Premium Dark, Vibrant Promo, Editorial Lifestyle, Quick Order, Pastel Friendly and Futuristic Glass. Switchable anytime.
+
+## ODS Print (desktop app)
+- Free Windows app that connects thermal printers to ODS and auto-prints every incoming order in real time.
+- Supports network (LAN, port 9100), USB and any installed Windows printer; routes price-less kitchen tickets and priced counter receipts to the right station.
+- Certificate login (one .ods-cert per restaurant), auto-reconnect, duplicate-print protection, and tickets in 7 languages including right-to-left Arabic.
+
+## Also included
+- Inventory with storage zones, AVCO valuation, live stock alerts and cost management.
+- Loyalty program (points and Bronze-to-VIP tiers), customer CRM and one-click email campaigns.
+- Reservations and Click & Collect, multi-location support, real-time analytics and activity logs.
+
+## Languages
+- Website and dashboard: English, French, German. Printed tickets: 7 languages including Arabic (RTL).
+
+## Links
+- Home: https://ordering-dashboard-solution.com/
+- Pricing: https://ordering-dashboard-solution.com/#pricing
+- Create an account: https://console.ordering-dashboard-solution.com/admin/register
+- Contact: contact@ordering-dashboard-solution.com

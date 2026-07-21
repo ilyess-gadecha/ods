@@ -1,0 +1,840 @@
+{
+  "header": {
+    "features": "Funktionen",
+    "benefits": "Vorteile",
+    "pricing": "Preise",
+    "getStarted": "Kostenlos starten",
+    "payments": "Zahlungen",
+    "ai": "KI",
+    "templates": "Vorlagen"
+  },
+  "hero": {
+    "badge": "#1 Plattform für Restaurantmanagement",
+    "title": "Ordering Dashboard Solution",
+    "titleSuffix": "für moderne Restaurants",
+    "subtitle": "Bieten Sie Ihren Gästen eine schöne QR-Speisekarte, kassieren Sie im Moment der Bestellung und überlassen Sie die Fleißarbeit der KI – von Menü-Videos bis zu Rechnungen. Alles für ein modernes Restaurant, auf einer Plattform.",
+    "benefits": {
+      "qrOrdering": "Kontaktlos bestellen per QR-Code",
+      "clickCollect": "Click & Collect mit QR-Abholung",
+      "reservations": "Reservierungen per QR-Code",
+      "analytics": "Umfassende Restaurant-Analytik",
+      "costManagement": "Kostenmanagement & Rentabilität",
+      "inventory": "Lager- & Personalverwaltung",
+      "payFirst": "Sichere Bezahlung bei Bestellung",
+      "ai": "KI-Menüs, -Fotos & -Videos",
+      "templates": "Schöne Menüvorlagen"
+    },
+    "getStarted": "Kostenlos starten",
+    "watchDemo": "Demo ansehen",
+    "noCredit": "Keine Kreditkarte erforderlich",
+    "freeTrial": "14 Tage kostenlos testen"
+  },
+  "trustSignals": {
+    "title": "Für den Erfolg von Restaurants gemacht",
+    "subtitle": "Umfassende Funktionen, die den Restaurantbetrieb modernisieren und das Gästeerlebnis verbessern",
+    "stats": {
+      "features": "Kernfunktionen",
+      "models": "Preismodelle",
+      "uptime": "System-Verfügbarkeit",
+      "orders": "Unterstützte Bestellungen"
+    }
+  },
+  "dashboardShowcase": {
+    "title": "Dashboard-Verwaltung",
+    "subtitle": "Erleben Sie die Leistung unseres umfassenden Restaurantmanagement-Systems anhand echter Dashboard-Screenshots aus dem laufenden Betrieb.",
+    "dashboards": {
+      "complete": {
+        "title": "Komplette Dashboard-Übersicht",
+        "description": "Umfassender Blick auf Ihren gesamten Restaurantbetrieb – alle wichtigen Kennzahlen und Steuerungen an einem Ort.",
+        "features": {
+          "analytics": "Echtzeit-Analysen",
+          "multiLocation": "Mehrere Standorte",
+          "performance": "Leistungseinblicke",
+          "control": "Zentrale Steuerung"
+        }
+      },
+      "orders": {
+        "title": "Bestellverwaltung",
+        "description": "Echtzeit-Verfolgung und -Verwaltung von Bestellungen mit detaillierten Analysen und Statusaktualisierungen.",
+        "features": {
+          "notifications": "Echtzeit-Benachrichtigungen",
+          "tracking": "Bestellstatus-Verfolgung",
+          "customerDetails": "Kundendaten",
+          "payment": "Zahlungsabwicklung"
+        }
+      },
+      "inventory": {
+        "title": "Zutaten, Zonen & Transfers",
+        "description": "Verwalten Sie Zutatenbestände, Lagerzonen, interne Transfers, Warnungen und Lagerwert in einem Live-Arbeitsbereich.",
+        "features": {
+          "monitoring": "Zonenbestand und Live-Mengen im Blick",
+          "alerts": "Warnungen bei kritischem, niedrigem und leerem Bestand",
+          "supplier": "Transfers zwischen Haupt-, Küchen- und eigenen Zonen",
+          "cost": "AVCO-Bewertung und Lagerwert-Verfolgung"
+        }
+      },
+      "menu": {
+        "title": "Menüverwaltung",
+        "description": "Dynamische Menüsteuerung mit Preisen, Kategorien und Verfügbarkeitsverwaltung.",
+        "features": {
+          "pricing": "Dynamische Preisgestaltung",
+          "category": "Kategorie-Organisation",
+          "availability": "Artikelverfügbarkeit",
+          "nutritional": "Nährwertangaben"
+        }
+      },
+      "tables": {
+        "title": "Tischverwaltung",
+        "description": "Effiziente Tischzuweisung und Reservierungssystem mit Echtzeit-Statusaktualisierungen.",
+        "features": {
+          "reservations": "Tischreservierungen",
+          "capacity": "Kapazitätsverwaltung",
+          "qrCode": "QR-Code-Erstellung",
+          "seating": "Optimierte Sitzplatzvergabe"
+        }
+      },
+      "marketing": {
+        "title": "Marketing-Analytik",
+        "description": "Umfassende Analysen und Marketing-Tools, um die Leistung Ihres Restaurants zu steigern.",
+        "features": {
+          "sales": "Umsatzanalysen",
+          "insights": "Kundeneinblicke",
+          "campaign": "Kampagnen-Tracking",
+          "revenue": "Umsatzberichte"
+        }
+      }
+    }
+  },
+  "inventorySpotlight": {
+    "eyebrow": "Intelligente Lagerverwaltung",
+    "title": "Machen Sie aus Bestand, Verschwendung und Zutatenkosten echte Gewinnkontrolle",
+    "subtitle": "ODS verknüpft zonenbasierten Bestand, Live-Warnungen, Chargenbewertung, tatsächlichen Zutatenverbrauch und Umsatzsignale – damit Ihr Team reagieren kann, bevor Service oder Marge leiden.",
+    "caption": "Aufgebaut aus denselben Lager- und Kostenansichten, die täglich im ODS-Admin genutzt werden.",
+    "proofs": {
+      "zones": "Mehrzonen-Lager mit Haupt-, Küchen- und eigenen Transferflüssen.",
+      "alerts": "Warnungen bei niedrigem, kritischem und leerem Bestand, gekoppelt an Nachbestellschwellen.",
+      "valuation": "Zonenbasierte AVCO-Bewertung mit Lagerwert netto und brutto.",
+      "analytics": "Echte Kosten vs. Umsatz, Ist- vs. Soll-Verbrauch und Zutaten-Prognosen zum Monatsende."
+    },
+    "screens": {
+      "zones": {
+        "title": "Zonen, Bestand und Transfers",
+        "description": "Verwalten Sie Zutaten, Lagerbereiche und interne Transfers über einen einzigen Betriebsbildschirm."
+      },
+      "alerts": {
+        "title": "Live-Bestandswarnungen",
+        "description": "Erkennen Sie Engpässe und kritische Zutaten, bevor der Service beeinträchtigt wird."
+      },
+      "ingredient": {
+        "title": "Analyse auf Zutatenebene",
+        "description": "Sehen Sie AVCO, Bestand nach Zone, Abweichungen, Empfehlungen und den prognostizierten Endbestand."
+      },
+      "cost": {
+        "title": "Echte Kosten vs. Umsatz",
+        "description": "Vergleichen Sie tatsächliche Zutatenkosten, Umsatz, Nettogewinn und prognostizierte Marge für den Monat."
+      },
+      "projections": {
+        "title": "Prognose der Zutatenausgaben",
+        "description": "Verfolgen Sie die wichtigsten Zutaten nach echten Kosten und schätzen Sie die Ausgaben zum Monatsende aus dem Live-Verbrauch."
+      }
+    }
+  },
+  "restaurantShowcase": {
+    "title": {
+      "part1": "Perfekt für",
+      "part2": "jeden Restauranttyp"
+    },
+    "subtitle": "Von der gehobenen Gastronomie bis zum Schnellrestaurant – unsere Plattform passt sich den individuellen Anforderungen Ihres Restaurants an und verbessert jeden Aspekt Ihres Betriebs.",
+    "types": {
+      "fineDining": {
+        "title": "Gehobene Gastronomie",
+        "description": "Werten Sie den Service Ihres Restaurants mit unserer Premium-Bestelllösung auf",
+        "stats": {
+          "restaurants": "50+ gehobene Restaurants",
+          "satisfaction": "98 % Kundenzufriedenheit",
+          "revenue": "Durchschnittlich 23 % mehr Umsatz"
+        }
+      },
+      "fastCasual": {
+        "title": "Fast Casual & Schnellservice",
+        "description": "Beschleunigen Sie den Service und verkürzen Sie Wartezeiten mit optimiertem Bestellen",
+        "stats": {
+          "locations": "200+ QSR-Standorte",
+          "service": "65 % schnellerer Service",
+          "wait": "40 % kürzere Wartezeiten"
+        }
+      },
+      "cafe": {
+        "title": "Cafés & Coffee Shops",
+        "description": "Perfekt für Coffee Shops mit mobiler Bestellung und Treueprogrammen",
+        "stats": {
+          "shops": "150+ Coffee Shops",
+          "return": "85 % Stammkunden",
+          "orderValue": "30 % höherer Bestellwert"
+        }
+      }
+    },
+    "menu": {
+      "title": "Präsentieren Sie Ihre köstliche Speisekarte",
+      "subtitle": "Schöne Food-Fotografie und dynamische Menüpräsentation steigern Bestellungen und Kundenzufriedenheit."
+    },
+    "technology": {
+      "title": "Nahtlose Technologie-Integration",
+      "subtitle": "Unsere Plattform integriert sich in Ihre bestehenden Kassensysteme, Zahlungsdienstleister und Küchengeräte für einen wirklich reibungslosen Restaurantbetrieb.",
+      "items": {
+        "pos": "Kassensystem-Integration",
+        "payment": "Zahlungsabwicklung",
+        "kitchen": "Küchen-Displaysysteme"
+      }
+    }
+  },
+  "statsShowcase": {
+    "title": {
+      "part1": "Ihr",
+      "part2": "Erfolg",
+      "part3": "beginnt hier"
+    },
+    "subtitle": "Werden Sie Teil der Revolution in der Restauranttechnologie. Erleben Sie als Erste die Zukunft des Restaurantmanagements mit ODS.",
+    "stats": {
+      "ready": {
+        "number": "Bereit",
+        "label": "zum Start",
+        "description": "Für moderne Restaurants entwickelt"
+      },
+      "dedicated": {
+        "label": "Engagiert",
+        "description": "Fokus auf Ihr Wachstum"
+      },
+      "support": {
+        "label": "Support",
+        "description": "Immer da, wenn Sie ihn brauchen"
+      },
+      "revenue": {
+        "label": "Umsatzsteigerung",
+        "description": "Prognose aus Branchenforschung"
+      }
+    },
+    "metrics": {
+      "technology": {
+        "title": "Branchenführende Technologie",
+        "before": "Alt-Systeme",
+        "after": "Moderne Cloud-Lösung",
+        "improvement": "Technik der nächsten Generation"
+      },
+      "excellence": {
+        "title": "Für Spitzenleistung gebaut",
+        "before": "Manuelle Prozesse",
+        "after": "Automatisierte Effizienz",
+        "improvement": "Optimierte Abläufe"
+      },
+      "growth": {
+        "title": "Auf Wachstum ausgerichtet",
+        "before": "Einfache Lösungen",
+        "after": "Umfassende Plattform",
+        "improvement": "All-in-One-System"
+      }
+    }
+  },
+  "features": {
+    "title": "Alles, was Sie für Ihr Restaurant brauchen",
+    "subtitle": "Leistungsstarke Funktionen, speziell für moderne Restaurants entwickelt",
+    "items": {
+      "orderManagement": {
+        "title": "Intelligente Bestellverwaltung",
+        "description": "Bündeln Sie Bestellungen aus mehreren Kanälen mit intelligentem Routing und Echtzeit-Verfolgung.",
+        "benefits": {
+          "tracking": "Echtzeit-Bestellverfolgung",
+          "integration": "Mehrkanal-Integration",
+          "notifications": "Automatische Benachrichtigungen"
+        }
+      },
+      "qrOrdering": {
+        "title": "Bestellen per QR-Code",
+        "description": "Ermöglichen Sie kontaktloses Speisen mit individuellen QR-Codes für Tische und Take-away-Bestellungen.",
+        "benefits": {
+          "contactless": "Kontaktloses Bestellen",
+          "tableCodes": "Individuelle Tisch-Codes",
+          "menuAccess": "Sofortiger Menüzugriff"
+        }
+      },
+      "analytics": {
+        "title": "Erweiterte Analytik",
+        "description": "Treffen Sie datenbasierte Entscheidungen mit umfassenden Berichten und Echtzeit-Einblicken.",
+        "benefits": {
+          "sales": "Umsatzanalysen",
+          "insights": "Kundeneinblicke",
+          "tracking": "Leistungsverfolgung"
+        }
+      },
+      "staffManagement": {
+        "title": "Personalverwaltung",
+        "description": "Verwalten Sie Ihr Team effizient mit rollenbasiertem Zugriff und Leistungsverfolgung.",
+        "benefits": {
+          "roleManagement": "Rollenverwaltung",
+          "metrics": "Leistungskennzahlen",
+          "schedule": "Dienstplan-Integration"
+        }
+      },
+      "mobileApps": {
+        "title": "Mobile Apps",
+        "description": "Native mobile Apps für Gäste und Personal – auch offline nutzbar.",
+        "benefits": {
+          "customerApp": "Gäste-App",
+          "staffApp": "Personal-App",
+          "offline": "Offline-Unterstützung"
+        }
+      },
+      "integrations": {
+        "title": "Individuelle Integrationen",
+        "description": "Verbinden Sie Ihre bestehenden Systeme über unsere flexible API und Integrationen.",
+        "benefits": {
+          "api": "API-Zugang",
+          "thirdParty": "Drittanbieter-Integrationen",
+          "workflows": "Individuelle Workflows"
+        }
+      },
+      "payment": {
+        "title": "Zahlungsabwicklung",
+        "description": "Akzeptieren Sie mehrere Zahlungsmethoden mit sicherer, PCI-konformer Abwicklung.",
+        "benefits": {
+          "multipleMethods": "Mehrere Zahlungsmethoden",
+          "secure": "Sichere Abwicklung",
+          "split": "Rechnung teilen"
+        }
+      },
+      "kitchen": {
+        "title": "Küchen-Display & Druck",
+        "description": "Optimieren Sie den Küchenbetrieb mit digitalen Displays und automatischem Druck.",
+        "benefits": {
+          "display": "Küchen-Displaysystem",
+          "printing": "Automatischer Druck",
+          "prioritization": "Bestellpriorisierung"
+        }
+      },
+      "multiLocation": {
+        "title": "Mehrere Standorte",
+        "description": "Verwalten Sie mehrere Restaurants über ein einziges Dashboard mit zentraler Steuerung.",
+        "benefits": {
+          "centralized": "Zentrale Verwaltung",
+          "locationSettings": "Standortspezifische Einstellungen",
+          "reporting": "Einheitliches Reporting"
+        }
+      },
+      "clickCollect": {
+        "title": "Click & Collect",
+        "description": "Ermöglichen Sie Vorbestellungen mit QR-Code-Abholung für reibungslosen Take-away-Service.",
+        "benefits": {
+          "qrOrdering": "Abholbestellungen per QR-Code",
+          "pickupManagement": "Verwaltung der Abholzeiten",
+          "notifications": "Benachrichtigung bei Abholbereitschaft"
+        }
+      },
+      "costManagement": {
+        "title": "Kostenmanagement",
+        "description": "Volle finanzielle Kontrolle mit Ausgabenverfolgung, Kostenanalyse und Rentabilitätseinblicken.",
+        "benefits": {
+          "tracking": "Echtzeit-Kostenverfolgung",
+          "analytics": "Gewinnmargen-Analyse",
+          "profitability": "Rentabilitätsberichte"
+        }
+      },
+      "reservations": {
+        "title": "QR-Reservierungen",
+        "description": "Lassen Sie Gäste Tische sofort per QR-Code-Scan und mit automatischen Bestätigungen buchen.",
+        "benefits": {
+          "qrBooking": "Tischbuchung per QR-Code",
+          "management": "Buchungsverwaltung",
+          "reminders": "Automatische Erinnerungen"
+        }
+      },
+      "payFirst": {
+        "title": "Bezahlung bei Bestellung",
+        "description": "Gäste zahlen per Karte im Moment der Bestellung – jeder Bon ist bezahlt, bevor er die Küche erreicht.",
+        "benefits": {
+          "prepaid": "Vorausbezahlte Bestellungen, keine Zechpreller",
+          "direct": "Geld direkt auf Ihr Konto",
+          "stripe": "Sichere Zahlungen via Stripe"
+        }
+      },
+      "aiStudio": {
+        "title": "KI-Studio",
+        "description": "Menü-Videos, Food-Fotos, Menü-Scan und Rechnungserfassung – echte KI, die die Fleißarbeit übernimmt.",
+        "benefits": {
+          "video": "KI-Menü-Videos",
+          "photos": "KI-Food-Fotografie",
+          "ocr": "KI-Menü- & Rechnungserfassung"
+        }
+      },
+      "loyalty": {
+        "title": "Treue & CRM",
+        "description": "Machen Sie Gäste zu Stammkunden – mit Punkten, Stufen, Kundeneinblicken und E-Mail-Kampagnen per Klick.",
+        "benefits": {
+          "points": "Punkte & Stufen von Bronze bis VIP",
+          "crm": "Kundenprofile & Segmente",
+          "campaigns": "E-Mail-Marketing-Kampagnen"
+        }
+      }
+    },
+    "highlights": {
+      "setup": {
+        "title": "30 Min. Einrichtung",
+        "description": "In Minuten startklar, nicht in Wochen"
+      },
+      "security": {
+        "title": "Sicherheit auf Enterprise-Niveau",
+        "description": "Sicherheit und Compliance auf Bankniveau"
+      },
+      "speed": {
+        "title": "Blitzschnell",
+        "description": "Für Geschwindigkeit und Leistung gebaut"
+      }
+    }
+  },
+  "benefits": {
+    "title": "Transformieren Sie Ihr Restaurant-Geschäft",
+    "subtitle": "Sehen Sie messbare Ergebnisse vom ersten Tag an. Unsere Plattform liefert echte Wirkung für Restaurants jeder Größe.",
+    "main": {
+      "revenue": {
+        "title": "Steigern Sie den Umsatz um 35 %",
+        "description": "Optimieren Sie Abläufe und steigern Sie den Umsatz mit datenbasierten Einblicken und schlanken Prozessen.",
+        "stats": {
+          "increase": "Durchschnittliche Umsatzsteigerung",
+          "speed": "Geschwindigkeit der Bestellabwicklung",
+          "retention": "Kundenbindung"
+        }
+      },
+      "time": {
+        "title": "Sparen Sie 15+ Stunden pro Woche",
+        "description": "Automatisieren Sie wiederkehrende Aufgaben und beseitigen Sie manuelle Prozesse, um sich auf das Wesentliche zu konzentrieren.",
+        "stats": {
+          "saved": "Gesparte Zeit pro Woche",
+          "reduced": "Reduzierte manuelle Aufgaben",
+          "efficiency": "Personaleffizienz"
+        }
+      },
+      "experience": {
+        "title": "Verbessern Sie das Gästeerlebnis",
+        "description": "Bieten Sie außergewöhnlichen Service mit schnellerem Bestellen, präziser Verfolgung und personalisierten Erlebnissen.",
+        "stats": {
+          "satisfaction": "Kundenzufriedenheit",
+          "accuracy": "Bestellgenauigkeit",
+          "waitTime": "Reduzierte Wartezeit"
+        }
+      }
+    },
+    "additional": {
+      "costs": {
+        "title": "Betriebskosten senken",
+        "description": "Senken Sie Personalkosten und reduzieren Sie Verschwendung mit intelligenter Lagerverwaltung und automatisierten Prozessen."
+      },
+      "accuracy": {
+        "title": "Bestellgenauigkeit verbessern",
+        "description": "Beseitigen Sie menschliche Fehler mit digitaler Bestellung und Küchen-Displaysystemen."
+      },
+      "decisions": {
+        "title": "Bessere Entscheidungen",
+        "description": "Treffen Sie fundierte Entscheidungen mit Echtzeit-Analysen und umfassendem Reporting."
+      }
+    },
+    "metrics": {
+      "orders": "Monatlich verarbeitete Bestellungen",
+      "satisfaction": "Kundenzufriedenheit",
+      "revenue": "Durchschnittliche Umsatzsteigerung",
+      "timeSaved": "Wöchentlich gesparte Zeit"
+    },
+    "proven": {
+      "title": "Bewährte Ergebnisse in der ganzen Branche",
+      "subtitle": "Echte Kennzahlen von Restaurants, die die ODS-Plattform nutzen"
+    },
+    "cta": {
+      "title": "Bereit, diese Ergebnisse in Ihrem Restaurant zu sehen?",
+      "description": "Schließen Sie sich Tausenden erfolgreicher Restaurants an, die ihren Betrieb mit ODS transformiert haben.",
+      "contactUs": "Kontakt aufnehmen",
+      "noCredit": "Keine Kreditkarte erforderlich"
+    }
+  },
+  "pricing": {
+    "title": "Einfache, transparente Preise",
+    "subtitle": "Je mehr los ist, desto weniger zahlen Sie. Überschreiten Sie 500 Bestellungen pro Monat, ist Ihr ODS-Abo kostenlos. Darunter vereinbart unser Preis-Center einen fairen Festpreis mit Ihnen – alle Funktionen inklusive, immer.",
+    "idealFor": "Ideal für",
+    "trial": {
+      "message": "7 Tage kostenlos testen – keine Kreditkarte erforderlich",
+      "badge": "Kostenlos testen"
+    },
+    "billing": {
+      "monthly": "Monatlich",
+      "yearly": "Jährlich",
+      "savePercent": "20 % sparen"
+    },
+    "period": {
+      "month": "/Monat",
+      "year": "/Jahr"
+    },
+    "mostPopular": "Am beliebtesten",
+    "save": "2 Monate geschenkt",
+    "cta": {
+      "getStarted": "Loslegen",
+      "contactUs": "Kontakt aufnehmen",
+      "contactSales": "Vertrieb kontaktieren",
+      "priceCenter": "Preis-Center kontaktieren"
+    },
+    "plans": {
+      "monthly": {
+        "name": "Monatsplan",
+        "description": "Perfekt für Restaurants, die Flexibilität mit monatlicher Abrechnung wünschen",
+        "idealFor": "Kleine bis mittlere Restaurants, die ODS Premium testen",
+        "billing": "Monatliche Abrechnung",
+        "features": {
+          "tables": "Unbegrenzte Tische & Bestellungen",
+          "menu": "Unbegrenzte Menüartikel",
+          "categories": "Mehrere Kategorien & Organisation",
+          "qr": "Digitale QR-Code-Speisekarte",
+          "branding": "Individuelles Branding (Logo & Farben)",
+          "orders": "Erweiterte Bestellverwaltung",
+          "kitchen": "Küchen-Display & Drucker-Integration",
+          "payment": "Mehrere Zahlungsmethoden",
+          "dashboard": "Echtzeit-Analyse-Dashboard",
+          "analytics": "Umsatzberichte & Einblicke",
+          "reports": "Berichte exportieren (CSV/PDF)",
+          "activityLogs": "Aktivitätsprotokolle & Verfolgung",
+          "employees": "Unbegrenzte Mitarbeiterverwaltung",
+          "inventory": "Lagerverfolgung & Warnungen",
+          "costTracking": "Kostenanalyse & -verfolgung",
+          "costManagement": "Komplettes Kostenmanagement-System",
+          "reservations": "Tischreservierungen & Buchungen",
+          "qrReservations": "QR-Code für Reservierungen",
+          "clickCollect": "Click & Collect / Abholbestellungen",
+          "qrClickCollect": "QR-Code für Click & Collect",
+          "marketing": "Marketing-Tools & Aktionen",
+          "notifications": "Push-Benachrichtigungen",
+          "multiLocation": "Unterstützung mehrerer Restaurants",
+          "support": "E-Mail- & Priority-Support"
+        }
+      },
+      "yearly": {
+        "name": "Jahresplan",
+        "description": "Bestes Preis-Leistungs-Verhältnis mit 2 Monaten gratis – unsere beliebteste Wahl",
+        "idealFor": "Wachsende Restaurants, die auf die digitale Transformation setzen",
+        "billing": "Jährliche Abrechnung",
+        "savings": "2 Monate geschenkt",
+        "discount": "Nur 40,83 €/Monat bei jährlicher Abrechnung",
+        "features": {
+          "tables": "Unbegrenzte Tische & Bestellungen",
+          "menu": "Unbegrenzte Menüartikel",
+          "categories": "Mehrere Kategorien & Organisation",
+          "qr": "Digitale QR-Code-Speisekarte",
+          "branding": "Individuelles Branding (Logo & Farben)",
+          "orders": "Erweiterte Bestellverwaltung",
+          "kitchen": "Küchen-Display & Drucker-Integration",
+          "payment": "Mehrere Zahlungsmethoden",
+          "dashboard": "Echtzeit-Analyse-Dashboard",
+          "analytics": "Umsatzberichte & Einblicke",
+          "reports": "Berichte exportieren (CSV/PDF)",
+          "activityLogs": "Aktivitätsprotokolle & Verfolgung",
+          "employees": "Unbegrenzte Mitarbeiterverwaltung",
+          "inventory": "Lagerverfolgung & Warnungen",
+          "costTracking": "Kostenanalyse & -verfolgung",
+          "costManagement": "Komplettes Kostenmanagement-System",
+          "reservations": "Tischreservierungen & Buchungen",
+          "qrReservations": "QR-Code für Reservierungen",
+          "clickCollect": "Click & Collect / Abholbestellungen",
+          "qrClickCollect": "QR-Code für Click & Collect",
+          "marketing": "Marketing-Tools & Aktionen",
+          "notifications": "Push-Benachrichtigungen",
+          "multiLocation": "Unterstützung mehrerer Restaurants",
+          "prioritySupport": "Priority-Support & schnellere Reaktionszeiten"
+        }
+      },
+      "free": {
+        "name": "Kostenlos",
+        "badge": "500+ Bestellungen / Monat",
+        "description": "Für gut besuchte Lokale. Sobald Sie 500 Bestellungen pro Monat überschreiten, ist Ihr ODS-Abo komplett kostenlos – Sie zahlen nur den kleinen Servicebetrag pro Bestellung.",
+        "idealFor": "Cafés und Restaurants mit 500+ Bestellungen pro Monat",
+        "priceNote": "Kostenlos, solange Sie über 500 Bestellungen pro Monat bleiben"
+      },
+      "custom": {
+        "name": "Individuell",
+        "badge": "Unter 500 Bestellungen / Monat",
+        "description": "Weniger als 500 Bestellungen pro Monat? Unser ODS Preis-Center vereinbart einen fairen, festen Monatspreis, zugeschnitten auf Ihr Lokal – ohne Überraschungen.",
+        "idealFor": "Neue oder kleinere Lokale, die noch wachsen",
+        "priceLabel": "Individuell",
+        "priceNote": "Ein fairer Preis, vereinbart mit dem ODS Preis-Center"
+      }
+    },
+    "faq": {
+      "title": "Häufig gestellte Fragen",
+      "questions": {
+        "trial": {
+          "q": "Gibt es eine kostenlose Testphase?",
+          "a": "Ja! Alle Pläne beinhalten eine 7-tägige kostenlose Testphase, um alle Funktionen zu erkunden. Keine Kreditkarte erforderlich."
+        },
+        "switch": {
+          "q": "Kann ich den Plan jederzeit wechseln?",
+          "a": "Absolut! Sie können Ihren Plan jederzeit upgraden, downgraden oder ändern."
+        },
+        "support": {
+          "q": "Was ist im Support enthalten?",
+          "a": "Alle Pläne beinhalten E-Mail-Support. Jahres-Abonnenten erhalten Priority-Support mit schnelleren Reaktionszeiten."
+        },
+        "fees": {
+          "q": "Gibt es Einrichtungsgebühren?",
+          "a": "Niemals Einrichtungsgebühren. Wir helfen Ihnen ohne zusätzliche Kosten beim Start."
+        },
+        "payments": {
+          "q": "Wie funktionieren Kartenzahlungen der Gäste?",
+          "a": "Bei der Bezahlung bei Bestellung zahlen Gäste per Karte über Stripe im Moment der Bestellung. Sie behalten den vollen Bestellbetrag abzüglich der üblichen Stripe-Kartengebühren – ODS berechnet Ihnen keine Provision, und Auszahlungen gehen direkt auf Ihr eigenes Stripe-Konto."
+        },
+        "cost": {
+          "q": "Was kostet ODS?",
+          "a": "Wenn Ihr Lokal 500 oder mehr Bestellungen pro Monat hat, ist Ihr ODS-Abo 0 € – Sie zahlen nur den kleinen Servicebetrag pro Bestellung, der zum Gästetotal hinzugefügt wird. Unter 500 Bestellungen pro Monat vereinbart unser ODS Preis-Center einen fairen, festen Monatspreis mit Ihnen. Jede Formel enthält alle Funktionen."
+        }
+      }
+    },
+    "payFirst": {
+      "title": "Gästezahlungen inklusive",
+      "text": "Aktivieren Sie die Bezahlung bei Bestellung und lassen Sie Gäste per Karte zahlen. 0 % Provision für Sie – ein kleiner Servicebetrag wird zum Gästetotal hinzugefügt, und Auszahlungen landen direkt auf Ihrem eigenen Stripe-Konto."
+    },
+    "headline": "Kostenlos ab 500 Bestellungen pro Monat"
+  },
+  "contact": {
+    "title": "Kontakt aufnehmen",
+    "subtitle": "Haben Sie Fragen zu ODS? Wir helfen gerne! Füllen Sie das Formular unten aus, und unser Team antwortet innerhalb von 24 Stunden.",
+    "contactInfo": "Kontaktinformationen",
+    "description": "Erreichen Sie uns über einen dieser Kanäle. Wir freuen uns immer, von Ihnen zu hören!",
+    "email": "E-Mail",
+    "info": {
+      "title": "Kontaktinformationen",
+      "description": "Erreichen Sie uns über einen dieser Kanäle. Wir freuen uns immer, von Ihnen zu hören!",
+      "email": "E-Mail"
+    },
+    "form": {
+      "name": "Ihr Name",
+      "email": "E-Mail-Adresse",
+      "phone": "Telefonnummer",
+      "restaurant": "Name des Restaurants",
+      "message": "Nachricht",
+      "submit": "Nachricht senden",
+      "send": "Nachricht senden",
+      "sending": "Wird gesendet …",
+      "required": "Pflichtfelder",
+      "thankYou": "Vielen Dank!",
+      "success": "Ihre Nachricht wurde erfolgreich gesendet. Wir melden uns innerhalb von 24 Stunden.",
+      "sendAnother": "Weitere Nachricht senden"
+    },
+    "immediate": {
+      "title": "Brauchen Sie sofort Hilfe?",
+      "description": "Unser Support-Team ist Montag bis Freitag von 9 bis 18 Uhr (EST) erreichbar",
+      "cta": "E-Mail schreiben",
+      "emailUs": "E-Mail schreiben"
+    }
+  },
+  "cta": {
+    "title": "Bereit, Ihr Restaurant zu transformieren?",
+    "subtitle": "Schließen Sie sich Tausenden erfolgreicher Restaurants an, die ODS nutzen, um Abläufe zu optimieren, den Umsatz zu steigern und Gäste zu begeistern.",
+    "contactUs": "Kontakt aufnehmen"
+  },
+  "footer": {
+    "description": "Wir stärken Restaurants mit intelligenten Bestell- und Verwaltungslösungen. Transformieren Sie Ihr Geschäft mit ODS.",
+    "email": "contact@ordering-dashboard-solution.com",
+    "copyright": "ODS Platform. Mit",
+    "copyrightEnd": "für Restaurants weltweit.",
+    "forRestaurants": "für Restaurants weltweit.",
+    "security": "Sicherheit auf Enterprise-Niveau",
+    "worldwide": "Weltweit verfügbar",
+    "mobile": "Mobile Apps verfügbar",
+    "cloud": "Cloud-basierte Plattform"
+  },
+  "templates": {
+    "eyebrow": "Bestellerlebnis für Gäste",
+    "title": {
+      "part1": "Eine Speisekarte.",
+      "part2": "Ihre Marke, in sieben Looks."
+    },
+    "subtitle": "Gäste scannen einen QR-Code und erhalten eine schnelle, app-artige Bestelloberfläche – in einem Design, das zu Ihrem Lokal passt. Wählen Sie einen Look und wechseln Sie ihn jederzeit.",
+    "cta": "Meine Speisekarte gestalten",
+    "note": "Vorlage jederzeit wechseln – kein Redesign, keine Ausfallzeit.",
+    "perks": {
+      "qr": "Ein QR-Code pro Tisch, Abholpunkt oder Reservierung.",
+      "brand": "Ihr Logo, Ihre Farben und Fotos auf jedem Bildschirm.",
+      "native": "App-flüssig auf jedem Handy – nichts zu installieren."
+    },
+    "items": {
+      "minimalPremium": {
+        "name": "Minimal Premium",
+        "description": "Klare cremefarbene Fläche, warme Beigetöne und ein Banner für das Aushängeschild-Getränk – dezent gehoben."
+      },
+      "premiumDark": {
+        "name": "Premium Dark",
+        "description": "Luxus-Lounge in Schwarz-Gold mit dramatischem Hero-Foto über die volle Breite."
+      },
+      "vibrantPromo": {
+        "name": "Vibrant Promo",
+        "description": "Kräftiges Rot-Orange, aktionsstarker Hero und runde Kategorie-Kacheln für lebhafte Lokale."
+      },
+      "editorialLifestyle": {
+        "name": "Editorial Lifestyle",
+        "description": "Immersiver Hero, elegante Serifen-Überschriften und horizontale Signature-Drink-Karussells."
+      },
+      "quickOrder": {
+        "name": "Quick Order",
+        "description": "Dunkelgrünes, funktionales Layout mit Suche, kompakten Zeilen und Mengenreglern für schnellen Service."
+      },
+      "pastelFriendly": {
+        "name": "Pastel Friendly",
+        "description": "Sanftes Himmelblau und Rosé, abgerundete Icon-Chips und ein freundliches, einladendes Gefühl."
+      },
+      "futuristicGlass": {
+        "name": "Futuristic Glass",
+        "description": "Dunkler Petrol-Verlauf mit Glassmorphism-Panels und Cyan-Glow – modern und zukunftsweisend."
+      }
+    }
+  },
+  "payment": {
+    "eyebrow": "Bezahlung bei Bestellung · Powered by Stripe",
+    "title": {
+      "part1": "Kassieren Sie im Moment,",
+      "part2": "in dem Gäste bestellen."
+    },
+    "subtitle": "Bei der Bezahlung bei Bestellung zahlen Gäste per Karte, bevor der Bon je die Küche erreicht. Keine Zechpreller, keine offenen Rechnungen, kein Hinterherlaufen – jede Bestellung ist im selben Moment beglichen.",
+    "cta": "Zahlungen aktivieren",
+    "onboard": "In wenigen Minuten eingerichtet – einfach IBAN und Ausweis hinzufügen.",
+    "steps": {
+      "order": "Gast scannt und stellt die Bestellung zusammen",
+      "pay": "Zahlt sicher per Karte über Stripe",
+      "kitchen": "Bestellung geht in die Küche – das Geld auf Ihr Konto"
+    },
+    "benefits": {
+      "commission": {
+        "title": "0 % Provision für Sie",
+        "text": "Sie behalten den vollen Bestellbetrag, abzüglich nur der üblichen Stripe-Kartengebühren. Der kleine Servicebetrag wird zum Gästetotal hinzugefügt – niemals von Ihrem abgezogen."
+      },
+      "direct": {
+        "title": "Geld landet auf Ihrem Konto",
+        "text": "Zahlungen gehen direkt auf Ihr eigenes Stripe-Konto und Ihre Bank. ODS hält Ihre Gelder niemals zurück."
+      },
+      "noShows": {
+        "title": "Null No-Shows & Zechpreller",
+        "text": "Die Bestellung erreicht die Küche erst, wenn die Zahlung erfolgreich war – jeder zubereitete Bon ist bereits bezahlt."
+      },
+      "fee": {
+        "title": "Ein winziger, fairer Servicebetrag",
+        "text": "Ein kleiner Betrag richtet sich nach dem Warenkorb – von 0,20 € bei kleinen bis 1,00 € bei großen Bestellungen – dem Gast vor der Zahlung angezeigt."
+      },
+      "refunds": {
+        "title": "Rückerstattungen integriert",
+        "text": "Erstatten Sie einen einzelnen Artikel oder eine ganze Bestellung per Klick, mit automatischer Monatsend-Abrechnung der Plattformgebühren zurück an Sie."
+      },
+      "global": {
+        "title": "Funktioniert weltweit",
+        "text": "Kassieren Sie in jedem von Stripe unterstützten Land und jeder Währung, wobei der Betrag in der lokalen Währung des Gastes angezeigt wird."
+      }
+    },
+    "mock": {
+      "review": "Prüfen & zahlen",
+      "subtotal": "Zwischensumme",
+      "serviceFee": "Servicebetrag",
+      "total": "Zu zahlen",
+      "pay": "Zahlen",
+      "secured": "Gesichert durch Stripe · Karten erreichen ODS nie",
+      "settled": "Zahlung erfolgreich",
+      "settledSub": "Bestellung an die Küche gesendet"
+    }
+  },
+  "ai": {
+    "eyebrow": "KI, integriert",
+    "title": {
+      "part1": "Die KI macht die Fleißarbeit.",
+      "part2": "Sie führen das Restaurant."
+    },
+    "subtitle": "Echte, einsatzbereite KI in Ihrem Dashboard – verwandelt Fotos und Bestand in Sekunden in Menüs, Medien und Papierkram. Keine Prompts zu lernen.",
+    "cta": "KI-Tools entdecken",
+    "video": {
+      "badge": "KI-Menü-Video",
+      "title": "Machen Sie aus einem Gerichtsfoto ein fesselndes Food-Reel",
+      "description": "Die KI betrachtet Ihr echtes Gerichtsfoto und inszeniert ein cineastisches, 5-sekündiges Hochformat-Reel, das dem Anrichten treu bleibt – bereit zum Posten oder direkt in der Speisekarte.",
+      "reelCaption": "KI-generiert · mit Musik",
+      "points": {
+        "vision": "Die KI liest Ihr echtes Foto für ein gerichtstreues Ergebnis – nie generische Stockware.",
+        "music": "Optionale KI-generierte Hintergrundmusik, automatisch hinzugefügt.",
+        "batch": "Erzeugen Sie Reels für Ihre ganze Speisekarte in einem Durchgang – zu planbaren Kosten pro Clip."
+      },
+      "chips": {
+        "faithful": "Gerichtstreu",
+        "music": "KI-Soundtrack",
+        "batch": "Ihr ganzes Menü"
+      }
+    },
+    "cards": {
+      "photos": {
+        "title": "KI-Food-Fotografie",
+        "description": "Erzeugen Sie auf Knopfdruck professionelle Fotos von Gerichten, Kategorien und Zutaten – kein Fotograf, kein Shooting."
+      },
+      "menuScan": {
+        "title": "KI-Menü-Scan",
+        "description": "Fotografieren Sie Ihre Papier-Speisekarte, und die KI digitalisiert jeden Artikel und jede Kategorie – Namen und Akzente inklusive."
+      },
+      "recipes": {
+        "title": "KI-Rezept-Komponist",
+        "description": "Erstellen Sie Zutaten und Mengen eines Gerichts aus genau dem, was auf Lager ist – oder im Kreativ-Chef-Modus – kalkuliert anhand Ihres Bestands."
+      },
+      "invoice": {
+        "title": "KI-Rechnungserfassung",
+        "description": "Fotografieren Sie eine Lieferantenrechnung – gedruckt oder handschriftlich, in jeder Sprache – und die KI extrahiert jede Position, jeden MwSt.-Satz und jede Summe."
+      },
+      "recipeScan": {
+        "title": "KI-Rezeptblatt-Scan",
+        "description": "Verwandeln Sie ein handschriftliches oder gedrucktes Vorbereitungsblatt in ein strukturiertes Rezept mit Zutaten, Mengen und Einheiten."
+      }
+    }
+  },
+  "print": {
+    "eyebrow": "Druck für Küche & Theke",
+    "title": {
+      "part1": "Jede Bestellung auf Papier,",
+      "part2": "in der Sekunde, in der sie eingeht."
+    },
+    "subtitle": "ODS Print ist eine schlanke Windows-App, die Ihre Thermodrucker mit ODS verbindet und jede eingehende Bestellung automatisch druckt – Küchenbons und Thekenbelege, an die richtige Station geleitet.",
+    "cta": "ODS Print holen",
+    "note": "Kostenlos mit ODS · Installation per Klick, ohne Einrichtung.",
+    "window": {
+      "switchCert": "Zertifikat wechseln",
+      "connected": "Verbunden",
+      "disconnected": "Getrennt",
+      "jobs": "Aufträge",
+      "tabPrinters": "Drucker",
+      "tabService": "Dienst",
+      "refresh": "Drucker aktualisieren",
+      "autoCut": "Papier automatisch schneiden",
+      "tearOff": "Abriss-Vorschub (Zeilen):",
+      "testPrint": "Testdruck",
+      "cutTest": "Schnitttest",
+      "configure": "Konfigurieren"
+    },
+    "features": {
+      "connect": {
+        "title": "LAN-, USB- & Windows-Drucker",
+        "text": "Netzwerk (Port 9100), USB oder jeder installierte Windows-Drucker."
+      },
+      "routing": {
+        "title": "Nach Station geleitet",
+        "text": "Thekenbelege mit Preisen und Küchenbons ohne Preise, an den richtigen Drucker gesendet."
+      },
+      "cut": {
+        "title": "Auto-Schnitt oder Abriss",
+        "text": "Voller Auto-Schnitt bei Druckern mit Messer oder ein smarter Abriss-Vorschub – pro Drucker einstellbar."
+      },
+      "cert": {
+        "title": "Anmeldung per Zertifikat",
+        "text": "Keine Passwörter – ein .ods-cert pro Restaurant, und der Druck stoppt, sobald es widerrufen wird."
+      },
+      "resilient": {
+        "title": "Verpasst nie einen Bon",
+        "text": "Automatische Wiederverbindung, ein 5-Sekunden-Watchdog und Schutz vor Doppeldruck – jede Bestellung druckt genau einmal."
+      },
+      "languages": {
+        "title": "Bons in 7 Sprachen",
+        "text": "Englisch, Französisch, Deutsch, Spanisch, Italienisch, Russisch und Arabisch (von rechts nach links)."
+      }
+    }
+  }
+}

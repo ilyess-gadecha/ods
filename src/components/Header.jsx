@@ -12,8 +12,10 @@ const Header = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false)
 
   const navigation = [
+    { name: t('header.templates'), href: '#templates' },
+    { name: t('header.payments'), href: '#payments' },
+    { name: t('header.ai'), href: '#ai' },
     { name: t('header.features'), href: '#features' },
-    { name: t('header.benefits'), href: '#benefits' },
     { name: t('header.pricing'), href: '#pricing' }
   ]
 

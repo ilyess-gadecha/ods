@@ -1,57 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
+
   <!-- Homepage - English -->
   <url>
     <loc>https://ordering-dashboard-solution.com/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://ordering-dashboard-solution.com/" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://ordering-dashboard-solution.com/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://ordering-dashboard-solution.com/de/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ordering-dashboard-solution.com/" />
-    <lastmod>2026-01-28</lastmod>
+    <lastmod>2026-07-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-  
+
   <!-- Homepage - French -->
   <url>
     <loc>https://ordering-dashboard-solution.com/fr/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://ordering-dashboard-solution.com/" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://ordering-dashboard-solution.com/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://ordering-dashboard-solution.com/de/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ordering-dashboard-solution.com/" />
-    <lastmod>2026-01-28</lastmod>
+    <lastmod>2026-07-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-  
-  <!-- Features Section -->
+
+  <!-- Homepage - German -->
   <url>
-    <loc>https://ordering-dashboard-solution.com/#features</loc>
-    <lastmod>2026-01-28</lastmod>
+    <loc>https://ordering-dashboard-solution.com/de/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ordering-dashboard-solution.com/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ordering-dashboard-solution.com/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://ordering-dashboard-solution.com/de/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ordering-dashboard-solution.com/" />
+    <lastmod>2026-07-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Templates Section -->
+  <url>
+    <loc>https://ordering-dashboard-solution.com/#templates</loc>
+    <lastmod>2026-07-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  
-  <!-- Pricing Section -->
+
+  <!-- Payments Section -->
   <url>
-    <loc>https://ordering-dashboard-solution.com/#pricing</loc>
-    <lastmod>2026-01-28</lastmod>
+    <loc>https://ordering-dashboard-solution.com/#payments</loc>
+    <lastmod>2026-07-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  
-  <!-- Benefits Section -->
+
+  <!-- AI Section -->
   <url>
-    <loc>https://ordering-dashboard-solution.com/#benefits</loc>
-    <lastmod>2026-01-28</lastmod>
+    <loc>https://ordering-dashboard-solution.com/#ai</loc>
+    <lastmod>2026-07-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ODS Print Section -->
+  <url>
+    <loc>https://ordering-dashboard-solution.com/#print</loc>
+    <lastmod>2026-07-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-  
+
+  <!-- Features Section -->
+  <url>
+    <loc>https://ordering-dashboard-solution.com/#features</loc>
+    <lastmod>2026-07-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Pricing Section -->
+  <url>
+    <loc>https://ordering-dashboard-solution.com/#pricing</loc>
+    <lastmod>2026-07-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Benefits Section -->
+  <url>
+    <loc>https://ordering-dashboard-solution.com/#benefits</loc>
+    <lastmod>2026-07-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <!-- Contact Section -->
   <url>
     <loc>https://ordering-dashboard-solution.com/#contact</loc>
-    <lastmod>2026-01-28</lastmod>
+    <lastmod>2026-07-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

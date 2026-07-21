@@ -3,20 +3,26 @@
     "features": "Fonctionnalités",
     "benefits": "Avantages",
     "pricing": "Tarifs",
-    "getStarted": "Commencer Gratuitement"
+    "getStarted": "Commencer Gratuitement",
+    "payments": "Paiements",
+    "ai": "IA",
+    "templates": "Modèles"
   },
   "hero": {
     "badge": "Plateforme de Gestion de Restaurant #1",
     "title": "Solution de Tableau de Bord de Commande",
     "titleSuffix": "pour Restaurants Modernes",
-    "subtitle": "Modernisez les opérations de votre restaurant avec notre solution complète de tableau de bord de commande. Des menus QR code aux analyses en temps réel, tout ce dont vous avez besoin pour améliorer l'efficacité et l'expérience client.",
+    "subtitle": "Offrez à vos clients un beau menu QR, encaissez dès la commande, et laissez l'IA s'occuper des tâches fastidieuses — des vidéos de plats aux factures. Tout pour gérer un restaurant moderne, sur une seule plateforme.",
     "benefits": {
       "qrOrdering": "Commande sans Contact par QR Code",
       "clickCollect": "Click & Collect avec Retrait QR",
       "reservations": "Réservations par Code QR",
       "analytics": "Analyses Complètes du Restaurant",
       "costManagement": "Gestion des Coûts & Rentabilité",
-      "inventory": "Gestion des Stocks & Personnel"
+      "inventory": "Gestion des Stocks & Personnel",
+      "payFirst": "Paiement sécurisé à la commande",
+      "ai": "Menus, photos et vidéos par IA",
+      "templates": "Superbes modèles de menu"
     },
     "getStarted": "Commencer Gratuitement",
     "watchDemo": "Voir la Démo",
@@ -340,6 +346,33 @@
           "management": "Gestion des réservations",
           "reminders": "Rappels automatiques"
         }
+      },
+      "payFirst": {
+        "title": "Paiement à la commande",
+        "description": "Le client paie par carte dès la commande — chaque ticket réglé avant d'arriver en cuisine.",
+        "benefits": {
+          "prepaid": "Commandes prépayées, zéro départ",
+          "direct": "Argent direct sur votre compte",
+          "stripe": "Paiements sécurisés via Stripe"
+        }
+      },
+      "aiStudio": {
+        "title": "Studio IA",
+        "description": "Vidéos de menu, photos culinaires, scan de menu et capture de factures — une vraie IA qui fait le travail fastidieux.",
+        "benefits": {
+          "video": "Vidéos de menu par IA",
+          "photos": "Photographie culinaire IA",
+          "ocr": "Capture menu & factures IA"
+        }
+      },
+      "loyalty": {
+        "title": "Fidélité & CRM",
+        "description": "Transformez vos clients en habitués avec points, niveaux, insights clients et campagnes email en un clic.",
+        "benefits": {
+          "points": "Points & niveaux Bronze à VIP",
+          "crm": "Profils clients & segments",
+          "campaigns": "Campagnes email marketing"
+        }
       }
     },
     "highlights": {
@@ -422,7 +455,7 @@
   },
   "pricing": {
     "title": "Tarification Simple et Transparente",
-    "subtitle": "Choisissez le plan qui correspond aux besoins de votre restaurant. Toutes les fonctionnalités incluses dans chaque plan.",
+    "subtitle": "Plus vous êtes actif, moins vous payez. Dépassez 500 commandes par mois et votre abonnement ODS est gratuit. En dessous, notre Centre Tarifaire fixe avec vous un prix juste et fixe — toutes les fonctionnalités incluses, toujours.",
     "idealFor": "Idéal pour",
     "trial": {
       "message": "Essai Gratuit de 7 Jours - Aucune Carte de Crédit Requise",
@@ -442,7 +475,8 @@
     "cta": {
       "getStarted": "Commencer",
       "contactUs": "Contactez-nous",
-      "contactSales": "Contacter les Ventes"
+      "contactSales": "Contacter les Ventes",
+      "priceCenter": "Contacter le Centre Tarifaire"
     },
     "plans": {
       "monthly": {
@@ -510,6 +544,21 @@
           "multiLocation": "Support multi-restaurants",
           "prioritySupport": "Support prioritaire et temps de réponse plus rapides"
         }
+      },
+      "free": {
+        "name": "Gratuit",
+        "badge": "500+ commandes / mois",
+        "description": "Pour les établissements très actifs. Dès que vous dépassez 500 commandes par mois, votre abonnement ODS est entièrement gratuit — vous ne payez que le petit frais de service par commande.",
+        "idealFor": "Cafés et restaurants réalisant 500+ commandes par mois",
+        "priceNote": "Gratuit tant que vous dépassez 500 commandes par mois"
+      },
+      "custom": {
+        "name": "Sur mesure",
+        "badge": "Moins de 500 commandes / mois",
+        "description": "Moins de 500 commandes par mois ? Notre Centre Tarifaire ODS convient avec vous d'un prix mensuel juste et fixe, adapté à votre établissement — sans surprise.",
+        "idealFor": "Établissements nouveaux ou plus petits, encore en croissance",
+        "priceLabel": "Sur mesure",
+        "priceNote": "Un prix juste, fixé avec le Centre Tarifaire ODS"
       }
     },
     "faq": {
@@ -530,9 +579,22 @@
         "fees": {
           "q": "Y a-t-il des frais de configuration?",
           "a": "Aucun frais de configuration. Nous vous aiderons à démarrer sans coût supplémentaire."
+        },
+        "payments": {
+          "q": "Comment fonctionnent les paiements par carte des clients ?",
+          "a": "Avec le paiement à la commande, le client paie par carte via Stripe dès qu'il commande. Vous gardez le montant total de la commande moins les frais de carte Stripe standards — ODS ne prélève aucune commission, et les versements vont directement sur votre compte Stripe."
+        },
+        "cost": {
+          "q": "Combien coûte ODS ?",
+          "a": "Si votre établissement réalise 500 commandes ou plus par mois, votre abonnement ODS est de 0 € — vous ne payez que le petit frais de service par commande, ajouté au total du client. En dessous de 500 commandes par mois, notre Centre Tarifaire ODS convient avec vous d'un prix mensuel juste et fixe. Chaque formule inclut toutes les fonctionnalités."
         }
       }
-    }
+    },
+    "payFirst": {
+      "title": "Paiements clients inclus",
+      "text": "Activez le paiement à la commande et laissez vos clients payer par carte. 0 % de commission pour vous — un petit frais de service est ajouté au total du client, et les versements arrivent directement sur votre compte Stripe."
+    },
+    "headline": "Gratuit à partir de 500 commandes par mois"
   },
   "contact": {
     "title": "Contactez-nous",
@@ -581,5 +643,198 @@
     "worldwide": "Disponible dans le Monde Entier",
     "mobile": "Applications Mobiles Disponibles",
     "cloud": "Plateforme Basée sur le Cloud"
+  },
+  "templates": {
+    "eyebrow": "Expérience de commande client",
+    "title": {
+      "part1": "Un seul menu.",
+      "part2": "Votre marque, en sept styles."
+    },
+    "subtitle": "Vos clients scannent un QR code et accèdent à une appli de commande rapide et fluide — dans un design qui correspond à votre salle. Choisissez un style, changez-en quand vous voulez.",
+    "cta": "Concevoir mon menu",
+    "note": "Changez de modèle à tout moment — sans refonte ni interruption.",
+    "perks": {
+      "qr": "Un QR code par table, point de retrait ou réservation.",
+      "brand": "Votre logo, vos couleurs et vos photos sur chaque écran.",
+      "native": "Fluide comme une appli, sur tout téléphone — rien à installer."
+    },
+    "items": {
+      "minimalPremium": {
+        "name": "Minimal Premium",
+        "description": "Fond crème épuré, accents beige chaleureux et bannière boisson à la une — sobre et haut de gamme."
+      },
+      "premiumDark": {
+        "name": "Premium Dark",
+        "description": "Lounge de luxe noir et or avec une photo héro pleine largeur spectaculaire."
+      },
+      "vibrantPromo": {
+        "name": "Vibrant Promo",
+        "description": "Rouge et orange audacieux, héro axé promo et tuiles de catégories rondes pour les lieux dynamiques."
+      },
+      "editorialLifestyle": {
+        "name": "Editorial Lifestyle",
+        "description": "Héro immersif, titres serif élégants et carrousels horizontaux de boissons signature."
+      },
+      "quickOrder": {
+        "name": "Quick Order",
+        "description": "Mise en page vert profond avec recherche, lignes compactes et sélecteurs de quantité pour un service rapide."
+      },
+      "pastelFriendly": {
+        "name": "Pastel Friendly",
+        "description": "Bleu ciel et rose poudré, pastilles arrondies et ambiance douce et accueillante."
+      },
+      "futuristicGlass": {
+        "name": "Futuristic Glass",
+        "description": "Dégradé bleu-vert sombre, panneaux glassmorphism et lueur cyan — moderne et futuriste."
+      }
+    }
+  },
+  "payment": {
+    "eyebrow": "Paiement à la commande · Propulsé par Stripe",
+    "title": {
+      "part1": "Encaissez dès que",
+      "part2": "le client commande."
+    },
+    "subtitle": "Avec le paiement à la commande, le client paie par carte avant même que le ticket n'arrive en cuisine. Plus de départs sans payer, plus d'ardoises impayées — chaque commande est réglée à l'instant.",
+    "cta": "Activer les paiements",
+    "onboard": "Configuré en quelques minutes — il suffit d'ajouter votre IBAN et votre pièce d'identité.",
+    "steps": {
+      "order": "Le client scanne et compose sa commande",
+      "pay": "Il paie en toute sécurité par carte via Stripe",
+      "kitchen": "La commande part en cuisine — l'argent arrive sur votre compte"
+    },
+    "benefits": {
+      "commission": {
+        "title": "0 % de commission pour vous",
+        "text": "Vous gardez le montant total de la commande, moins les seuls frais de carte Stripe standards. Le petit frais de service est ajouté au total du client — jamais prélevé sur le vôtre."
+      },
+      "direct": {
+        "title": "Argent versé sur votre compte",
+        "text": "Les paiements arrivent directement sur votre propre compte Stripe et votre banque. ODS ne détient jamais vos fonds."
+      },
+      "noShows": {
+        "title": "Zéro départ sans payer",
+        "text": "La commande ne part en cuisine qu'une fois le paiement réussi : chaque ticket préparé est déjà payé."
+      },
+      "fee": {
+        "title": "Un petit frais de service équitable",
+        "text": "Un petit frais proportionnel au panier — de 0,20 € sur les petits tickets à 1,00 € sur les grands — affiché au client avant de payer."
+      },
+      "refunds": {
+        "title": "Remboursements intégrés",
+        "text": "Remboursez un article ou une commande entière en un clic, avec un règlement automatique des frais de plateforme en fin de mois."
+      },
+      "global": {
+        "title": "Fonctionne partout",
+        "text": "Encaissez dans tous les pays et devises pris en charge par Stripe, le frais étant affiché dans la devise locale du client."
+      }
+    },
+    "mock": {
+      "review": "Vérifier & payer",
+      "subtotal": "Sous-total",
+      "serviceFee": "Frais de service",
+      "total": "Total à payer",
+      "pay": "Payer",
+      "secured": "Sécurisé par Stripe · les cartes ne passent jamais par ODS",
+      "settled": "Paiement réussi",
+      "settledSub": "Commande envoyée en cuisine"
+    }
+  },
+  "ai": {
+    "eyebrow": "L'IA, intégrée",
+    "title": {
+      "part1": "L'IA fait le travail fastidieux.",
+      "part2": "Vous gérez le restaurant."
+    },
+    "subtitle": "Une IA réelle et déjà en production dans votre tableau de bord — transformant photos et stock en menus, médias et paperasse en quelques secondes. Aucune formule à apprendre.",
+    "cta": "Découvrir les outils IA",
+    "video": {
+      "badge": "Vidéo de menu IA",
+      "title": "Transformez la photo d'un plat en vidéo qui capte le regard",
+      "description": "L'IA analyse la vraie photo de votre plat et réalise une vidéo verticale cinématographique de 5 secondes fidèle au dressage — prête à publier ou à afficher dans le menu.",
+      "reelCaption": "Généré par IA · avec musique",
+      "points": {
+        "vision": "L'IA lit votre vraie photo pour un rendu fidèle au plat — jamais une banque d'images générique.",
+        "music": "Musique de fond générée par IA en option, ajoutée automatiquement.",
+        "batch": "Générez des vidéos pour tout votre menu en un lot, à un coût par clip prévisible."
+      },
+      "chips": {
+        "faithful": "Fidèle au plat",
+        "music": "Bande-son IA",
+        "batch": "Tout votre menu"
+      }
+    },
+    "cards": {
+      "photos": {
+        "title": "Photographie culinaire IA",
+        "description": "Générez à la demande des photos professionnelles de plats, catégories et ingrédients — sans photographe ni shooting."
+      },
+      "menuScan": {
+        "title": "Scan de menu IA",
+        "description": "Prenez en photo votre menu papier et l'IA numérise chaque article et catégorie, noms et accents préservés."
+      },
+      "recipes": {
+        "title": "Compositeur de recettes IA",
+        "description": "Composez les ingrédients et quantités d'un plat à partir de ce qui est réellement en stock — ou en mode chef créatif — chiffré selon votre inventaire."
+      },
+      "invoice": {
+        "title": "Capture de factures IA",
+        "description": "Photographiez une facture fournisseur — imprimée ou manuscrite, dans n'importe quelle langue — et l'IA en extrait chaque ligne, taux de TVA et total."
+      },
+      "recipeScan": {
+        "title": "Scan de fiche recette IA",
+        "description": "Transformez une fiche de préparation manuscrite ou imprimée en recette structurée avec ingrédients, quantités et unités."
+      }
+    }
+  },
+  "print": {
+    "eyebrow": "Impression cuisine & comptoir",
+    "title": {
+      "part1": "Chaque commande imprimée,",
+      "part2": "à la seconde où elle arrive."
+    },
+    "subtitle": "ODS Print est une appli Windows légère qui connecte vos imprimantes thermiques à ODS et imprime chaque commande automatiquement — tickets cuisine et reçus comptoir, dirigés vers le bon poste.",
+    "cta": "Obtenir ODS Print",
+    "note": "Inclus avec ODS · installation en un clic, sans configuration.",
+    "window": {
+      "switchCert": "Changer de certificat",
+      "connected": "Connecté",
+      "disconnected": "Déconnecté",
+      "jobs": "Tâches",
+      "tabPrinters": "Imprimantes",
+      "tabService": "Service",
+      "refresh": "Actualiser",
+      "autoCut": "Coupe automatique",
+      "tearOff": "Avance de coupe (lignes) :",
+      "testPrint": "Test impression",
+      "cutTest": "Test de coupe",
+      "configure": "Configurer"
+    },
+    "features": {
+      "connect": {
+        "title": "Imprimantes LAN, USB & Windows",
+        "text": "Réseau (port 9100), USB, ou toute imprimante Windows installée."
+      },
+      "routing": {
+        "title": "Dirigé par poste",
+        "text": "Reçus comptoir avec prix et tickets cuisine sans prix, envoyés à la bonne imprimante."
+      },
+      "cut": {
+        "title": "Coupe auto ou déchirable",
+        "text": "Coupe automatique sur les imprimantes équipées, ou avance intelligente pour déchirer — réglable par imprimante."
+      },
+      "cert": {
+        "title": "Connexion par certificat",
+        "text": "Sans mot de passe — un .ods-cert par restaurant, et l'impression s'arrête s'il est révoqué."
+      },
+      "resilient": {
+        "title": "Ne rate jamais un ticket",
+        "text": "Reconnexion automatique, surveillance de 5 secondes et protection anti-doublon — chaque commande imprimée une seule fois."
+      },
+      "languages": {
+        "title": "Tickets en 7 langues",
+        "text": "Anglais, français, allemand, espagnol, italien, russe et arabe (de droite à gauche)."
+      }
+    }
   }
 }
